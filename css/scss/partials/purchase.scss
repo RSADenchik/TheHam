@@ -1,0 +1,42 @@
+.purchase {
+  height: 476px;
+  opacity: 0.7;
+  background-color: #1c2a33;
+  .img-purchase {
+    position: absolute;
+    height: 476px;
+    width: 100%;
+    opacity: 0.9;
+  }
+  .purchase-title {
+    margin-top: 130px;
+    color: #18cfab;
+    font-family: $global-montserrat-regular;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+  .purchase-info {
+    margin-top: 36px;
+    color: #d8d8d8;
+    font-family: $global-montserrat-regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+  }
+  .white-border {
+    -webkit-box-shadow: 0px -5px 2px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px -5px 2px 0px rgba(255,255,255,1);
+    box-shadow: 0px -5px 2px 0px rgba(255,255,255,1);
+  }
+  .button-purchase {
+    margin: 80px auto 0;
+    width: 165px;
+    height: 60px;
+    font-family: $global-montserrat-regular;
+    background-color: $color-aqua;
+    border-radius: 4px;
+    color: white;
+  }
+}

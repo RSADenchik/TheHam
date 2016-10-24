@@ -1,0 +1,93 @@
+.fun-fact {
+  width: 100%;
+  margin-top: 100px;
+  .fact-1 {
+    float: left;
+    border-top: 4px solid $color-aqua;
+    width: 25%;
+    background: #1c2a33 url('/img/img-fact-1.png') center 30% no-repeat;
+    .fact-title-1 {
+      margin-top: 50%;
+      color: white;
+      font-family: $global-montserrat-regular;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 42px;
+      text-transform: uppercase;
+    }
+    .fact-info-1 {
+      color: #18cfab;
+      font-family: $global-montserrat-regular;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 25px;
+    }
+  }
+
+  .fact-2 {
+    float: left;
+    border-top: 4px solid #25333c;
+    width: 25%;
+    background: $color-aqua url('/img/img-fact-2.png') center 30% no-repeat;
+    .fact-title-2 {
+      margin-top: 50%;
+      color: white;
+      font-family: $global-montserrat-regular;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 42px;
+      text-transform: uppercase;
+    }
+    .fact-info-2 {
+      color: #25333c;
+      font-family: $global-montserrat-regular;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 25px;
+    }
+  }
+  .fact-3 {
+    float: left;
+    border-top: 4px solid $color-aqua;
+    width: 25%;
+    background: #1c2a33 url('/img/img-fact-3.png') center 30% no-repeat;
+    .fact-title-3 {
+      margin-top: 50%;
+      color: white;
+      font-family: $global-montserrat-regular;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 42px;
+      text-transform: uppercase;
+    }
+    .fact-info-3 {
+      color: $color-aqua;
+      font-family: $global-montserrat-regular;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 25px;
+    }
+  }
+  .fact-4 {
+    float: left;
+    border-top: 4px solid #25333c;
+    width: 25%;
+    background: #1c2a33 url('/img/img-fact-4.png') center 30% no-repeat;
+    .fact-title-4 {
+      margin-top: 50%;
+      color: white;
+      font-family: $global-montserrat-regular;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 42px;
+      text-transform: uppercase;
+    }
+    .fact-info-4 {
+      color: #25333c;
+      font-family: $global-montserrat-regular;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 25px;
+    }
+  }
+}

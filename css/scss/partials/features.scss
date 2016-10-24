@@ -1,0 +1,50 @@
+.features {
+  background-color: white;
+  .feature-title {
+    margin-top: 100px;
+    text-align: center;
+    color: #4e4e4e;
+    font-family: $global-montserrat-regular;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+  }
+  .h-line-1 {
+    margin: 36px auto 0;
+    width: 76px;
+    height: 1px;
+    background-color: $color-aqua;
+  }
+  .h-line-2 {
+    margin: 3px 51% 50px 49%;
+    width: 76px;
+    height: 1px;
+    background-color: $color-aqua;
+  }
+  .leaf-title {
+    display: inline-block;
+    margin-left: 10px;
+    color: $color-aqua;
+    font-family: $global-montserrat-regular;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  .feature-info {
+    margin-bottom: 50px;
+    color: #777;
+    font-family: $global-montserrat-regular;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
+  }
+  .feature-pretitle {
+    display: inline-block;
+    margin-left: 10px;
+    color: #717171;
+    font-family: $global-montserrat-regular;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+}

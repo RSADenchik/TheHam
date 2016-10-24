@@ -1,0 +1,89 @@
+.contact {
+
+.map-google {
+  width: 50%;
+  height: 500px;
+  margin-top: 100px;
+  float: left;
+}
+  .contact-field {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    float: left;
+    width: 50%;
+    .contact-title {
+      margin-left: 20px;
+      color: #4e4e4e;
+      font-family: $global-montserrat-regular;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 40px;
+    }
+    .h-line-1 {
+      margin-left: 100px;
+      margin-bottom: 4px;
+      width: 76px;
+      height: 1px;
+      background-color: $color-aqua;
+    }
+    .h-line-2 {
+      margin-left: 108px;
+      width: 76px;
+      height: 1px;
+      background-color: $color-aqua;
+    }
+    .contact-form {
+      width: 94%;
+      margin-top: 50px;
+      margin-left: 20px;
+      .input-name {
+        width: 94%;
+        margin-bottom: 15px;
+        height: 54px;
+        opacity: 0.8;
+        border: 1px solid #c1d2cf;
+      }
+      .input-name[placeholder] {
+        padding-left: 20px;
+      }
+      .input-email {
+        width: 94%;
+        margin-bottom: 15px;
+        height: 54px;
+        opacity: 0.8;
+        border: 1px solid #c1d2cf;
+      }
+      .input-email[placeholder] {
+        padding-left: 20px;
+      }
+      .textarea-contact {
+        margin-bottom: 15px;
+        width: 94%;
+        opacity: 0.8;
+        border: 1px solid #c1d2cf;
+      }
+      .textarea-contact[placeholder] {
+        padding-left: 20px;
+      }
+      .shadow-button {
+        width: 94%;
+        height: 58px;
+        background-color: #08bf9b;
+        border-radius: 3px;
+        .contact-button {
+          border: none;
+          width: 100%;
+          height: 54px;
+          background-color: $color-aqua;
+          border-radius: 3px;
+          color: white;
+          font-family: $global-montserrat-regular;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 16px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

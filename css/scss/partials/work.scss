@@ -1,0 +1,124 @@
+.work {
+  height: auto;
+  background-color: #f8fcfe;
+  border: 1px solid #e1e1e1;
+  .work-title {
+    margin-top: 100px;
+    text-align: center;
+    color: #4e4e4e;
+    font-family: $global-montserrat-regular;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+  }
+  .h-line-1 {
+    margin: 36px auto 0;
+    width: 76px;
+    height: 1px;
+    background-color: $color-aqua;
+  }
+  .h-line-2 {
+    margin: 3px 51% 50px 49%;
+    width: 76px;
+    height: 1px;
+    background-color: $color-aqua;
+  }
+  .work-menu {
+    text-align: center;
+    list-style: none;
+    margin-bottom: 80px;
+    .work-li {
+      display: inline-block;
+      border: 1px solid #ebebeb;
+      margin-left: -5px;
+      &:hover {
+        border-top: 2px solid $color-aqua;
+        margin-top: -2px;
+      }
+    }
+    .work-a {
+      padding: 15px 25px;
+      color: #717171;
+      font-family: $global-montserrat-regular;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 50px;
+      cursor: pointer;
+      &:hover {
+        color: $color-aqua;
+        text-decoration: none;
+      }
+    }
+  }
+  .margin-fix {
+    padding-left: 0;
+    padding-right: 0;
+    .block {
+      width: 100%;
+      &:hover .image-block-hover  {
+        display: block;
+      }
+      .image-block {
+        width: 100%;
+        background: white;
+        .img-paris {
+          position: relative;
+          width: 100%;
+        }
+      }
+      .image-block-hover {
+        position: absolute;
+        text-align: center;
+        display: none;
+        background: #f8fcfe;
+        border-top: 2px solid $color-aqua;
+        top: 0;
+        opacity: 0.75;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        .hover-img {
+          padding-top: 100px;
+        }
+        .title-block-hover {
+          color: #18cfab;
+          font-family: $global-montserrat-bold;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 25px;
+          text-transform: uppercase;
+        }
+        .info-block-hover {
+          color: #8a8a8a;
+          font-family: $global-montserrat-regular;
+          font-size: 12px;
+          font-weight: 300;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+  .button-upload {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 100px;
+
+    .upload-button {
+      margin: 0 auto;
+      width: 165px;
+      height: 60px;
+      background-color: $color-aqua;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      font-family: $global-montserrat-regular;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 42px;
+      text-transform: uppercase;
+    }
+    .icon-plus {
+      padding-left: 10px;
+    }
+  }
+}

@@ -1,0 +1,121 @@
+.feedback {
+  margin-top: 50px;
+  .feedback-img {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+  }
+  .feedback-title {
+    margin-top: 100px;
+    color: white;
+    font-family: $global-montserrat-regular;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+  }
+  .h-line-1 {
+    margin: 36px auto 0;
+    width: 76px;
+    height: 1px;
+    background-color: $color-aqua;
+  }
+  .h-line-2 {
+    margin: 3px 51% 50px 49%;
+    width: 76px;
+    height: 1px;
+    background-color: $color-aqua;
+  }
+  .feedback-info {
+    margin-top: 55px;
+    color: #bbb;
+    font-family: $global-montserrat-regular;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+  }
+  .carousel-inner>.item {
+    z-index: 1;
+  }
+  .feedback-caption {
+    position: static;
+    padding: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .caption-title {
+      color: $color-aqua;
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .caption-info {
+      color: #bbb;
+      font-size: 13px;
+      font-weight: 300;
+    }
+    .img-opacity {
+      margin: 50px auto 0;
+      border-radius: 50%;
+      width: 164px;
+      height: 163px;
+      opacity: 0.2;
+      background-color: $color-aqua;
+    }
+    .img-autor {
+      border-radius: 50%;
+      margin-top: -182px;
+      width: 142px;
+      height: 141px;
+      border: 3px solid $color-aqua;
+    }
+  }
+  .feedback-indicator {
+    position: static;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    .li-indicator {
+      width: 59px;
+      height: 59px;
+      border-radius: 50%;
+      border: 5px solid rgba(31, 218, 181, 0.2);
+      background: url('/img/autor.jpg') center center no-repeat;
+      background-size: cover;
+      background-clip: padding-box;
+      &:nth-of-type(2n) {
+        background: url('/img/autor1.jpg') center center no-repeat;
+        background-size: cover;
+        background-clip: padding-box;
+      }
+    }
+    .active {
+      margin: 0;
+      border: 5px solid $color-aqua;
+    }
+  }
+  .buttom-prev {
+    position: absolute;
+    right: 67%;
+    margin-top: 15px;
+    width: 31px;
+    height: 31px;
+    border: 1px solid #bbb;
+    background: transparent;
+    &:hover {
+      background-color: $color-aqua;
+    }
+  }
+  .buttom-next {
+    position: absolute;
+    top: 86%;
+    right: 30%;
+    width: 31px;
+    height: 31px;
+    border: 1px solid #bbb;
+    background: transparent;
+    &:hover {
+      background-color: $color-aqua;
+    }
+  }
+
+}

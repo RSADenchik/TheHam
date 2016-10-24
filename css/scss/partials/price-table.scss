@@ -1,0 +1,104 @@
+.price-table {
+  .price-title {
+    margin-top: 100px;
+    text-align: center;
+    color: #4e4e4e;
+    font-family: $global-montserrat-regular;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+  }
+  .h-line-1 {
+    margin: 36px auto 0;
+    width: 76px;
+    height: 1px;
+    background-color: $color-aqua;
+  }
+  .h-line-2 {
+    margin: 3px 51% 50px 49%;
+    width: 76px;
+    height: 1px;
+    background-color: $color-aqua;
+  }
+  .personal {
+    float: left;
+    list-style: none;
+    text-align: center;
+    width: 25%;
+    background-color: #f8fcfe;
+    border-collapse: collapse;
+    border-radius: 5px;
+    padding-left: 0;
+    position: relative;
+    overflow: hidden;
+    &:hover .li-price,
+    &:hover .li-button {
+      background-color: $color-aqua;
+    }
+    &:hover:after {
+      content: "offer";
+      width: 80px;
+      height: 22px;
+      background-color: $color-aqua;
+      color: white;
+      position: absolute;
+      top: 10px;
+      right: -18px;
+      transform: rotate(45deg);
+      font-family: $global-montserrat-regular;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 26px;
+      text-transform: uppercase;
+    }
+    .li-header {
+      padding: 10px;
+      color: #717171;
+      font-family: $global-montserrat-regular;
+      border: 1px solid #e1e1e1;
+      font-size: 24px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .li-price {
+      padding: 30px;
+      background-color: #2e4a5b;
+      border: 1px solid #ebebeb;
+      color: white;
+      font-family: $global-montserrat-regular;
+      line-height: 34px;
+      font-size: 39px;
+      font-weight: 700;
+      text-transform: uppercase;
+      overflow: hidden;
+      .price-span {
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+    }
+    .li-content {
+      padding: 5px;
+      border: 1px solid #e1e1e1;
+      color: #777;
+      font-family: $global-montserrat-regular;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 47px;
+      &:last-child {
+        padding: 30px;
+      }
+    }
+    .li-button {
+      width: 170px;
+      height: 50px;
+      background-color: #2e4a5b;
+      border-radius: 3px;
+      color: white;
+      font-family: $global-montserrat-regular;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 50px;
+    }
+  }
+}

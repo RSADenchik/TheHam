@@ -1,0 +1,129 @@
+.footer {
+  height: 757px;
+  background-color: #1c2b33;
+  .logo {
+    float: left;
+    font-family: $global-montserrat-regular;
+    font-size: 40px;
+    width: 22%;
+    margin-left: 2%;
+    line-height: 50px;
+    margin-top: 130px;
+    .logo-1-part {
+      color: white;
+      font-weight: 400;
+    }
+    .logo-2-part {
+      color: $color-aqua;;
+      font-weight: 700;
+    }
+    .footer-info {
+      margin-top: 40px;
+      color: #b2b2b2;
+      font-family: $global-montserrat-regular;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 26px;
+    }
+    .footer-info-1 {
+      margin-top: 50px;
+      font-size: 14px;
+      font-weight: 300;
+      color: silver;
+      font-family: $global-montserrat-regular;
+      line-height: 26px;
+      span {
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+    .footer-info-2 {
+      margin-top: 30px;
+      color: #c1c1c1;
+      font-family: $global-montserrat-regular;
+      line-height: 26px;
+      font-size: 14px;
+      font-weight: 300;
+      span {
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+  .recent-post {
+    width: 38%;
+    float: left;
+    margin-top: 117px;
+    margin-left: 2%;
+    .title-recent {
+      color: white;
+      margin-bottom: 63px;
+      font-family: $global-montserrat-regular;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26px;
+      text-transform: uppercase;
+    }
+    .standart-post {
+      width: 100%;
+      border-bottom: 1px solid #294453;
+      margin-bottom: 37px;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    .footer-img-post {
+      float: left;
+      width: 77px;
+      height: 66px;
+    }
+    .standart-title {
+      margin: 0;
+      width: 70%;
+      padding-left: 15px;
+      float: left;
+      color: white;
+      font-family: $global-montserrat-regular;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 14px;
+      text-transform: uppercase;
+    }
+    .standart-info {
+      width: 75%;
+      float: left;
+      padding-left: 15px;
+      padding-top: 8px;
+      color: #b2b2b2;
+      font-family: $global-montserrat-regular;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 25px;
+    }
+    .date-post {
+      width: 30%;
+      color: #f1f1f1;
+      font-family: $global-montserrat-regular;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 30px;
+      padding: 0;
+      margin-left: 95px;
+    }
+  }
+  .tags-post {
+    width: 25%;
+    float: left;
+    margin-top: 117px;
+    margin-left: 50px;
+    .title-tags {
+      margin-bottom: 63px;
+      color: white;
+      font-family: $global-montserrat-regular;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26px;
+      text-transform: uppercase;
+    }
+  }
+}

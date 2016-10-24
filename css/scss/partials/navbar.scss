@@ -1,0 +1,101 @@
+.navbar-fixed-top {
+  -webkit-transform: translate3d(0, 0, 0);
+}
+.nav-ham {
+  height: 85px;
+  margin: 0;
+  background-color: #42423c;
+  border: none;
+
+  .header {
+    height: 85px;
+    width: 100%;
+    padding-top: 10px;
+
+    .logo {
+      float: left;
+      padding-top: 0;
+      margin-left: 3%;
+      display: inline-block;
+      font-family: $global-montserrat-bold;
+      font-size: 20px;
+      a:hover {
+        text-decoration: none;
+      }
+     .logo-1-part {
+        color: white;
+        font-weight: 400;
+      }
+      .logo-2-part {
+        color: $color-aqua;;
+        font-weight: 700;
+      }
+    }
+    .menu-list {
+      text-align: center;
+      margin-bottom: 0;
+      height: 74px;
+      padding-left: 0;
+      font-family: $global-montserrat-regular;
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 18px;
+      text-transform: uppercase;
+      list-style: none;
+
+      .list-items {
+        display: inline-block;
+        color: #b8b8b8;
+        margin-left: 10px;
+        &:hover {
+          color: $color-aqua;
+          padding-bottom: 50px;
+          border-bottom: 2px solid $color-aqua;;
+        }
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+        .search-button {
+          font-size: 12px;
+          width: 40px;
+          height: 35px;
+          background-color: transparent;
+          color: #bbb;
+          &:hover {
+            color: $color-aqua;;
+          }
+        }
+      } // menu-list
+    }  //header
+    .search-form {
+      display: none;
+      width: 50%;
+      margin: 0;
+      margin-right: 3%;
+      padding: 0;
+      float: right;
+      border: none;
+      .search-input {
+        width: 50%;
+        float: right;
+        height: 45px;
+        background-color: white;
+        color: #a5a5a5;
+        font-family: $global-montserrat-regular;
+        font-size: 12px;
+        font-weight: 400;
+      }
+      .search-button-input {
+        position: absolute;
+        right: 4%;
+        width: 44px;
+        height: 43px;
+        background-color: $color-aqua;
+        .active-search-icon {
+          color: white;
+        }
+      }
+    }
+  }
+

@@ -1,0 +1,67 @@
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "settings/mixins";
+@import "settings/font-awesome/font-awesome";
+
+
+html,
+body {
+  background: #fff;
+}
+button {
+  outline: none;
+}
+.fix-padding {
+  padding: 0;
+}
+  /* Include Fonts  */
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("/fonts/Montserrat/montserrat-regular.ttf");
+  src: url("/fonts/Montserrat/montserrat-regular.eot#iefix") format("embedded-opentype"),
+  url("/fonts/Montserrat/montserrat-regular.woff") format("woff"),
+  url("/fonts/Montserrat/montserrat-regular.ttf") format("truetype"),
+  url("/fonts/Montserrat/montserrat-regular.svg#Montserrat-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("/fonts/Montserrat/montserrat-bold.ttf");
+  src: url("/fonts/Montserrat/montserrat-bold.eot#iefix") format("embedded-opentype"),
+  url("/fonts/Montserrat/montserrat-bold.woff") format("woff"),
+  url("/fonts/Montserrat/montserrat-bold.ttf") format("truetype"),
+  url("/fonts/Montserrat/montserrat-bold.svg#Montserrat-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+  /*  Global Fonts   */
+  $global-montserrat-bold: "Montserrat-Bold";
+  $global-montserrat-regular: "Montserrat-Regular";
+
+  /*  Global Colors   */
+
+  $color-aqua: #18cfab;
+
+
+  /* Partials project */
+@import "partials/navbar";
+@import "partials/home";
+@import "partials/four-options";
+@import "partials/features";
+@import "partials/about";
+@import "partials/work";
+@import "partials/service";
+@import "partials/purchase";
+@import "partials/breaking-news";
+@import "partials/fun-fact";
+@import "partials/price-table";
+@import "partials/feedback";
+@import "partials/team";
+@import "partials/purchase-1";
+@import "partials/contact";
+@import "partials/footer";
+/*  Mobile partials   */
+
+  /* Slick-slider  */
+@import "partials/mini-slider";
+

@@ -1,68 +1,67 @@
-.four-options {
-  width: 100%;
-  .option-1 {
-    float: left;
-    width: 25%;
-    height: 260px;
-    border-top: 4px solid $color-aqua;
-    background: #1c2a33 url('/img/option-img-1.png') center 30% no-repeat;
-    .option-title-1 {
-      margin: 180px 5px 22% 5px;
-      text-align: center;
-      font-family: $global-montserrat-regular;
-      text-transform: uppercase;
-      font-size: 18px;
-      font-weight: 700;
-      color: $color-aqua;
-    }
-  }
-  .option-2 {
-    float: left;
-    width: 25%;
-    height: 260px;
-    border-top: 4px solid white;
-    background: $color-aqua url('/img/option-img-2.png') center 30% no-repeat;
-    .option-title-2 {
-      margin: 180px 5px 22% 5px;
-      text-align: center;
-      font-family: $global-montserrat-regular;
-      text-transform: uppercase;
-      font-size: 18px;
-      font-weight: 700;
-      color: white;
-    }
-  }
-  .option-3 {
-    float: left;
-    width: 25%;
-    height: 260px;
-    border-top: 4px solid $color-aqua;
-    background: #1c2a33 url('/img/option-img-3.png') center 30% no-repeat;
-    .option-title-3 {
-      margin: 180px 5px 22% 5px;
-      text-align: center;
-      font-family: $global-montserrat-regular;
-      text-transform: uppercase;
-      font-size: 18px;
-      font-weight: 700;
-      color: $color-aqua;
-    }
-  }
-  .option-4 {
-    float: left;
-    width: 25%;
-    height: 260px;
-    border-top: 4px solid white;
-    background: $color-aqua url('/img/option-img-4.png') center 30% no-repeat;
-    .option-title-4 {
-      margin: 180px 5px 22% 5px;
-      text-align: center;
-      font-family: $global-montserrat-regular;
-      text-transform: uppercase;
-      font-size: 18px;
-      font-weight: 700;
-      color: white;
-    }
-  }
-}
+ .four-options {
+   .option-1 {
+     float: left;
+     width: 25%;
+     height: 220px;
+     border-top: 4px solid $color-aqua;
+     background: #1c2a33 url('/img/option-img-1.png') center 20% no-repeat;
+      .option-title-1 {
+        margin: 150px 5px 0 5px;
+        text-align: center;
+        font-family: $global-montserrat-regular;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 700;
+        color: $color-aqua;
+      }
+   }
+   .option-2 {
+     float: left;
+     width: 25%;
+     height: 220px;
+     border-top: 4px solid white;
+     background: $color-aqua url('/img/option-img-2.png') center 20% no-repeat;
+      .option-title-2 {
+        margin: 150px 5px 0 5px;
+        text-align: center;
+        font-family: $global-montserrat-regular;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 700;
+        color: white;
+      }
+   }
+   .option-3 {
+     float: left;
+     width: 25%;
+     height: 220px;
+     border-top: 4px solid $color-aqua;
+     background: #1c2a33 url('/img/option-img-3.png') center 20% no-repeat;
+      .option-title-3 {
+        margin: 150px 5px 0 5px;
+        text-align: center;
+        font-family: $global-montserrat-regular;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 700;
+        color: $color-aqua;
+      }
+   }
+   .option-4 {
+     float: left;
+     width: 25%;
+     height: 220px;
+     border-top: 4px solid white;
+     background: $color-aqua url('/img/option-img-4.png') center 20% no-repeat;
+      .option-title-4 {
+        margin: 150px 5px 0 5px;
+        text-align: center;
+        font-family: $global-montserrat-regular;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 700;
+        color: white;
+      }
+   }
+ }
 

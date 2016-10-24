@@ -5,10 +5,10 @@
     float: left;
     font-family: $global-montserrat-regular;
     font-size: 40px;
-    width: 22%;
-    margin-left: 2%;
+    width: 19%;
+    margin-left: 3%;
     line-height: 50px;
-    margin-top: 130px;
+    margin-top: 100px;
     .logo-1-part {
       color: white;
       font-weight: 400;
@@ -51,9 +51,9 @@
     }
   }
   .recent-post {
-    width: 38%;
+    width: 33%;
     float: left;
-    margin-top: 117px;
+    margin-top: 85px;
     margin-left: 2%;
     .title-recent {
       color: white;
@@ -79,9 +79,8 @@
     }
     .standart-title {
       margin: 0;
-      width: 70%;
-      padding-left: 15px;
-      float: left;
+      margin-left: 20%;
+      padding-left: 24px;
       color: white;
       font-family: $global-montserrat-regular;
       font-size: 16px;
@@ -90,9 +89,8 @@
       text-transform: uppercase;
     }
     .standart-info {
-      width: 75%;
-      float: left;
-      padding-left: 15px;
+      margin-left: 20%;
+      padding-left: 24px;
       padding-top: 8px;
       color: #b2b2b2;
       font-family: $global-montserrat-regular;
@@ -101,23 +99,23 @@
       line-height: 25px;
     }
     .date-post {
-      width: 30%;
       color: #f1f1f1;
       font-family: $global-montserrat-regular;
       font-size: 14px;
       font-weight: 300;
       line-height: 30px;
       padding: 0;
-      margin-left: 95px;
+      padding-left: 24px;
+      margin-left: 20%;
     }
   }
   .tags-post {
-    width: 25%;
+    width: 20%;
     float: left;
-    margin-top: 117px;
-    margin-left: 50px;
+    margin-top: 85px;
+    margin-left: 2%;
     .title-tags {
-      margin-bottom: 63px;
+      margin-bottom: 50px;
       color: white;
       font-family: $global-montserrat-regular;
       font-size: 18px;
@@ -125,5 +123,174 @@
       line-height: 26px;
       text-transform: uppercase;
     }
+    .tags-table {
+      width: 100%;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #294453;
+      border-spacing: 10px;
+      border-collapse: separate;
+      .td-table {
+        color: white;
+        border: 1px solid #d7d7d7;
+        text-align: center;
+        font-family: $global-montserrat-regular;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 36px;
+        &:hover {
+          background-color: $color-aqua;
+        }
+      }
+    }
+    .newsletter-title {
+      margin-bottom: 30px;
+      color: white;
+      font-family: $global-montserrat-regular;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 40px;
+    }
+    .newsletter-info {
+      color: #b4b4b4;
+      font-family: $global-montserrat-regular;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 26px;
+    }
+    .input-field {
+      position: relative;
+      .enter-mail {
+        width: 100%;
+        height: 42px;
+        float: left;
+        background-color: #22353f;
+        border: none;
+        outline: 0;
+      }
+      .enter-mail[placeholder] {
+        padding-left: 10px;
+        color: #757575;
+        font-family: $global-montserrat-regular;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 26px;
+      }
+      .submit-mail {
+        width: 15%;
+        height: 42px;
+        position: absolute;
+        right: 0;
+        background-color: #294453;
+        border: none;
+        color: $color-aqua;
+        font-family: $global-montserrat-regular;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 26px;
+        outline: 0;
+      }
+    }
+  }
+  .flicke-feed {
+    width: 19%;
+    float: left;
+    margin-top: 85px;
+    margin-left: 2%;
+    .title-flicke {
+      margin-bottom: 50px;
+      color: white;
+      font-family: $global-montserrat-regular;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 20px;
+      text-transform: uppercase;
+    }
+    .img-group {
+      width: 100%;
+      display: inline-block;
+      .img-flicke {
+        width: 74px;
+        height: 74px;
+        margin: 7px;
+      }
+    }
+  }
+}
+@media #{$bootstrap-sm} {
+  .footer {
+    height: 600px;
+  }
+  .footer .logo {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  .footer .logo .footer-info {
+    font-size: 10px;
+    margin-top: 50px;
+    line-height: 20px;
+
+  }
+  .footer .recent-post {
+    margin-top: 45px;
+  }
+  .footer .recent-post .title-recent {
+    font-size: 14px;
+    margin-bottom: 64px;
+  }
+  .footer .logo .footer-info-1 {
+    line-height: 20px;
+    font-size: 10px;
+  }
+  .footer .logo .footer-info-2 {
+    line-height: 20px;
+    font-size: 10px;
+  }
+  .footer .recent-post .standart-title {
+    margin: 0 0 0 20%;
+    padding-left: 34px;
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .footer .recent-post .standart-info {
+    padding-left: 34px;
+    line-height: 15px;
+    font-size: 10px
+  }
+  .footer .recent-post .date-post {
+    padding: 0 0 0 34px;
+    font-size: 10px;
+  }
+  .footer .tags-post {
+    margin-top: 44px;
+  }
+  .footer .tags-post .title-tags {
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+  .footer .tags-post .tags-table .td-table {
+    font-size: 11px;
+  }
+  .footer .tags-post .newsletter-title {
+    margin-bottom: 6px;
+    font-size: 14px;
+  }
+  .footer .tags-post .newsletter-info {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .footer .tags-post .input-field .submit-mail {
+    width: 25%;
+  }
+  .footer .flicke-feed {
+    margin-top: 44px;
+  }
+  .footer .flicke-feed .title-flicke {
+    margin-bottom: 56px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .footer .flicke-feed .img-group .img-flicke {
+    width: 50px;
+    height: 50px;
   }
 }

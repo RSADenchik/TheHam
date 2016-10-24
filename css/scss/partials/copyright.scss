@@ -1,0 +1,15 @@
+.copyright {
+  height: 108px;
+  background-color: #22353f;
+  .copyright-title {
+    margin-top: 5%;
+    font-family: $global-montserrat-regular;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+    color: #aeaeae;
+  }
+  .copyright-span {
+    color: $color-aqua;
+  }
+}

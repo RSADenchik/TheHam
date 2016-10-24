@@ -18,12 +18,13 @@
     text-transform: uppercase;
   }
   .purchase-info {
-    margin-top: 36px;
+    width: 70%;
+    margin: 0 auto;
     color: #d8d8d8;
     font-family: $global-montserrat-regular;
     font-size: 16px;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 30px;
   }
   .white-border {
     -webkit-box-shadow: 0px -5px 2px 0px rgba(255,255,255,1);
@@ -31,12 +32,22 @@
     box-shadow: 0px -5px 2px 0px rgba(255,255,255,1);
   }
   .button-purchase {
-    margin: 80px auto 0;
+    margin: 50px auto 0;
     width: 165px;
     height: 60px;
     font-family: $global-montserrat-regular;
     background-color: $color-aqua;
     border-radius: 4px;
     color: white;
+  }
+}
+@media #{$bootstrap-sm} {
+  .purchase .purchase-title {
+    font-size: 20px;
+  }
+}
+@media #{$bootstrap-md} {
+  .purchase .purchase-title {
+    font-size: 30px;
   }
 }

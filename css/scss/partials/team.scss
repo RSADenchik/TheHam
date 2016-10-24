@@ -1,7 +1,7 @@
 .team {
 
   .team-title {
-    margin-top: 100px;
+    margin-top: 80px;
     color: #4e4e4e;
     font-family: $global-montserrat-regular;
     font-size: 36px;
@@ -26,8 +26,7 @@
     float: left;
     height: 371px;
     list-style: none;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-left: 2%;
       &:hover .person-img>.hover-add-img {
         display: block;
       }
@@ -43,13 +42,16 @@
       }
     .person-img {
       height: 229px;
+      width: 100%;
       background-color: #dae9e6;
       position: relative;
       .hover-add-img {
         position: absolute;
         display: none;
         top: 35%;
-        right: 35%;
+        text-align: center;
+        right: 0;
+        left: 0;
       }
       .person-foto {
         height: 229px;

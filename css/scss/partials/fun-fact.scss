@@ -3,91 +3,127 @@
   margin-top: 100px;
   .fact-1 {
     float: left;
-    border-top: 4px solid $color-aqua;
     width: 25%;
-    background: #1c2a33 url('/img/img-fact-1.png') center 30% no-repeat;
+    height: 260px;
+    position: relative;
+    border-top: 4px solid $color-aqua;
+    background: #1c2a33 url('/img/img-fact-1.png') center 42% no-repeat;
     .fact-title-1 {
-      margin-top: 50%;
+      position: absolute;
+      bottom: 11%;
+      left: 0;
+      right: 0;
       color: white;
       font-family: $global-montserrat-regular;
-      font-size: 36px;
+      font-size: 30px;
       font-weight: 400;
-      line-height: 42px;
+      line-height: 20px;
       text-transform: uppercase;
     }
     .fact-info-1 {
+      position: absolute;
+      bottom: 2%;
+      left: 0;
+      right: 0;
       color: #18cfab;
       font-family: $global-montserrat-regular;
       font-size: 18px;
       font-weight: 300;
-      line-height: 25px;
+      line-height: 14px;
     }
   }
 
   .fact-2 {
     float: left;
+    height: 260px;
+    position: relative;
     border-top: 4px solid #25333c;
     width: 25%;
-    background: $color-aqua url('/img/img-fact-2.png') center 30% no-repeat;
+    background: $color-aqua url('/img/img-fact-2.png') center 42% no-repeat;
     .fact-title-2 {
-      margin-top: 50%;
+      position: absolute;
+      bottom: 11%;
+      left: 0;
+      right: 0;
       color: white;
       font-family: $global-montserrat-regular;
-      font-size: 36px;
+      font-size: 30px;
       font-weight: 400;
-      line-height: 42px;
+      line-height: 20px;
       text-transform: uppercase;
     }
     .fact-info-2 {
+      position: absolute;
+      bottom: 2%;
+      left: 0;
+      right: 0;
       color: #25333c;
       font-family: $global-montserrat-regular;
       font-size: 18px;
       font-weight: 300;
-      line-height: 25px;
+      line-height: 14px;
     }
   }
   .fact-3 {
     float: left;
+    height: 260px;
+    position: relative;
     border-top: 4px solid $color-aqua;
     width: 25%;
-    background: #1c2a33 url('/img/img-fact-3.png') center 30% no-repeat;
+    background: #1c2a33 url('/img/img-fact-3.png') center 42% no-repeat;
     .fact-title-3 {
-      margin-top: 50%;
+      position: absolute;
+      bottom: 11%;
+      left: 0;
+      right: 0;
       color: white;
       font-family: $global-montserrat-regular;
-      font-size: 36px;
+      font-size: 30px;
       font-weight: 400;
-      line-height: 42px;
+      line-height: 20px;
       text-transform: uppercase;
     }
     .fact-info-3 {
+      position: absolute;
+      bottom: 2%;
+      left: 0;
+      right: 0;
       color: $color-aqua;
       font-family: $global-montserrat-regular;
       font-size: 18px;
       font-weight: 300;
-      line-height: 25px;
+      line-height: 14px;
     }
   }
   .fact-4 {
     float: left;
+    height: 260px;
+    position: relative;
     border-top: 4px solid #25333c;
     width: 25%;
-    background: #1c2a33 url('/img/img-fact-4.png') center 30% no-repeat;
+    background: #1c2a33 url('/img/img-fact-4.png') center 42% no-repeat;
     .fact-title-4 {
-      margin-top: 50%;
+      position: absolute;
+      bottom: 11%;
+      left: 0;
+      right: 0;
       color: white;
       font-family: $global-montserrat-regular;
-      font-size: 36px;
+      font-size: 30px;
       font-weight: 400;
-      line-height: 42px;
+      line-height: 20px;
       text-transform: uppercase;
     }
     .fact-info-4 {
+      position: absolute;
+      bottom: 2%;
+      left: 0;
+      right: 0;
       color: #25333c;
       font-family: $global-montserrat-regular;
       font-size: 18px;
       font-weight: 300;
-      line-height: 25px;
+      line-height: 14px;
     }
   }
 }

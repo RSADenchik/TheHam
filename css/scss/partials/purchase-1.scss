@@ -20,11 +20,12 @@
   }
   .notebook {
     float: left;
-    width: 50%;
-    margin: 50px 0 50px 10%;
+    width: 55%;
+    margin: 30px 0 60px 5%;
   }
   .ul-purchase-1 {
     margin-top: 20px;
+    width: 33%;
     margin-left: 50px;
     float: left;
     list-style: none;
@@ -57,5 +58,39 @@
     -webkit-box-shadow: 0px -5px 2px 0px rgba(255,255,255,1);
     -moz-box-shadow: 0px -5px 2px 0px rgba(255,255,255,1);
     box-shadow: 0px -5px 2px 0px rgba(255,255,255,1);
+  }
+}
+@media #{$bootstrap-md} {
+  .purchase-1 .purchase-title-1 {
+    font-size: 34px;
+    margin-top: 76px;
+    line-height: 28px;
+  }
+  .purchase-1 .purchase-title-2 {
+    font-size: 32px;
+    line-height: 28px;
+  }
+  .purchase-1 .ul-purchase-1 .li-purchase-1 {
+    line-height: 32px;
+  }
+  .purchase-1 .purchase-1-button {
+    height: 50px;
+  }
+}
+@media #{$bootstrap-sm} {
+  .purchase-1 .purchase-title-1 {
+    margin-top: 50px;
+    font-size: 24px;
+    line-height: 20px;
+  }
+  .purchase-1 .purchase-title-2 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .purchase-1 .notebook {
+    margin: 72px 0 20px 5%;
+  }
+  .purchase-1 .ul-purchase-1 {
+    margin-top: 0;
   }
 }

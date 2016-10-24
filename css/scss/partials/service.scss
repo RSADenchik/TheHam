@@ -1,7 +1,7 @@
 .service {
 
   .service-title {
-      margin-top: 100px;
+      margin-top: 70px;
       text-align: center;
       color: #4e4e4e;
       font-family: $global-montserrat-regular;
@@ -30,28 +30,28 @@
       float: none;
       display: inline-block;
       background-color: #f8fcfe;
-      border: 1px solid #ebebeb;
     }
-    .nav-tabs>li>a {
-      margin-right: 0;
-      border: none;
-    }
-    .service-li a {
-      position: relative;
-      color: #717171;
-      padding: 10px 25px;
+    .service-li>a {
       margin: 0;
+      padding: 10px 10px;
+      border: 1px solid #ebebeb;
+      position: relative;
       font-family: $global-montserrat-regular;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 400;
-      line-height: 50px;
+      line-height: 30px;
       cursor: pointer;
+      color: #717171;
       &:hover {
+        border-bottom: none;
+        border-top: none;
         color: white;
         background-color: $color-aqua;
         text-decoration: none;
       }
       &:focus {
+        border-bottom: none;
+        border-top: none;
         color: white;
         background-color: $color-aqua;
       }
@@ -75,7 +75,6 @@
     height: 300px;
     .content-img {
       float: left;
-      margin-left: 6%;
     }
     .service-info {
       float: left;

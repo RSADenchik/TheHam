@@ -1,10 +1,11 @@
   .about {
     background-color: #0a0f14;
     .about-img {
-      float: left;
-      width: 50%;
-      margin-top: 252px;
-      margin-left: -15px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 40%;
+      height: 55%;
     }
     .about-title {
       float: right;
@@ -21,7 +22,7 @@
       float: right;
       width: 76px;
       height: 1px;
-      margin-right: 22%;
+      margin-right: 21%;
 
       background-color: $color-aqua;
     }

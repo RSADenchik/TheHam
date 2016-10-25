@@ -1,6 +1,6 @@
 .feedback {
   margin-top: 50px;
-  background: url(/img/feedback.jpg) no-repeat;
+  background: url(../img/feedback.jpg) no-repeat;
   .feedback-img {
     position: absolute;
     width: 100%;
@@ -83,11 +83,11 @@
       height: 59px;
       border-radius: 50%;
       border: 5px solid rgba(31, 218, 181, 0.2);
-      background: url('/img/autor.jpg') center center no-repeat;
+      background: url('../img/autor.jpg') center center no-repeat;
       background-size: cover;
       background-clip: padding-box;
       &:nth-of-type(2n) {
-        background: url('/img/autor1.jpg') center center no-repeat;
+        background: url('../img/autor1.jpg') center center no-repeat;
         background-size: cover;
         background-clip: padding-box;
       }

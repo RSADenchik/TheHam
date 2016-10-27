@@ -1,0 +1,111 @@
+.m-navbar {
+  background-color: #42423c;
+  position: fixed;
+  margin-bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.logo {
+  float: left;
+  margin-left: 3%;
+  padding-top: 6px;
+  display: inline-block;
+  font-family: $global-montserrat-bold;
+  font-size: 20px;
+  .logo-m-img {
+    width: 34px;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  .logo-1-part {
+    color: white;
+    font-weight: 400;
+  }
+  .logo-2-part {
+    color: $color-aqua;;
+    font-weight: 700;
+  }
+}
+.navbar-header .m-toggle {
+  background-color: Turquoise;
+  &:hover {
+    background-color: Turquoise;
+  }
+}
+.navbar-header .collapsed {
+  background-color: $color-aqua;
+  &:active {
+    background-color: $color-aqua;
+  }
+  &:focus {
+    background-color: $color-aqua;
+  }
+}
+  .logo-m {
+    font-size: 20px;
+    font-family: $global-montserrat-bold;
+  }
+.search-form {
+  border: none;
+  padding: 0;
+  @media #{$bootstrap-sm} {
+    position: absolute;
+    right: 1%;
+  }
+}
+.input-group {
+  width: 50%;
+  min-width: 150px;
+  max-width: 200px;
+  outline: 0;
+  margin: 0 auto;
+  &:active {
+    outline: 0;
+  }
+}
+.input-search {
+  background: LightCyan;
+}
+.float-sm-fix {
+  float: none;
+}
+.m-search-button {
+  background-color: SkyBlue;
+  display: block;
+  outline: 0;
+  &:hover {
+    background-color: Turquoise;
+    outline: 0;
+  }
+  &:focus {
+    background-color: Turquoise;
+    outline: 0;
+  }
+}
+  .nav > .list-m-items {
+    text-align: center;
+    font-family: $global-montserrat-bold;
+    width: 50%;
+    max-width: 172px;
+    margin: 0 auto;
+    border-radius: 10px;
+    &:hover {
+      background-color: Turquoise;
+    }
+  }
+.navbar-nav>li>a {
+  line-height: 18px;
+}
+@media #{$bootstrap-iphone5-xs} {
+  .navbar-nav {
+    text-align: center;
+  }
+  .nav>.list-m-items {
+    display: inline-block;
+  }
+}
+
+

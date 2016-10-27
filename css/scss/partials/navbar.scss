@@ -43,15 +43,20 @@
         .list-items {
           margin-left: 10px;
           display: inline-block;
-          color: #b8b8b8;
           &:hover {
             padding-bottom: 50px;
-            color: $color-aqua;
             border-bottom: 2px solid $color-aqua;
           }
           &:last-child {
             border-bottom: none;
             padding-bottom: 0;
+          }
+        }
+        .list-items>a {
+          color: #b8b8b8;
+          text-decoration: none;
+          &:hover {
+            color: $color-aqua;
           }
         }
         .search-button {

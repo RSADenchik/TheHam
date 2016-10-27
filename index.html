@@ -8,7 +8,67 @@
         <link href="css/main.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <nav class="navbar navbar-default navbar-fixed-top nav-ham">
+        <nav class="navbar navbar-default m-navbar visible-xs">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="logo">
+                        <a href="/index.html">
+                            <img class="logo-m-img" src="img/logo-img.png" alt="logo">
+                        </a>
+                        <span class="logo-1-part">the<strong class="logo-2-part">Ham</strong></span>
+                    </div>
+                    <button type="button" class="navbar-toggle collapsed m-toggle visible-xs" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand logo-m" href="#"></a>
+                    <form class="navbar-form search-form hidden-xs hidden-sm" role="search">
+                        <div class="input-group">
+                            <input type="text" class="form-control input-search" placeholder="Пошук...">
+                            <span class="input-group-btn fix-on-focus">
+                                    <button id="search" class="btn btn-default m-search-button" type="button">
+                                        <i class="fa fa-search icon-search"></i>
+                                    </button>
+                                </span>
+                        </div>
+                    </form>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav float-sm-fix">
+                        <li class="list-m-items">
+                            <a href="#">home</a>
+                        </li>
+                        <li class="list-m-items">
+                            <a href="#">skills</a>
+                        </li >
+                        <li class="list-m-items">
+                            <a href="#">Screenshot</a>
+                        </li>
+                        <li class="list-m-items">
+                            <a href="#">service</a>
+                        </li>
+                        <li class="list-m-items">
+                            <a href="#">work</a>
+                        </li>
+                        <li class="list-m-items">
+                            <a href="#">testimonial</a>
+                        </li>
+                        <li class="list-m-items">
+                            <a href="#">blog</a>
+                        </li>
+                        <li class="list-m-items">
+                            <a href="#">team</a>
+                        </li>
+                        <li class="list-m-items">
+                            <a href="#">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-default navbar-fixed-top nav-ham hidden-xs">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12">
@@ -20,18 +80,33 @@
                                 <span class="logo-1-part">the<strong class="logo-2-part">Ham</strong></span>
                             </div>
                             <ul class="menu-list">
-                                <li class="list-items">home</li>
-                                <li class="list-items">about</li>
-                                <li class="list-items">skills</li>
-                                <li class="list-items">service</li>
-                                <li class="list-items">work</li>
-                                <li class="list-items">testimonial</li>
-                                <li class="list-items">blog</li>
-                                <li class="list-items">team</li>
-                                <li class="list-items">contact</li>
+                                <li class="list-items">
+                                    <a href="#">home</a>
+                                </li>
+                                <li class="list-items">
+                                    <a href="#">skills</a>
+                                </li>
+                                <li class="list-items">
+                                    <a href="#">service</a>
+                                </li>
+                                <li class="list-items">
+                                    <a href="#">work</a>
+                                </li>
+                                <li class="list-items">
+                                    <a href="#">testimonial</a>
+                                </li>
+                                <li class="list-items">
+                                    <a href="#">blog</a>
+                                </li>
+                                <li class="list-items">
+                                    <a href="#">team</a>
+                                </li>
+                                <li class="list-items">
+                                    <a href="#">contact</a>
+                                </li>
                                 <li class="list-items">
                                     <span class="search-span">
-                                        <button id="search" class="btn btn-default search-button" type="button">
+                                        <button id="search-ham" class="btn btn-default search-button" type="button">
                                             <i class="fa fa-search"></i>
                                         </button>
                                     </span>
@@ -74,7 +149,7 @@
         <div class="four-options">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-xs-12">
+                    <div class="col-xs-12 fix-padding">
                         <div class="option-1">
                             <p class="option-title-1">Different theme option</p>
                         </div>
@@ -101,22 +176,22 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-4">
-                        <img src="img/icons/leaf.png" alt="">
-                        <h2 class="leaf-title">Retina Ready</h2>
+                    <div class="col-xs-4 hover-block">
+                        <img class="feature-img" src="img/icons/leaf.png" alt="">
+                        <h2 class="feature-pretitle">Retina Ready</h2>
                         <p class="feature-info">All our modules are built with the possi bility to thse choose between
                             different design and you change.
                         </p>
                     </div>
                     <div class="col-xs-4">
-                        <img src="img/icons/pen.png" alt="">
+                        <img class="feature-img" src="img/icons/pen.png" alt="">
                         <h2 class="feature-pretitle">Creative Blog Style</h2>
                         <p class="feature-info">All our modules are built with the possi bility to thse choose between
                             different design and you change.
                         </p>
                     </div>
                     <div class="col-xs-4">
-                        <img src="img/icons/search.png" alt="">
+                        <img class="feature-img" src="img/icons/search.png" alt="">
                         <h2 class="feature-pretitle">Icon Fonts</h2>
                         <p class="feature-info">All our modules are built with the possi bility to thse choose between
                             different design and you change.
@@ -125,21 +200,21 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-4">
-                        <img src="img/icons/send-clock.png" alt="">
+                        <img class="feature-img" src="img/icons/send-clock.png" alt="">
                         <h2 class="feature-pretitle">Parallax Effects</h2>
                         <p class="feature-info">All our modules are built with the possi bility to thse choose between
                             different design and you change.
                         </p>
                     </div>
                     <div class="col-xs-4">
-                        <img src="img/icons/computer.png" alt="">
+                        <img class="feature-img" src="img/icons/computer.png" alt="">
                         <h2 class="feature-pretitle">Amazing Interface</h2>
                         <p class="feature-info">All our modules are built with the possi bility to thse choose between
                             different design and you change.
                         </p>
                     </div>
                     <div class="col-xs-4">
-                        <img src="img/icons/tools.png" alt="">
+                        <img class="feature-img" src="img/icons/tools.png" alt="">
                         <h2 class="feature-pretitle">SEO Optimized</h2>
                         <p class="feature-info">All our modules are built with the possi bility to thse choose between
                             different design and you change.
@@ -148,21 +223,21 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-4">
-                        <img src="img/icons/light.png" alt="">
+                        <img class="feature-img" src="img/icons/light.png" alt="">
                         <h2 class="feature-pretitle">Creative Solutions</h2>
                         <p class="feature-info">All our modules are built with the possi bility to thse choose between
                             different design and you change.
                         </p>
                     </div>
                     <div class="col-xs-4">
-                        <img src="img/icons/plane.png" alt="">
+                        <img class="feature-img" src="img/icons/plane.png" alt="">
                         <h2 class="feature-pretitle">Mega Menus</h2>
                         <p class="feature-info">All our modules are built with the possi bility to thse choose between
                             different design and you change.
                         </p>
                     </div>
                     <div class="col-xs-4">
-                        <img src="img/icons/interface.png" alt="">
+                        <img class="feature-img" src="img/icons/interface.png" alt="">
                         <h2 class="feature-pretitle">Custom Backgrounds</h2>
                         <p class="feature-info">All our modules are built with the possi bility to thse choose between
                             different design and you change.

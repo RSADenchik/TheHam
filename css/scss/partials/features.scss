@@ -21,14 +21,10 @@
       height: 1px;
       background-color: $color-aqua;
     }
-    .leaf-title {
-      display: inline-block;
-      margin-left: 10px;
-      color: $color-aqua;
-      font-family: $global-montserrat-regular;
-      font-size: 20px;
-      font-weight: 700;
-      line-height: 40px;
+    .hover-block:hover {
+      .features .feature-pretitle {
+        color: $color-aqua;
+      }
     }
     .feature-info {
       margin-bottom: 50px;
@@ -48,3 +44,33 @@
       line-height: 40px;
     }
   }
+@media #{$bootstrap-xs} {
+  .features .feature-title {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  .features .h-line-1 {
+    margin-top: 15px;
+  }
+  .features .h-line-2 {
+    margin-bottom: 30px;
+  }
+  .feature-img {
+    margin: 0 auto;
+    display: block;
+    height: 34px;
+  }
+  .features .feature-pretitle {
+    text-align: center;
+    display: block;
+    margin: 10px 2px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .features .feature-info {
+    margin-bottom: 0;
+    text-align: left;
+    line-height: 20px;
+    font-size: 10px;
+  }
+}

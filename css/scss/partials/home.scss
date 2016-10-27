@@ -1,8 +1,9 @@
 .home {
   background-color: #3b3b3b;
+  margin-top: 75px;
     .home-title {
       width: 100%;
-      margin-top: 20%;
+      padding-top: 3%;
       font-family: $global-montserrat-regular;
       text-transform: uppercase;
       .pre-title {
@@ -93,3 +94,59 @@
       }
     }
   }
+@media #{$bootstrap-xs} {
+  .home {
+    margin-top: 50px;
+  }
+  .home .home-title .pre-title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .home .home-title .pre-title .color-aqua {
+    font-size: 16px;
+  }
+  .home .home-title .home-main-title {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .home .home-title .last-title {
+    font-size: 10px;
+    line-height: 30px;
+  }
+  .home .button-panel {
+    height: 185px;
+  }
+  .home .button-panel .left-button {
+    margin-right: 5px;
+    width: 130px;
+    font-size: 12px;
+  }
+  .home .button-panel .right-button {
+    width: 130px;
+    font-size: 12px;
+  }
+  .home .rslides {
+    width: 90px;
+    left: 0;
+    top: 30%;
+    margin: 0 auto;
+    right: 0;
+  }
+  .home .Previous {
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
+  .home .Next {
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media #{$bootstrap-iphone5-xs} {
+  .home .rslides {
+    top: -25%;
+    margin-right: 3%;
+  }
+}

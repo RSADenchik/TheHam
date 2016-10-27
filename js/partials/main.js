@@ -1,6 +1,6 @@
 $(document).ready(function() {
     /* Button-search */
-    $('#search').on('click', function () {
+    $('#search-ham').on('click', function () {
         $('#forma').toggle();
     });
     /* Slider-slick */

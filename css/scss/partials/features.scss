@@ -1,5 +1,10 @@
 .features {
   background-color: white;
+  .hover-block {
+    &:hover .feature-pretitle {
+    color: $color-aqua;
+    }
+  }
     .feature-title {
       margin-top: 100px;
       text-align: center;
@@ -45,17 +50,21 @@
     }
   }
 @media #{$bootstrap-xs} {
+  .features .hover-block {
+    padding: 5px;
+  }
   .features .feature-title {
     font-size: 18px;
-    margin-top: 0;
+    margin-top: 20px;
   }
   .features .h-line-1 {
     margin-top: 15px;
   }
   .features .h-line-2 {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .feature-img {
+    margin-top: 10px;
     margin: 0 auto;
     display: block;
     height: 34px;
@@ -69,8 +78,8 @@
   }
   .features .feature-info {
     margin-bottom: 0;
-    text-align: left;
-    line-height: 20px;
-    font-size: 10px;
+    text-align: center;
+    line-height: 18px;
+    font-size: 9px;
   }
 }

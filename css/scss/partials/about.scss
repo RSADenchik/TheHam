@@ -80,9 +80,11 @@
           color: whitesmoke;
         }
         .a-about:hover,
-        .a-about:active,
-        .a-about:focus{
+        .a-about:active {
           color: $color-aqua;
+        }
+        .a-about:focus {
+          outline: 0;
         }
       }
       .tab-content {

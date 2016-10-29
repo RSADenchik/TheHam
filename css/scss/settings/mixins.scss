@@ -1,5 +1,7 @@
 $bootstrap-xs: "(max-width:767px)";
 $bootstrap-iphone5-xs: "(max-height: 415px)";
+$bootstrap-iphone5-portrait: "(min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait)";
+$bootstrap-iphone5-landscape: "(min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape)";
 $bootstrap-sm: "(min-width:768px) and (max-width:991px)";
 $bootstrap-md: "(min-width:992px) and (max-width:1199px)";
 $bootstrap-lg: "(min-width:1200px) and (max-width:1399px)";

@@ -228,7 +228,6 @@
     font-size: 10px;
     margin-top: 50px;
     line-height: 20px;
-
   }
   .footer .recent-post {
     margin-top: 45px;
@@ -293,4 +292,141 @@
     width: 50px;
     height: 50px;
   }
+}
+@media #{$bootstrap-xs} {
+  .footer {
+    height: auto;
+  }
+  .footer .logo {
+    margin-top: 20px;
+    line-height: 30px;
+    font-size: 20px;
+  }
+  .footer .logo .footer-info {
+    margin-top: 15px;
+    line-height: 20px;
+    font-size: 10px;
+  }
+  .footer .logo .footer-info-1 {
+    margin-top: 20px;
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .footer .logo .footer-info-1 span {
+    font-size: 12px;
+  }
+  .footer .logo .footer-info-2 {
+    font-size: 10px;
+    margin-top: 10px;
+    line-height: 16px;
+  }
+  .footer .logo .footer-info-2 span {
+    font-size: 12px;
+  }
+  .footer .recent-post {
+    margin-top: 20px;
+  }
+  .footer .recent-post .title-recent {
+    margin-top: 9px;
+    margin-bottom: 20px;
+    font-size: 10px;
+    line-height: 26px;
+  }
+  .footer .recent-post .footer-img-post {
+    width: 40px;
+    height: 40px;
+  }
+  .footer .recent-post .standart-title {
+    padding-left: 10px;
+    font-size: 9px;
+    line-height: 14px;
+  }
+  .footer .recent-post .standart-info {
+    padding-left: 10px;
+    line-height: 16px;
+    font-size: 7px;
+  }
+  .footer .recent-post .date-post {
+    line-height: 5px;
+    padding: 0 0 0 24px;
+    font-size: 7px;
+  }
+  .footer .tags-post {
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+  .footer .tags-post .title-tags {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 11px;
+    line-height: 26px;
+  }
+  .footer .tags-post .tags-table {
+    border-spacing: 0;
+  }
+  .footer .tags-post .tags-table .td-table {
+    font-size: 10px;
+    line-height: 31px;
+  }
+  .footer .tags-post .newsletter-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    line-height: 24px;
+  }
+  .footer .tags-post .newsletter-info {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .footer .tags-post .input-field .enter-mail[placeholder] {
+    font-size: 10px;
+  }
+  .footer .tags-post .input-field .enter-mail {
+    height: 35px;
+  }
+  .footer .tags-post .input-field .submit-mail {
+    height: 35px;
+    width: 31%;
+  }
+  .footer .flicke-feed {
+    margin-top: 20px;
+  }
+  .footer .flicke-feed .title-flicke {
+    margin-bottom: 20px;
+    margin-top: 13px;
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .footer .flicke-feed .img-group .img-flicke {
+    width: 35px;
+    height: 35px;
+    margin: 4px;
+  }
+}
+@media #{$bootstrap-iphone5-portrait} {
+ .hidden-portreit {
+   display: none;
+ }
+  .footer .logo {
+    width: 30%;
+    margin-left: 1%;
+    text-align: justify;
+  }
+  .footer .logo .footer-info {
+    line-height: 15px;
+  }
+  .footer .flicke-feed, .footer .tags-post {
+    width: 35%;
+    margin-left: 3%;
+    text-align: center;
+  }
+  .footer .flicke-feed {
+    text-align: center;
+    width: 28%;
+  }
+  .footer .flicke-feed .img-group .img-flicke {
+    width: 30px;
+    height: 30px;
+  }
+
 }

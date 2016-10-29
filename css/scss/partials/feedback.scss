@@ -46,6 +46,7 @@
     left: 0;
     right: 0;
     bottom: 0;
+    text-shadow: none;
     .caption-title {
       color: $color-aqua;
       font-size: 16px;
@@ -128,5 +129,61 @@
   }
   .feedback .buttom-next {
     right: 25%;
+  }
+}
+@media #{$bootstrap-xs} {
+  .feedback {
+    margin-top: 50px;
+  }
+  .feedback .feedback-title {
+    margin-top: 30px;
+    font-size: 20px
+  }
+  .feedback .h-line-1 {
+    margin: 16px auto 0;
+  }
+  .feedback .h-line-2 {
+    margin: 3px 51% 20px 49%;
+  }
+  .feedback .feedback-info {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .feedback .feedback-caption .caption-title {
+    font-size: 16px;
+  }
+  .feedback .feedback-caption .caption-info {
+    font-size: 14px;
+  }
+  .feedback .feedback-caption .img-opacity {
+    margin: 15px auto 0;
+    width: 100px;
+    height: 100px;
+  }
+  .feedback .feedback-caption .img-autor {
+    margin-top: -125px;
+    width: 100px;
+    height: 100px;
+  }
+  .feedback .buttom-next, .feedback .buttom-prev {
+    right: 78%;
+    top: 80%;
+  }
+  .feedback .buttom-next {
+    right: 16%;
+  }
+}
+@media #{$bootstrap-iphone5-portrait} {
+  .carousel-inner {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .feedback .buttom-prev {
+    right: 80%;
+    top: 42%;
+  }
+  .feedback .buttom-next {
+    top: 42%;
+    right: 10%;
   }
 }

@@ -60,7 +60,7 @@
     .service-li a:focus:after{
       bottom: 0;
       margin-bottom: -10px;
-      left: 45%;
+      left: 38%;
       width: 20px;
       height: 20px;
       content: "";
@@ -72,7 +72,7 @@
   .tab-content {
     margin-top: 50px;
     width: 100%;
-    height: 300px;
+    min-height: 300px;
     .content-img {
       float: left;
     }
@@ -82,5 +82,53 @@
       width: 66%;
       margin-left: 35px;
     }
+  }
+}
+@media #{$bootstrap-xs} {
+  .service .service-title {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .service .h-line-1 {
+    margin-top: 15px;
+  }
+  .service .h-line-2 {
+    margin-bottom: 20px;
+  }
+  .service .service-ul {
+    display: block;
+    margin: 0 auto;
+  }
+  .service .service-ul .service-li {
+    margin-bottom: 14px;
+    display: inline-block;
+  }
+  .service .service-ul .service-li>a {
+    margin: 0;
+    padding: 10px 8px;
+    border: 1px solid #ebebeb;
+    position: relative;
+    line-height: 30px;
+    font-size: 10px;
+  }
+  .service .service-ul .service-li a:focus:after, .service .service-ul .service-li a:hover:after {
+    left: 38%;
+  }
+  .service .tab-content {
+    margin-top: 10px;
+    width: 100%;
+    min-height: 175px;
+  }
+  .service .tab-content .content-img {
+    float: left;
+    margin-right: 10px;
+    width: 30%;
+  }
+  .service .tab-content .service-info {
+    text-align: justify;
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    font-size: 10px;
   }
 }

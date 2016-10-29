@@ -1,6 +1,7 @@
 .m-navbar {
   background-color: #42423c;
   position: fixed;
+  border: none;
   margin-bottom: 0;
   top: 0;
   right: 0;
@@ -96,8 +97,12 @@
       background-color: Turquoise;
     }
   }
-.navbar-nav>li>a {
+.navbar-default .navbar-nav>li>a {
+  color: white;
   line-height: 18px;
+  &:hover {
+    color: white;
+  }
 }
 @media #{$bootstrap-iphone5-xs} {
   .navbar-nav {

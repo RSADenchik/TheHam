@@ -1,5 +1,6 @@
 .purchase {
-  height: 476px;
+  background: url('../img/purches.jpg') no-repeat center center;
+  background-size: cover;
   opacity: 0.7;
   background-color: #1c2a33;
   .img-purchase {
@@ -32,7 +33,7 @@
     box-shadow: 0px -5px 2px 0px rgba(255,255,255,1);
   }
   .button-purchase {
-    margin: 50px auto 0;
+    margin: 50px auto 25px;
     width: 165px;
     height: 60px;
     font-family: $global-montserrat-regular;
@@ -49,5 +50,34 @@
 @media #{$bootstrap-md} {
   .purchase .purchase-title {
     font-size: 30px;
+  }
+}
+@media #{$bootstrap-xs} {
+  .purchase .purchase-title {
+    margin-top: 30px;
+    color: #18cfab;
+    font-family: $global-montserrat-regular;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+  .purchase .purchase-info {
+    width: 80%;
+    margin: 0 auto;
+    color: #d8d8d8;
+    font-family: $global-montserrat-regular;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  .purchase .button-purchase {
+    margin: 20px auto 25px;
+    width: 130px;
+    height: 50px;
+    font-family: $global-montserrat-regular;
+    background-color: #18cfab;
+    border-radius: 4px;
+    color: #fff;
   }
 }

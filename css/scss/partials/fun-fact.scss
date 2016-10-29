@@ -127,3 +127,30 @@
     }
   }
 }
+  @media #{$bootstrap-xs} {
+    .fun-fact {
+      margin-top: 20px;
+       .fact-1,
+       .fact-2,
+       .fact-3,
+       .fact-4{
+         height: auto;
+         min-height: 130px;
+         background-size: cover;
+       }
+       .fact-1 .fact-title-1,
+       .fact-2 .fact-title-2,
+       .fact-3 .fact-title-3,
+       .fact-4 .fact-title-4{
+         font-size: 18px;
+         line-height: 20px;
+       }
+       .fact-1 .fact-info-1,
+       .fact-2 .fact-info-2,
+       .fact-3 .fact-info-3,
+       .fact-4 .fact-info-4{
+         font-size: 12px;
+         line-height: 12px;
+       }
+    }
+  }

@@ -36,5 +36,17 @@ $(document).ready(function() {
             coords: [50.512706, 30.602495],
             url: 'https://RSADenchik.github.io/second_psd'
         });
+    });
+    // Google maps for mobile
+    $(function() {
+        $("#map-m").googleMap({
+            scrollwheel: true
+        });
+
+        // Marker 1
+        $("#map-m").addMarker({
+            coords: [50.512706, 30.602495],
+            url: 'https://RSADenchik.github.io/second_psd'
+        });
     })
 });

@@ -107,3 +107,54 @@
     }
   }
 }
+@media #{$bootstrap-xs} {
+  .team .team-title {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .team .h-line-1 {
+    margin: 16px auto 0;
+  }
+  .team .h-line-2 {
+    margin: 3px 51% 20px 49%;
+  }
+  .team .team-person {
+    height: auto;
+  }
+  .team .team-person .person-img {
+    height: auto;
+  }
+  .team .team-person:hover .person-img>.hover-add-img {
+    text-align: center;
+  }
+  .team .team-person:hover .person-img>.hover-add-img>img {
+    width: 70%;
+  }
+  .team .team-person .person-img .person-foto {
+    height: auto;
+  }
+  .team .team-person .person-info .name-person {
+    padding-left: 0;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+  }
+  .team .team-person .person-info .proff-person {
+    text-align: center;
+    padding-left: 0;
+    font-size: 11px;
+    line-height: 15px;
+  }
+  .team .team-person .person-social {
+    height: 45px;
+  }
+  .team .team-person .person-social a {
+    line-height: 41px;
+  }
+  .team .team-person .person-social a:first-child {
+    margin-left: -4.8px;
+  }
+  .team .team-person .person-social .social-icon {
+    font-size: 15px;
+  }
+}

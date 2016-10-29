@@ -94,3 +94,57 @@
     margin-top: 0;
   }
 }
+@media #{$bootstrap-xs} {
+  .purchase-1 {
+    margin-top: 20px;
+  }
+  .purchase-1 .purchase-title-1 {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 14px;
+  }
+  .purchase-1 .purchase-title-2 {
+    font-size: 18px;
+    line-height: 15px;
+  }
+  .purchase-1 .notebook {
+    width: 44%;
+    margin: 30px 0 45px 1%;
+  }
+  .purchase-1 .ul-purchase-1 {
+    margin-top: 0;
+    width: 40%;
+    padding: 0;
+  }
+  .purchase-1 .ul-purchase-1 .li-purchase-1 {
+    line-height: 24px;
+    font-size: 12px;
+  }
+  .purchase-1 .purchase-1-button {
+    margin-top: 15px;
+    width: 130px;
+    height: 40px;
+    line-height: 32px;
+    font-size: 10px;
+  }
+}
+@media #{$bootstrap-iphone5-portrait} {
+  .purchase-1 .purchase-title-1 {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .purchase-1 .purchase-title-2 {
+    font-size: 11px;
+    line-height: 10px;
+  }
+  .purchase-1 .ul-purchase-1 {
+    margin-top: 0;
+    width: 50%;
+    padding: 0;
+    margin-left: 10px;
+  }
+  .purchase-1 .ul-purchase-1 .li-purchase-1 {
+    line-height: 24px;
+    font-size: 7px;
+  }
+}

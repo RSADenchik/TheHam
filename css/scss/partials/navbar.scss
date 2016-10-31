@@ -30,7 +30,6 @@
         }
       }
       .menu-list {
-        float: right;
         margin-bottom: 0;
         padding-left: 0;
         text-align: center;
@@ -72,18 +71,21 @@
       } // menu-list
     }  //header
     .search-form {
-      width: 25%;
-      max-width: 200px;
-      margin: 0;
+      width: 35%;
+      height: 35px;
+      margin: 0 auto;
+      margin-right: 26.6%;
       padding: 0;
-      position: absolute;
-      right: 0;
-      bottom: 0;
+      position: relative;
       display: none;
       border: none;
       .search-input {
-        float: right;
-        width: 100%;
+        width: 93%;
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
         height: 35px;
         font-family: $global-montserrat-regular;
         font-size: 12px;
@@ -94,6 +96,9 @@
       .search-button-input {
         width: 40px;
         height: 35px;
+        float: right;
+        z-index: 2;
+        margin: 0 auto;;
         position: absolute;
         right: 0;
         background-color: $color-aqua;

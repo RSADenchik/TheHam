@@ -49,37 +49,39 @@
             </div>
         </nav>
         <nav class="navbar navbar-default navbar-fixed-top nav-ham hidden-xs">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="header">
-                            <div class="logo">
-                                <a href="/index.html"><img src="img/logo-img.png" alt="logo"></a>
-                                <span class="logo-1-part">the<strong class="logo-2-part">Ham</strong></span>
+            <div class="background-nav">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="header">
+                                <div class="logo">
+                                    <a href="/index.html"><img src="img/logo-img.png" alt="logo"></a>
+                                    <span class="logo-1-part">the<strong class="logo-2-part">Ham</strong></span>
+                                </div>
+                                <ul class="menu-list">
+                                    <li class="list-items"><a href="#home">home</a></li>
+                                    <li class="list-items"><a href="#four-options">skills</a></li>
+                                    <li class="list-items"><a href="#work">work</a></li>
+                                    <li class="list-items"><a href="#service">service</a></li>
+                                    <li class="list-items"><a href="#breaking-news">blog</a></li>
+                                    <li class="list-items"><a href="#feedback">testimonial</a></li>
+                                    <li class="list-items"><a href="#team">team</a></li>
+                                    <li class="list-items"><a href="#contact">contact</a></li>
+                                    <li class="list-items">
+                                        <span class="search-span">
+                                            <button id="search-ham" class="btn btn-default search-button" type="button">
+                                                <i class="fa fa-search icon-search"></i>
+                                            </button>
+                                        </span>
+                                    </li>
+                                </ul>
+                                <form id="forma" class="navbar-form search-form" role="search">
+                                    <input type="search" class="form-control search-input" placeholder="Type and search...">
+                                    <button class="btn btn-default search-button-input" type="button">
+                                        <i class="fa fa-search active-search-icon"></i>
+                                    </button>
+                                </form>
                             </div>
-                            <ul class="menu-list">
-                                <li class="list-items"><a href="#home">home</a></li>
-                                <li class="list-items"><a href="#four-options">skills</a></li>
-                                <li class="list-items"><a href="#work">work</a></li>
-                                <li class="list-items"><a href="#service">service</a></li>
-                                <li class="list-items"><a href="#breaking-news">blog</a></li>
-                                <li class="list-items"><a href="#feedback">testimonial</a></li>
-                                <li class="list-items"><a href="#team">team</a></li>
-                                <li class="list-items"><a href="#contact">contact</a></li>
-                                <li class="list-items">
-                                    <span class="search-span">
-                                        <button id="search-ham" class="btn btn-default search-button" type="button">
-                                            <i class="fa fa-search"></i>
-                                        </button>
-                                    </span>
-                                </li>
-                            </ul>
-                            <form id="forma" class="navbar-form search-form" role="search">
-                                <button class="btn btn-default search-button-input" type="button">
-                                    <i class="fa fa-search active-search-icon"></i>
-                                </button>
-                                <input type="search" class="form-control search-input" placeholder="Type and search...">
-                            </form>
                         </div>
                     </div>
                 </div>
@@ -277,157 +279,111 @@
                         <h2 class="work-title">Our Amazing Work</h2>
                         <div class="h-line-1"></div>
                         <div class="h-line-2"></div>
-                        <ul class="work-menu">
-                            <li class="work-li"><a class="work-a">All</a></li>
-                            <li class="work-li"><a class="work-a">Graphic Design</a></li>
-                            <li class="work-li"><a class="work-a">Web Design</a></li>
-                            <li class="work-li"><a class="work-a">Landing Pages</a></li>
-                            <li class="work-li"><a class="work-a">Wordpress</a></li>
+                        <ul class="work-menu simplefilter">
+                            <li class="work-li active" data-filter="all"><a class="work-a">All</a></li>
+                            <li class="work-li" data-filter="1"><a class="work-a">Graphic Design</a></li>
+                            <li class="work-li" data-filter="2"><a class="work-a">Web Design</a></li>
+                            <li class="work-li" data-filter="3"><a class="work-a">Landing Pages</a></li>
+                            <li class="work-li" data-filter="4"><a class="work-a">Wordpress</a></li>
                         </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-3 margin-fix">
-                        <div class="block row-block1">
-                            <div class="image-block">
-                                <img class="img-paris" src="img/paris.jpg" alt="">
-                            </div>
-                            <div class="image-block-hover">
-                                <img class="hover-img" src="img/icons/work-icon.png" alt="">
-                                <h2 class="title-block-hover">creative design</h2>
-                                <p class="info-block-hover">Web Design</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-3 margin-fix">
-                        <div class="block row-block1">
-                            <div class="image-block">
-                                <img class="img-paris" src="img/paris.jpg" alt="">
-                            </div>
-                            <div class="image-block-hover">
-                                <img class="hover-img" src="img/icons/work-icon.png" alt="">
-                                <h2 class="title-block-hover">creative design</h2>
-                                <p class="info-block-hover">Web Design</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-3 margin-fix">
-                        <div class="block row-block1">
-                            <div class="image-block">
-                                <img class="img-paris" src="img/paris.jpg" alt="">
-                            </div>
-                            <div class="image-block-hover">
-                                <img class="hover-img" src="img/icons/work-icon.png" alt="">
-                                <h2 class="title-block-hover">creative design</h2>
-                                <p class="info-block-hover">Web Design</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-3 margin-fix">
-                        <div class="block row-block1">
-                            <div class="image-block">
-                                <img class="img-paris" src="img/paris.jpg" alt="">
-                            </div>
-                            <div class="image-block-hover">
-                                <img class="hover-img" src="img/icons/work-icon.png" alt="">
-                                <h2 class="title-block-hover">creative design</h2>
-                                <p class="info-block-hover">Web Design</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-3 margin-fix">
-                        <div class="block row-block1">
-                            <div class="image-block">
-                                <img class="img-paris" src="img/paris.jpg" alt="">
-                            </div>
-                            <div class="image-block-hover">
-                                <img class="hover-img" src="img/icons/work-icon.png" alt="">
-                                <h2 class="title-block-hover">creative design</h2>
-                                <p class="info-block-hover">Web Design</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-3 margin-fix">
-                        <div class="block row-block1">
-                            <div class="image-block">
-                                <img class="img-paris" src="img/paris.jpg" alt="">
-                            </div>
-                            <div class="image-block-hover">
-                                <img class="hover-img" src="img/icons/work-icon.png" alt="">
-                                <h2 class="title-block-hover">creative design</h2>
-                                <p class="info-block-hover">Web Design</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-3 margin-fix">
-                        <div class="block row-block1">
-                            <div class="image-block">
-                                <img class="img-paris" src="img/paris.jpg" alt="">
-                            </div>
-                            <div class="image-block-hover">
-                                <img class="hover-img" src="img/icons/work-icon.png" alt="">
-                                <h2 class="title-block-hover">creative design</h2>
-                                <p class="info-block-hover">Web Design</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-3 margin-fix">
-                        <div class="block row-block1">
-                            <div class="image-block">
-                                <img class="img-paris" src="img/paris.jpg" alt="">
-                            </div>
-                            <div class="image-block-hover">
-                                <img class="hover-img" src="img/icons/work-icon.png" alt="">
-                                <h2 class="title-block-hover">creative design</h2>
-                                <p class="info-block-hover">Web Design</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-3 margin-fix">
-                        <div class="block row-block1">
-                            <div class="image-block">
-                                <img class="img-paris" src="img/paris.jpg" alt="">
-                            </div>
-                            <div class="image-block-hover">
-                                <img class="hover-img" src="img/icons/work-icon.png" alt="">
-                                <h2 class="title-block-hover">creative design</h2>
-                                <p class="info-block-hover">Web Design</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-3 margin-fix">
-                        <div class="block row-block1">
-                            <div class="image-block">
-                                <img class="img-paris" src="img/paris.jpg" alt="">
-                            </div>
-                            <div class="image-block-hover">
-                                <img class="hover-img" src="img/icons/work-icon.png" alt="">
-                                <h2 class="title-block-hover">creative design</h2>
-                                <p class="info-block-hover">Web Design</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-3 margin-fix">
-                        <div class="block row-block1">
-                            <div class="image-block">
-                                <img class="img-paris" src="img/paris.jpg" alt="">
-                            </div>
-                            <div class="image-block-hover">
-                                <img class="hover-img" src="img/icons/work-icon.png" alt="">
-                                <h2 class="title-block-hover">creative design</h2>
-                                <p class="info-block-hover">Web Design</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-3 margin-fix">
-                        <div class="block row-block1">
-                            <div class="image-block">
-                                <img class="img-paris" src="img/paris.jpg" alt="">
-                            </div>
-                            <div class="image-block-hover">
-                                <img class="hover-img" src="img/icons/work-icon.png" alt="">
-                                <h2 class="title-block-hover">creative design</h2>
-                                <p class="info-block-hover">Web Design</p>
+                        <div class="row">
+                            <div class="filtr-container">
+                                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2">
+                                    <img class="filtr-img" src="img/sort/d1.png" alt="">
+                                    <div class="image-block-hover">
+                                        <img class="hover-img" src="img/icons/work-icon.png" alt="">
+                                        <h2 class="title-block-hover">creative design</h2>
+                                        <p class="info-block-hover">Web Design</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2">
+                                    <img class="filtr-img" src="img/sort/d2.jpg" alt="">
+                                    <div class="image-block-hover">
+                                        <img class="hover-img" src="img/icons/work-icon.png" alt="">
+                                        <h2 class="title-block-hover">creative design</h2>
+                                        <p class="info-block-hover">Web Design</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1">
+                                    <img class="filtr-img" src="img/sort/g1.jpg" alt="">
+                                    <div class="image-block-hover">
+                                        <img class="hover-img" src="img/icons/work-icon.png" alt="">
+                                        <h2 class="title-block-hover">creative design</h2>
+                                        <p class="info-block-hover">Graphic Design</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1">
+                                    <img class="filtr-img" src="img/sort/g2.png" alt="">
+                                    <div class="image-block-hover">
+                                        <img class="hover-img" src="img/icons/work-icon.png" alt="">
+                                        <h2 class="title-block-hover">creative design</h2>
+                                        <p class="info-block-hover">Graphic Design</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1">
+                                    <img class="filtr-img" src="img/sort/g3.png" alt="">
+                                    <div class="image-block-hover">
+                                        <img class="hover-img" src="img/icons/work-icon.png" alt="">
+                                        <h2 class="title-block-hover">creative design</h2>
+                                        <p class="info-block-hover">Graphic Design</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3">
+                                    <img class="filtr-img" src="img/sort/l1.png" alt="">
+                                    <div class="image-block-hover">
+                                        <img class="hover-img" src="img/icons/work-icon.png" alt="">
+                                        <h2 class="title-block-hover">creative design</h2>
+                                        <p class="info-block-hover">Landing Pages</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3">
+                                    <img class="filtr-img" src="img/sort/l2.jpg" alt="">
+                                    <div class="image-block-hover">
+                                        <img class="hover-img" src="img/icons/work-icon.png" alt="">
+                                        <h2 class="title-block-hover">creative design</h2>
+                                        <p class="info-block-hover">Landing Pages</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3">
+                                    <img class="filtr-img" src="img/sort/l3.jpg" alt="">
+                                    <div class="image-block-hover">
+                                        <img class="hover-img" src="img/icons/work-icon.png" alt="">
+                                        <h2 class="title-block-hover">creative design</h2>
+                                        <p class="info-block-hover">Landing Pages</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="4">
+                                    <img class="filtr-img" src="img/sort/w1.png" alt="">
+                                    <div class="image-block-hover">
+                                        <img class="hover-img" src="img/icons/work-icon.png" alt="">
+                                        <h2 class="title-block-hover">creative design</h2>
+                                        <p class="info-block-hover">Wordpress</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="4">
+                                    <img class="filtr-img" src="img/sort/w2.png" alt="">
+                                    <div class="image-block-hover">
+                                        <img class="hover-img" src="img/icons/work-icon.png" alt="">
+                                        <h2 class="title-block-hover">creative design</h2>
+                                        <p class="info-block-hover">Wordpress</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="4">
+                                    <img class="filtr-img" src="img/sort/w3.png" alt="">
+                                    <div class="image-block-hover">
+                                        <img class="hover-img" src="img/icons/work-icon.png" alt="">
+                                        <h2 class="title-block-hover">creative design</h2>
+                                        <p class="info-block-hover">Wordpress</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="4, 2">
+                                    <img class="filtr-img" src="img/sort/w4.jpg" alt="">
+                                    <div class="image-block-hover">
+                                        <img class="hover-img" src="img/icons/work-icon.png" alt="">
+                                        <h2 class="title-block-hover">creative design</h2>
+                                        <p class="info-block-hover">Wordpress</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -436,7 +392,7 @@
                     <div class="col-xs-12">
                         <div class="button-upload">
                             <button class="upload-button">
-                                <span class="icon-plus"><i class="fa fa-plus" aria-hidden="true"></i>Load More</span>
+                                <span class="icon-plus"><i class="fa fa-plus icon-margin" aria-hidden="true"></i>Load More</span>
                             </button>
                         </div>
                     </div>
@@ -1045,6 +1001,8 @@
             </div>
         </div>
         <script src="js/main.min.js"></script>
+        <script src="js/partials/jquery.filterizr.js"></script>
+        <script src="js/partials/filter.js"></script>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlJlXIIHWgdZ5KkHsWGm9B4r-kEYLhygs"></script>
     </body>
 </html>

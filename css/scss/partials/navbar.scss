@@ -2,13 +2,18 @@
   -webkit-transform: translate3d(0, 0, 0);
 }
 .nav-ham {
-  height: 85px;
+  height: 122px;
   margin-bottom: 0;
+  background: transparent;
   border: none;
-  background-color: #42423c;
+  //background-color: #42423c;
+   .background-nav {
+     opacity: 0.8;
+     background-color: #42423c;;
+   }
     .header {
-      height: 85px;
-      padding-top: 10px;
+      height: 122px;
+      padding-top: 32px;
       position: relative;
       .logo {
         float: left;
@@ -16,7 +21,7 @@
         padding-top: 0;
         display: inline-block;
         font-family: $global-montserrat-bold;
-        font-size: 20px;
+        font-size: 32px;
         a:hover {
             text-decoration: none;
         }
@@ -34,21 +39,26 @@
         padding-left: 0;
         text-align: center;
         font-family: $global-montserrat-regular;
-        font-size: 16px;
+        font-size: 13px;
         font-weight: 700;
         line-height: 18px;
         text-transform: uppercase;
         list-style: none;
         .list-items {
-          margin-left: 10px;
+          padding-top: 10px;
+          margin-left: 20px;
+          margin-bottom: 49px;
+          vertical-align: baseline;
           display: inline-block;
           &:hover {
-            padding-bottom: 50px;
+            padding-bottom: 49px;
+            margin-bottom: 0;
             border-bottom: 2px solid $color-aqua;
           }
           &:last-child {
+            margin-bottom: 0;
+            padding-bottom: 36px;
             border-bottom: none;
-            padding-bottom: 0;
           }
         }
         .list-items>a {
@@ -59,34 +69,32 @@
           }
         }
         .search-button {
-          font-size: 12px;
-          width: 40px;
-          height: 35px;
+          padding: 10px;
           background-color: transparent;
           color: #bbb;
+          border-color: transparent;
           &:hover {
-            color: $color-aqua;;
+            color: $color-aqua;
+          }
+          .icon-search {
+            font-size: 22px;
           }
         }
       } // menu-list
     }  //header
     .search-form {
-      width: 35%;
-      height: 35px;
-      margin: 0 auto;
-      margin-right: 26.6%;
+      width: 100%;
+      text-align: center;
+      height: 54px;
+      margin: 0 auto 0 130px;
       padding: 0;
       position: relative;
       display: none;
       border: none;
       .search-input {
-        width: 93%;
+        width: 670px;
         z-index: 1;
-        position: absolute;
-        right: 0;
-        left: 0;
-        margin: 0 auto;
-        height: 35px;
+        height: 54px;
         font-family: $global-montserrat-regular;
         font-size: 12px;
         font-weight: 400;
@@ -94,13 +102,11 @@
         color: #a5a5a5;
       }
       .search-button-input {
-        width: 40px;
-        height: 35px;
-        float: right;
+        width: 44px;
+        height: 43px;
         z-index: 2;
-        margin: 0 auto;;
+        margin: 5px auto 0 -50px;
         position: absolute;
-        right: 0;
         background-color: $color-aqua;
         .active-search-icon {
           color: white;

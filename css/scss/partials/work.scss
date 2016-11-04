@@ -50,22 +50,20 @@
       }
     }
   }
-  .margin-fix {
-    padding-left: 0;
-    padding-right: 0;
-    .block {
-      width: 100%;
-      &:hover .image-block-hover  {
-        display: block;
-      }
-      .image-block {
-        width: 100%;
-        background: white;
-        .img-paris {
-          position: relative;
-          width: 100%;
-        }
-      }
+  .filtr-item {
+    display: inline-block;
+    width: 250px;
+    padding: 16px;
+    &:hover .image-block-hover  {
+      display: block;
+    }
+  }
+  .filtr-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
       .image-block-hover {
         position: absolute;
         text-align: center;
@@ -97,7 +95,6 @@
         }
       }
     }
-  }
   .button-upload {
     text-align: center;
     margin-top: 70px;
@@ -119,8 +116,10 @@
     .icon-plus {
       padding-left: 10px;
     }
+    .icon-margin {
+      margin-right: 10px;
+    }
   }
-}
 @media #{$bootstrap-xs} {
   .work .work-title {
     margin-top: 20px;
@@ -168,7 +167,6 @@
   .work .margin-fix .block .image-block-hover .hover-img {
     padding-top: 15%;
     width: 50%;
-    padding-top: 15%;
     vertical-align: middle;
   }
   .work .margin-fix .block .image-block-hover .title-block-hover {
@@ -183,7 +181,7 @@
   }
   .work .margin-fix .block .image-block-hover .info-block-hover {
     color: #8a8a8a;
-    font-family: "Montserrat-Regular";
+    font-family: $global-montserrat-regular;
     font-size: 8px;
     font-weight: 300;
     line-height: 18px;
@@ -202,7 +200,7 @@
     font-size: 12px;
     border-radius: 4px;
     color: #fff;
-    font-family: "Montserrat-Regular";
+    font-family: $global-montserrat-regular;
     line-height: 12px;
   }
   .work .button-upload .icon-plus {

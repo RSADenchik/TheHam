@@ -36,6 +36,13 @@
         margin-top: -2px;
       }
     }
+    .selected {
+      border-top: 2px solid $color-aqua;
+      margin-top: -2px;
+      .work-a:first-child {
+        color: $color-aqua;
+      }
+    }
     .work-a {
       padding: 15px 25px;
       color: #717171;
@@ -50,6 +57,13 @@
       }
     }
   }
+  .filtr-container {
+    max-height: 622px;
+    max-width: 900px;
+    margin: 0 auto 0 16%;
+    width: 100%;
+    top: -80px;
+  }
   .filtr-item {
     display: inline-block;
     width: 250px;
@@ -61,6 +75,7 @@
   .filtr-img {
     display: block;
     max-width: 100%;
+    position: relative;
     height: auto;
     border-radius: 5px;
   }
@@ -97,7 +112,6 @@
     }
   .button-upload {
     text-align: center;
-    margin-top: 70px;
     margin-bottom: 70px;
     .upload-button {
       margin: 0 auto;
@@ -120,6 +134,12 @@
       margin-right: 10px;
     }
   }
+
+@media #{$bootstrap-md} {
+  .work .filtr-container {
+    margin-left: 10%;
+  }
+}
 @media #{$bootstrap-xs} {
   .work .work-title {
     margin-top: 20px;

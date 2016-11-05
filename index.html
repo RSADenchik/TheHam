@@ -195,12 +195,14 @@
         <div class="about">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-xs-12">
+                    <div class="about-container col-xs-12">
                         <img class="about-img hidden-xs" src="img/about-img.png" alt="">
                         <div class="about-informations">
+                            <div class="about-header">
                                 <h2 class="about-title">About Our Company</h2>
                                 <div class="h-line-1"></div>
                                 <div class="h-line-2"></div>
+                            </div>
                             <ul class="nav nav-tabs about-tab">
                                 <li class="li-about"><a class="a-about" data-toggle="tab" href="#history">our History</a></li>
                                 <li class="li-about"><a class="a-about" data-toggle="tab" href="#biography">our Biography</a></li>
@@ -213,8 +215,8 @@
                                         Excepteur sint occaecat cupidatat non proident,
                                         sunt in culpa qui officia deserunt mollit anim id est laborum.
                                     </p>
-                                    <div class="row fix-row">
-                                        <div class="col-xs-6 fix-padding">
+                                    <div class="history fix-row">
+                                        <div class="history-info fix-padding">
                                             <img class="done-icon" src="img/icons/done.png" alt="">
                                             <p class="done-list">Excepteur sint occaecat sint.</p>
                                             <img class="done-icon" src="img/icons/done.png" alt="">
@@ -224,7 +226,7 @@
                                             <img class="done-icon" src="img/icons/done.png" alt="">
                                             <p class="done-list">Excepteur sint occaecat sint.</p>
                                         </div>
-                                        <div class="col-xs-6 fix-padding">
+                                        <div class="history-info fix-padding">
                                             <img class="done-icon" src="img/icons/done.png" alt="">
                                             <p class="done-list">Excepteur sint occaecat sint.</p>
                                             <img class="done-icon" src="img/icons/done.png" alt="">
@@ -280,7 +282,7 @@
                         <div class="h-line-1"></div>
                         <div class="h-line-2"></div>
                         <ul class="work-menu simplefilter">
-                            <li class="work-li active" data-filter="all"><a class="work-a">All</a></li>
+                            <li class="work-li active selected" data-filter="all"><a class="work-a">All</a></li>
                             <li class="work-li" data-filter="1"><a class="work-a">Graphic Design</a></li>
                             <li class="work-li" data-filter="2"><a class="work-a">Web Design</a></li>
                             <li class="work-li" data-filter="3"><a class="work-a">Landing Pages</a></li>
@@ -385,15 +387,11 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="button-upload">
-                            <button class="upload-button">
-                                <span class="icon-plus"><i class="fa fa-plus icon-margin" aria-hidden="true"></i>Load More</span>
-                            </button>
+                            <div class="button-upload">
+                                <button class="upload-button">
+                                    <span class="icon-plus"><i class="fa fa-plus icon-margin" aria-hidden="true"></i>Load More</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -416,7 +414,7 @@
                         </ul>
                         <div class="tab-content">
                             <div id="web-design" class="tab-pane fade in active">
-                                <img class="content-img" src="img/web-design.jpg" alt="">
+                                <img class="content-img" src="img/service/service.jpg" alt="">
                                 <p class="service-info">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -434,7 +432,7 @@
                                 </p>
                             </div>
                             <div id="graphic-design" class="tab-pane fade">
-                                <img class="content-img" src="img/sevice-img.png" alt="">
+                                <img class="content-img" src="img/service/service1.jpg" alt="">
                                 <p class="service-info">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -443,7 +441,7 @@
                                 </p>
                             </div>
                             <div id="online-support" class="tab-pane fade">
-                                <img class="content-img" src="img/sevice-img.png" alt="">
+                                <img class="content-img" src="img/service/service2.jpg" alt="">
                                 <p class="service-info">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -452,7 +450,7 @@
                                 </p>
                             </div>
                             <div id="app-design" class="tab-pane fade">
-                                <img class="content-img" src="img/sevice-img.png" alt="">
+                                <img class="content-img" src="img/service/service3.jpg" alt="">
                                 <p class="service-info">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -461,7 +459,7 @@
                                 </p>
                             </div>
                             <div id="online-marketing" class="tab-pane fade">
-                                <img class="content-img" src="img/sevice-img.png" alt="">
+                                <img class="content-img" src="img/service/service4.jpg" alt="">
                                 <p class="service-info">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -470,7 +468,7 @@
                                 </p>
                             </div>
                             <div id="seo-service" class="tab-pane fade">
-                                <img class="content-img" src="img/sevice-img.png" alt="">
+                                <img class="content-img" src="img/service/service5.jpg" alt="">
                                 <p class="service-info">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -765,14 +763,14 @@
                                 </div>
                             </div>
                             <!-- Indicators -->
-                            <button class="buttom-prev" id="myBtn"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                            <button class="buttom-prev" id="myBtn"></button>
                             <ol class="carousel-indicators feedback-indicator">
                                 <li data-target="#myCarousel" data-slide-to="0" class="li-indicator active"></li>
                                 <li data-target="#myCarousel" data-slide-to="1" class="li-indicator"></li>
                                 <li data-target="#myCarousel" data-slide-to="2" class="li-indicator"></li>
                                 <li data-target="#myCarousel" data-slide-to="3" class="li-indicator"></li>
                             </ol>
-                            <button class="buttom-next" id="myBtn2"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                            <button class="buttom-next" id="myBtn2"></button>
                         </div>
                     </div>
                 </div>

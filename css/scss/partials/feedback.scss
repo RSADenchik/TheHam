@@ -1,6 +1,6 @@
 .feedback {
   margin-top: 50px;
-  background: url(../img/feedback.jpg) no-repeat;
+  background: url('../img/feedback.jpg') no-repeat;
   .feedback-img {
     position: absolute;
     width: 100%;
@@ -95,6 +95,8 @@
     }
     .active {
       margin: 0;
+      position: relative;
+      top: -10px;
       border: 5px solid $color-aqua;
     }
   }
@@ -105,9 +107,12 @@
     width: 31px;
     height: 31px;
     border: 1px solid #bbb;
-    background: transparent;
+    border-right: 1px solid #57646c;
+    background: url('../img/arrow-left-autor.png') center center no-repeat;
     &:hover {
-      background-color: $color-aqua;
+      border: none;
+      border-right: 1px solid #1ea58f;
+      background: url('../img/arrow-left-autor-hover.png') center center no-repeat;
     }
   }
   .buttom-next {
@@ -117,9 +122,12 @@
     width: 31px;
     height: 31px;
     border: 1px solid #bbb;
-    background: transparent;
+    border-left: 1px solid #57646c;
+    background: url('../img/arrow-right-autor.png') center center no-repeat;
     &:hover {
-      background-color: $color-aqua;
+      border: none;
+      border-left: 1px solid #1ea58f;
+      background: url('../img/arrow-right-autor-hover.png') center center no-repeat;
     }
   }
 }

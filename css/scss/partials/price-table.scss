@@ -25,12 +25,17 @@
     list-style: none;
     text-align: center;
     width: 25%;
+    border-radius: 5px;
     background-color: #f8fcfe;
     border-collapse: collapse;
-    border-radius: 5px;
     padding-left: 0;
     position: relative;
     overflow: hidden;
+    &:hover {
+      box-shadow: -2px -2px 9px #c7c7c7,
+                  2px 2px 9px #c7c7c7,
+                    0 0 40px #c7c7c7;
+    }
     &:hover .li-price,
     &:hover .li-button {
       background-color: $color-aqua;
@@ -94,6 +99,7 @@
       height: 50px;
       background-color: #2e4a5b;
       border-radius: 3px;
+      border: none;
       color: white;
       font-family: $global-montserrat-regular;
       font-size: 14px;

@@ -33,8 +33,9 @@
     }
     .service-li>a {
       margin: 0;
-      padding: 10px 10px;
+      padding: 15px 25px;
       border: 1px solid #ebebeb;
+      border-radius: 0;
       position: relative;
       font-family: $global-montserrat-regular;
       font-size: 14px;
@@ -60,7 +61,7 @@
     .service-li a:focus:after{
       bottom: 0;
       margin-bottom: -10px;
-      left: 38%;
+      left: 44%;
       width: 20px;
       height: 20px;
       content: "";
@@ -75,13 +76,22 @@
     min-height: 300px;
     .content-img {
       float: left;
+      margin-left: 10.5%;
     }
     .service-info {
       float: left;
       text-align: justify;
-      width: 66%;
+      width: 57%;
       margin-left: 35px;
     }
+  }
+}
+@media #{$bootstrap-md} {
+  .service .tab-content .content-img {
+    margin-left: 2%;
+  }
+  .service .tab-content .service-info {
+    width: 71%;
   }
 }
 @media #{$bootstrap-xs} {

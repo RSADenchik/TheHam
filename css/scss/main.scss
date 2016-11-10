@@ -7,6 +7,11 @@ html,
 body {
   background: #fff;
 }
+img, i, button {
+  &:hover {
+    cursor: pointer;
+  }
+}
 button {
   outline: none;
 }

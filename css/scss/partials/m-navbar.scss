@@ -1,5 +1,5 @@
 .m-navbar {
-  background-color: #42423c;
+  background: transparent;
   position: fixed;
   border: none;
   margin-bottom: 0;
@@ -7,6 +7,13 @@
   right: 0;
   left: 0;
   z-index: 1030;
+}
+.container-fluid>.navbar-header {
+  background: #42423c;
+}
+.navbar-collapse {
+  border-top: none;
+  box-shadow: none;
 }
 .logo {
   float: left;
@@ -31,10 +38,20 @@
   }
 }
 .navbar-header .m-toggle {
+  margin-right: 35px;
   background-color: Turquoise;
   &:hover {
     background-color: Turquoise;
   }
+}
+ul.navbar-nav {
+  width: 115px;
+  background: #42423c;
+  float: right;
+  margin: 0;
+  margin-right: -15px;
+
+
 }
 .navbar-header .collapsed {
   background-color: $color-aqua;
@@ -89,7 +106,6 @@
   .nav > .list-m-items {
     text-align: center;
     font-family: $global-montserrat-bold;
-    width: 50%;
     max-width: 172px;
     margin: 0 auto;
     border-radius: 10px;

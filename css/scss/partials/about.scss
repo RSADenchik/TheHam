@@ -268,60 +268,95 @@
     }
   }
   @media #{$bootstrap-xs} {
-    .about .about-informations .tab-content .fix-row {
-      margin-left: 25px;
+    .about {
+      background: #0a0f14;
+      height: auto;
     }
-    .about .about-informations {
+    .about, .about .about-container {
+      height: auto;
+    }
+    .about .about-container .about-informations .tab-content .fix-row {
+      margin: 0 0 20px auto;
+    }
+    .about .about-container .about-informations {
       width: 100%;
+      padding-top: 0;
+      float: none;
     }
-    .about .about-informations .about-title {
+    .about .about-container .about-informations .about-header .about-title {
       margin-top: 15px;
-      font-size: 16px;
+      font-size: 25px;
+      margin-left: 0;
+      text-align: center;
     }
-    .about .about-informations .tab-content .done-list {
+    .about .about-container .about-informations .about-header .h-line-1 {
+      margin: 0 auto 0 32%;
+    }
+    .about .about-container .about-informations .about-header .h-line-2 {
+      margin: 4px auto;
+    }
+    .about .about-container .about-informations .tab-content .history .done-list {
       text-align: left;
-      font-size: 10px;
+      font-size: 12px;
       padding-top: 5px;
       line-height: 16px;
     }
-    .about .about-informations .about-tab {
+    .about .about-container .about-informations .tab-content .history {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .about .about-container .about-informations .tab-content .history .history-info {
+      width: 25%;
+      min-width: 232px;
+      margin: 0 auto 20px;
+    }
+
+    .about .about-container .about-informations .about-tab {
       width: 100%;
       text-align: center;
       height: 50px;
-      margin-top: 20px;
+      margin-top: 25px;
+      margin-left: 0;
       border: none;
     }
-    .about .about-informations .about-tab .li-about {
+    .about .about-container .about-informations .about-tab .li-about {
       display: inline-block;
       float: none;
-      margin-right: 10px;
+      margin-right: 5px;
       font-family: $global-montserrat-regular;
       text-transform: uppercase;
-      font-size: 10px;
-      line-height: 39px;
+      font-size: 12px;
+      line-height: 42px;
       font-weight: 700;
     }
-    .about .about-informations .tab-content .p-content {
-      width: 90%;
-      margin: 0 auto 15px;
+    .about .about-container .about-informations .tab-content .p-content {
+      width: 85%;
+      margin: 0 auto 10px auto;
       text-align: justify;
       font-family: $global-montserrat-regular;
-      font-size: 10px;
+      font-size: 12px;
       line-height: 25px;
       font-weight: 300;
       color: #bebebe;
     }
-
-
-    .about .about-informations .tab-content .biography {
-      width: 90%;
-      margin: 10px auto 0;
+    .about .about-container .about-informations .tab-content .biography {
+      width: 85%;
+      margin: 0 auto 25px auto;
       text-align: justify;
-      line-height: 18px;
-      font-size: 10px;
+      line-height: 25px;
+      font-size: 12px;
     }
     .about .about-informations .tab-content .done-icon {
       margin-top: 0;
       margin-right: 10px;
+    }
+    .about .about-container .about-informations .tab-content #skill .user-interface,
+    .about .about-container .about-informations .tab-content #skill .web-design {
+      font-size: 10px;
+    }
+    .about .about-container .about-informations .tab-content #skill .app-design,
+    .about .about-container .about-informations .tab-content #skill .html-css,
+    .about .about-container .about-informations .tab-content #skill .wordpress {
+      font-size: 10px;
     }
   }

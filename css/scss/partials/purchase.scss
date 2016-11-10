@@ -58,6 +58,9 @@
   }
 }
 @media #{$bootstrap-xs} {
+  .purchase {
+    height: auto;
+  }
   .purchase .purchase-title {
     margin-top: 30px;
     color: #18cfab;

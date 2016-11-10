@@ -94,6 +94,19 @@
     width: 71%;
   }
 }
+@media #{$bootstrap-sm} {
+  .service .service-ul .service-li>a,
+  .work .work-menu .work-a {
+    padding: 10px 10px;
+  }
+  .service .tab-content .content-img {
+    margin-left: 0;
+  }
+  .service .tab-content .service-info {
+    width: 68%;
+    margin-left: 21px;
+  }
+}
 @media #{$bootstrap-xs} {
   .service .service-title {
     margin-top: 20px;

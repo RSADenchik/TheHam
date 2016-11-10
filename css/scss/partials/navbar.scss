@@ -17,7 +17,6 @@
       position: relative;
       .logo {
         float: left;
-        margin-left: 3%;
         padding-top: 0;
         display: inline-block;
         font-family: $global-montserrat-bold;
@@ -117,5 +116,8 @@
 @media #{$bootstrap-sm} {
   .nav-ham .header .menu-list {
     font-size: 11px;
+  }
+  .nav-ham .header .menu-list .list-items {
+    margin-left: 10px !important;
   }
 }

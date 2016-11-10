@@ -127,6 +127,26 @@
     }
   }
 }
+@media #{$bootstrap-sm} {
+  .fun-fact .fact-1,
+  .fun-fact .fact-2,
+  .fun-fact .fact-3,
+  .fun-fact .fact-4 {
+    height: 250px;
+  }
+  .fun-fact .fact-1 .fact-title-1,
+  .fun-fact .fact-2 .fact-title-2,
+  .fun-fact .fact-3 .fact-title-3,
+  .fun-fact .fact-4 .fact-title-4 {
+    bottom: 8%;
+  }
+  .fun-fact .fact-1 .fact-info-1,
+  .fun-fact .fact-2 .fact-info-2,
+  .fun-fact .fact-3 .fact-info-3,
+  .fun-fact .fact-4 .fact-info-4 {
+    bottom: 0;
+  }
+}
   @media #{$bootstrap-xs} {
     .fun-fact {
       margin-top: 20px;

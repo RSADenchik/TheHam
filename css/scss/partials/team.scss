@@ -143,6 +143,14 @@
     }
   }
 }
+@media #{$bootstrap-sm} {
+  .team .team-person .person-info .name-person {
+    font-size: 12px;
+  }
+  .team .team-person .person-info .proff-person {
+    font-size: 12px;
+  }
+}
 @media #{$bootstrap-xs} {
   .team .team-title {
     margin-top: 20px;

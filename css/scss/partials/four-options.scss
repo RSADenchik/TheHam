@@ -64,6 +64,20 @@
       }
    }
  }
+ @media #{$bootstrap-sm} {
+   .four-options .option-1,
+   .four-options .option-2,
+   .four-options .option-3,
+   .four-options .option-4 {
+     height: 250px;
+   }
+   .four-options .option-1 .option-title-1,
+   .four-options .option-2 .option-title-2,
+   .four-options .option-3 .option-title-3,
+   .four-options .option-4 .option-title-4 {
+     margin-top: 170px;
+   }
+ }
  @media #{$bootstrap-xs} {
    .four-options .option-1,
    .four-options .option-2,

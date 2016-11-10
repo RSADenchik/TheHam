@@ -140,6 +140,12 @@
     margin-left: 10%;
   }
 }
+@media #{$bootstrap-sm} {
+  .work .filtr-container {
+    margin-left: 8%;
+    max-height: 740px;
+  }
+}
 @media #{$bootstrap-xs} {
   .work .work-title {
     margin-top: 20px;

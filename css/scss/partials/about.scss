@@ -250,8 +250,21 @@
   }
   @media #{$bootstrap-sm} {
     .about .about-informations .tab-content .done-list {
+
+    }
+    .about .about-container .about-informations .tab-content .history .done-list {
       float: left;
-      font-size: 12px;
+      font-size: 11px;
+      width: 40%;
+    }
+    .about .about-container .about-informations .tab-content .history .history-info {
+      width: 100%;
+    }
+    .about .about-container .about-informations .tab-content .fix-row {
+      margin: 0 0 0 25px;
+    }
+    .about .about-container .about-informations .about-tab .li-about {
+      margin-right: 10px;
     }
   }
   @media #{$bootstrap-xs} {

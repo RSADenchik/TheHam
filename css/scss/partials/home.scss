@@ -107,6 +107,18 @@
       }
     }
   }
+@media #{$bootstrap-sm} {
+  .home .home-title {
+    padding-top: 23%;
+  }
+  .home .home-title .home-main-title {
+    font-size: 65px;
+  }
+  .home .home-title .last-title {
+    font-size: 25px;
+  }
+
+}
 @media #{$bootstrap-xs} {
   .home {
     margin-top: 50px;

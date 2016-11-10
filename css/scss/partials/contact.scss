@@ -91,6 +91,20 @@
     }
   }
 }
+@media #{$bootstrap-sm} {
+  .nav-ham .header .logo {
+    font-size: 27px;
+  }
+  .nav-ham .header .menu-list .list-items {
+    margin-left: 12px;
+  }
+  .nav-ham .header .menu-list {
+    text-align: right;
+  }
+  .nav-ham .search-form .search-input {
+    width: 500px;
+  }
+}
 @media #{$bootstrap-xs} {
   .contact .contact-field {
     margin-top: 20px;

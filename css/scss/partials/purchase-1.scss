@@ -110,6 +110,10 @@
 }
 
 @media #{$bootstrap-sm} {
+  .purchase-1 {
+    height: 670px;
+    background-size: 63% 84%;
+  }
   .purchase-1 .purchase-title-1 {
     margin-top: 50px;
     font-size: 24px;
@@ -124,6 +128,9 @@
   }
   .purchase-1 .ul-purchase-1 {
     margin-top: 0;
+  }
+  .purchase-1 .purchase-1-button {
+    margin-top: 24px;
   }
 }
 @media #{$bootstrap-xs} {

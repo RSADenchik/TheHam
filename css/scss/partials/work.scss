@@ -170,11 +170,10 @@
   }
   .work .work-menu {
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 40px;
     width: 100%;
     list-style: none;
     padding: 0;
-    margin-bottom: 10px;
   }
   .work .work-menu .work-li {
     display: inline-block;
@@ -189,6 +188,14 @@
     font-weight: 400;
     line-height: 50px;
     cursor: pointer;
+  }
+  .work .filtr-container {
+    max-height: 330px;
+    margin: 0 auto 0 2%;
+    top: -50px;
+  }
+  .work .filtr-item {
+    width: 120px;
   }
   .work .margin-fix .block .image-block-hover .hover-img {
     padding-top: 15%;
@@ -231,5 +238,10 @@
   }
   .work .button-upload .icon-plus {
     padding-left: 0;
+  }
+}
+@media #{$bootstrap-iphone5-landscape} {
+  .work .filtr-container {
+    max-height: 220px;
   }
 }

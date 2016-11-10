@@ -166,7 +166,7 @@
     height: auto;
   }
   .team .team-person .person-img {
-    height: auto;
+    height: 100px;
   }
   .team .team-person:hover .person-img>.hover-add-img {
     text-align: center;
@@ -175,19 +175,42 @@
     width: 70%;
   }
   .team .team-person .person-img .person-foto {
-    height: auto;
+    height: 101px;
+  }
+  .team .team-person .person-info .hover-add-img {
+    margin-top: 0;
+    width: 100%;
+    margin-right: 0;
+  }
+  .team .team-person .person-info .hover-add-img .add-img {
+    width: 15px;
+    height: 15px;
+  }
+  .team .team-person .person-info .hover-add-img .submit-type {
+    margin: 28px auto;
+    font-size: 10px;
+  }
+  .team .team-person .person-info .hover-add-img label {
+    padding-right: 5px;
+  }
+  .team .team-person .person-info .filename {
+    line-height: 12px;
+    font-size: 10px;
+    text-align: center;
+    padding-right: 0;
   }
   .team .team-person .person-info .name-person {
     padding-left: 0;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 9px;
+    padding-top: 19px;
+    line-height: 9px;
     text-align: center;
   }
   .team .team-person .person-info .proff-person {
     text-align: center;
     padding-left: 0;
-    font-size: 11px;
-    line-height: 15px;
+    font-size: 8px;
+    line-height: 9px;
   }
   .team .team-person .person-social {
     height: 45px;

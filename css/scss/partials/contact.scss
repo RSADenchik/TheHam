@@ -2,7 +2,8 @@
 
 .map-google {
   width: 50%;
-  border: 1px solid gold;
+  margin-left: -15px;
+  //border: 1px solid gold;
   height: 500px;
   margin-top: 100px;
   float: left;
@@ -13,6 +14,7 @@
     float: left;
     width: 50%;
     .contact-title {
+      margin-top: 10px;
       margin-left: 20px;
       color: #4e4e4e;
       font-family: $global-montserrat-regular;
@@ -59,6 +61,7 @@
       }
       .textarea-contact {
         margin-bottom: 15px;
+        padding-top: 10px;
         width: 94%;
         opacity: 0.8;
         border: 1px solid #c1d2cf;

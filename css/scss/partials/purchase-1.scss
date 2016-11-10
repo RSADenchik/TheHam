@@ -1,6 +1,8 @@
 .purchase-1 {
   margin-top: 100px;
-  background: url('../img/purchase-1.jpg');
+  height: 924px;
+  background: #233441 url(../img/notebook-img.png) no-repeat left bottom;
+  background-size: 63% 78%;
   .purchase-title-1 {
     margin-top: 100px;
     font-family: $global-montserrat-regular;
@@ -24,10 +26,10 @@
     margin: 30px 0 60px 5%;
   }
   .ul-purchase-1 {
-    margin-top: 20px;
-    width: 33%;
-    margin-left: 50px;
-    float: left;
+    margin: 0 auto;
+    margin-right: 0;
+    margin-top: 50px;
+    width: 42%;
     list-style: none;
     padding: 0;
     .li-purchase-1 {
@@ -42,10 +44,11 @@
     }
   }
   .purchase-1-button {
-    margin-top: 20px;
+    margin-top: 70px;
     width: 165px;
     height: 60px;
     background-color: $color-aqua;
+    border: none;
     border-radius: 4px;
     color: white;
     font-family: $global-montserrat-regular;
@@ -61,6 +64,10 @@
   }
 }
 @media #{$bootstrap-md} {
+  .purchase-1 {
+    height: 665px;
+    background-size: 65% 76%;
+  }
   .purchase-1 .purchase-title-1 {
     font-size: 34px;
     margin-top: 76px;
@@ -70,13 +77,38 @@
     font-size: 32px;
     line-height: 28px;
   }
+  .purchase-1 .ul-purchase-1 {
+    margin-top: 30px;
+  }
   .purchase-1 .ul-purchase-1 .li-purchase-1 {
     line-height: 32px;
   }
   .purchase-1 .purchase-1-button {
     height: 50px;
+    margin-top: 30px;
   }
 }
+@media #{$bootstrap-lg} {
+  .purchase-1 {
+    height: 780px;
+    background-size: 63% 78%;
+  }
+  .purchase-1 .purchase-title-1 {
+    font-size: 40px;
+    line-height: 43px;
+
+  }
+  .purchase-1 .purchase-title-2 {
+    font-size: 40px;
+  }
+  .purchase-1 .ul-purchase-1 {
+    margin-top: 30px;
+  }
+  .purchase-1 .purchase-1-button {
+    margin-top: 35px;
+  }
+}
+
 @media #{$bootstrap-sm} {
   .purchase-1 .purchase-title-1 {
     margin-top: 50px;

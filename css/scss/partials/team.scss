@@ -27,12 +27,9 @@
     height: 371px;
     list-style: none;
     margin-left: 2%;
-      &:hover .person-img>.hover-add-img {
-        display: block;
-      }
       &:hover .person-info,
       &:hover .person-social {
-      background-color: $color-aqua;
+      background-color: Tomato;
       }
       &:hover .person-info>.proff-person {
         color: #2e4a5b;
@@ -45,14 +42,6 @@
       width: 100%;
       background-color: #dae9e6;
       position: relative;
-      .hover-add-img {
-        position: absolute;
-        display: none;
-        top: 35%;
-        text-align: center;
-        right: 0;
-        left: 0;
-      }
       .person-foto {
         height: 229px;
         width: 100%;
@@ -61,7 +50,54 @@
     }
     .person-info {
       height: 77px;
+      position: relative;
       background-color: #2e4a5b;
+      .filename {
+        background-color: transparent;
+        position: absolute;
+        text-align: right;
+        border: none;
+        color: green;
+        padding-right: 8px;
+        line-height: 14px;
+        font-size: 12px;
+        bottom: 0;
+        width: 100%;
+        right: 0;
+      }
+      .hover-add-img {
+        position: absolute;
+        text-align: center;
+        width: 60px;
+        margin-right: 5px;
+        margin-top: 5px;
+        right: 0;
+        top: 0;
+        input[type="file"] {
+          display: none;
+        }
+        label {
+          display: block;
+          margin-bottom: 0;
+          text-align: right;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+        }
+        .add-img {
+          width: 30px;
+          height: 30px;
+        }
+        .submit-type {
+          display: none;
+          margin-top: 5px;
+          border-radius: 5px;
+          background-color: aqua;
+          border: none;
+        }
+      }
       .name-person {
         padding-top: 15px;
         padding-left: 15px;
@@ -79,7 +115,7 @@
         font-family: $global-montserrat-regular;
         font-size: 13px;
         font-weight: 300;
-        line-height: 39px;
+        line-height: 18px;
       }
     }
     .person-social {

@@ -3,6 +3,31 @@ $(document).ready(function() {
     $('#search-ham').on('click', function () {
         $('#forma').toggle();
     });
+    // Фильтр блока .work
+    var filterizd =  $('.filtr-container').filterizr( {
+        animationDuration: 0.6,
+        layout: 'sameSize',
+        filterOutCss: {
+            'opacity': 0,
+            transform: 'scale(0.75)'
+        },
+        filterInCss: {
+            'opacity': 1,
+            transform: 'scale(0.75)',
+            transition: 'all 0.5s ease-out 0ms'
+        }
+    });
+    //Simple filter controls
+    $('.simplefilter .work-li').click(function() {
+        $('.simplefilter .work-li').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    // Selected first li
+    $('.work-menu .work-li').hover(function() {
+        $('.work-menu li').removeClass('selected');
+    });
+
     /* Slider-slick */
     $(function() {
         $(".rslides").responsiveSlides({
@@ -24,6 +49,81 @@ $(document).ready(function() {
     // Go to the next item
     $("#myBtn2").click(function(){
         $("#myCarousel").carousel("next");
+    });
+    // Meet our team input add image
+    $('.input-1').on('change', function() {
+        // Берем название загруженое в input и выводим в блок
+        var filename1 = $(this).val().replace(/.*\\/, " ");
+        $('#filename-1').val(filename1).css("display", "block");
+        $('#input-file-1').css("display", "block");
+    });
+    $('.input-2').on('change', function() {
+        var filename2 = $(this).val().replace(/.*\\/, " ");
+        $('#filename-2').val(filename2).css("display", "block");
+        $('#input-file-2').css("display", "block");
+    });
+    $('.input-3').on('change', function() {
+        var filename3 = $(this).val().replace(/.*\\/, " ");
+        $('#filename-3').val(filename3).css("display", "block");
+        $('#input-file-3').css("display", "block");
+    });
+    $('.input-4').on('change', function() {
+        var filename4 = $(this).val().replace(/.*\\/, " ");
+        $('#filename-4').val(filename4).css("display", "block");
+        $('#input-file-4').css("display", "block");
+    });
+
+    $('#input-file-1').on('click', function() {
+        $(this).hide();
+        $('#filename-1').hide();
+    });
+    $('#input-file-2').on('click', function() {
+        $(this).hide();
+        $('#filename-2').hide();
+    });
+    $('#input-file-3').on('click', function() {
+        $(this).hide();
+        $('#filename-3').hide();
+    });
+    $('#input-file-4').on('click', function() {
+        $(this).hide();
+        $('#filename-4').hide();
+    });
+    //upload images
+    $(document).ready (function (e) {
+        $(".hover-add-img").on('submit',(function(e) {
+            e.preventDefault();
+            $.ajax({
+                url: "ajaxupload.php",
+                type: "POST",
+                data:  new FormData(this),
+                contentType: false,
+                cache: false,
+                processData:false,
+                beforeSend : function()
+                {
+                    //$("#preview").fadeOut();
+                    // $("#err").fadeOut();
+                },
+                success: function(data)
+                {
+                    if(data=='invalid')
+                    {
+                        // invalid file format.
+                        // $("#err").html("Invalid File !").fadeIn();
+                    }
+                    else
+                    {
+                        $(".team-person:hover .person-img").html(data).fadeIn();
+                        $(".hover-add-img")[0].reset();
+                    }
+                },
+                error: function(e)
+                {
+                    // $("#err").html(e).fadeIn();
+                }
+            });
+        }));
     });
     // Google maps
     $(function() {
@@ -48,5 +148,22 @@ $(document).ready(function() {
             coords: [50.512706, 30.602495],
             url: 'https://RSADenchik.github.io/second_psd'
         });
-    })
+    });
+        // Форма отправки сообщения
+    $("#commentForm").submit(function() { //устанавливаем событие отправки для формы с id=form
+        var form_data = $(this).serialize(); //собераем все данные из формы
+        $.ajax({
+            type: "POST", //Метод отправки
+            url: "mail.php", //путь до php фаила отправителя
+            data: form_data,
+            beforeSend: function () {
+
+            },
+            success: function () {
+                //код в этом блоке выполняется при успешной отправке сообщения
+                alert("Ваше сообщение отправлено успешно!");
+            }
+        });
+        // console.log(form_data);
+    });
 });

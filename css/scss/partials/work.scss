@@ -61,7 +61,7 @@
     max-height: 580px;
     max-width: 900px;
     margin: 0 auto 0 16%;
-    width: 100%;
+    width: 95%;
     top: -80px;
   }
   .filtr-item {
@@ -243,5 +243,6 @@
 @media #{$bootstrap-iphone5-landscape} {
   .work .filtr-container {
     max-height: 220px;
+    margin: 0 auto 0 13%;
   }
 }

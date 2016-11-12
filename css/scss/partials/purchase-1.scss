@@ -2,7 +2,7 @@
   margin-top: 100px;
   height: 924px;
   background: #233441 url(../img/notebook-img.png) no-repeat left bottom;
-  background-size: 63% 78%;
+  background-size: 56% 78%;
   .purchase-title-1 {
     margin-top: 100px;
     font-family: $global-montserrat-regular;
@@ -20,33 +20,32 @@
     line-height: 65px;
     text-transform: uppercase;
   }
-  .notebook {
-    float: left;
-    width: 55%;
-    margin: 30px 0 60px 5%;
-  }
   .ul-purchase-1 {
     margin: 0 auto;
     margin-right: 0;
+    padding-top: 10px;
     margin-top: 50px;
     width: 42%;
     list-style: none;
-    padding: 0;
     .li-purchase-1 {
       color: #f7f7f7;
+      width: 90%;
       font-family: $global-montserrat-regular;
-      font-size: 14px;
+      font-size: 18px;
       font-weight: 300;
       line-height: 35px;
     }
     .done-icon {
       padding-right: 20px;
+      width: 10%;
+      float: left;
     }
   }
   .purchase-1-button {
     margin-top: 70px;
     width: 165px;
     height: 60px;
+    margin-left: 42px;
     background-color: $color-aqua;
     border: none;
     border-radius: 4px;
@@ -66,7 +65,7 @@
 @media #{$bootstrap-md} {
   .purchase-1 {
     height: 665px;
-    background-size: 65% 76%;
+    background-size: 58% 76%;
   }
   .purchase-1 .purchase-title-1 {
     font-size: 34px;
@@ -165,8 +164,7 @@
     padding-right: 10px;
   }
   .purchase-1 .purchase-1-button {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 15px;
     width: 130px;
     height: 40px;
     line-height: 32px;

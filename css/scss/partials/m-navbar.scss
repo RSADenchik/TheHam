@@ -17,7 +17,6 @@
 }
 .logo {
   float: left;
-  margin-left: 3%;
   padding-top: 6px;
   display: inline-block;
   font-family: $global-montserrat-bold;
@@ -118,6 +117,11 @@ ul.navbar-nav {
   line-height: 18px;
   &:hover {
     color: white;
+  }
+}
+@media #{$bootstrap-xs} {
+  .logo {
+    margin-left: 35px;
   }
 }
 @media #{$bootstrap-iphone5-xs} {

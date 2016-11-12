@@ -79,10 +79,10 @@
 }
 @media #{$bootstrap-sm} {
   .breaking-news .block-news .title .post-title {
-    font-size: 14px;
+    font-size: 18px;
   }
   .breaking-news .block-news .title .post-info {
-    font-size: 11px;
+    font-size: 14px;
   }
 }
 @media #{$bootstrap-xs} {
@@ -101,28 +101,16 @@
     margin-bottom: 20px;
   }
   .breaking-news .block-news {
-    margin-top: 15px;
-  }
-  .breaking-news .block-news .block-date {
-    width: 35px;
-    height: 35px;
-  }
-  .breaking-news .block-news .block-date .date {
-    font-size: 10px;
-    padding: 5px 0;
-    line-height: 15px;
+    margin: 15px auto 0;
+    width: 90%;
   }
   .breaking-news .block-news .title .post-title {
-    font-size: 11px;
     margin-top: 5px;
+    font-size: 20px;
     margin-bottom: 5px;
-    line-height: 20px;
   }
   .breaking-news .block-news .title .post-info {
-    white-space: pre-wrap;
-    font-size: 8px;
     margin-top: 5px;
-    margin-bottom: 5px;
-    line-height: 20px;
+    font-size: 16px;
   }
 }

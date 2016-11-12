@@ -4,17 +4,15 @@
     height: 676px;
     opacity: 0.9;
     .about-container {
-      height: 676px;
       .about-informations {
         float: right;
-        padding-top: 99px;
-        min-height: 510px;
+        margin-bottom: 50px;
         width: 60%;
         .about-header {
           width: 100%;
           .about-title {
-            margin-top: 35px;
             text-align: left;
+            margin-top: 100px;
             margin-left: 55px;
             font-family: $global-montserrat-regular;
             font-size: 36px;
@@ -127,7 +125,8 @@
               margin-right: 10px;
             }
             .done-list {
-              width: 100%;
+              float: left;
+              width: 90%;
               font-family: $global-montserrat-regular;
               font-size: 14px;
               line-height: 38px;
@@ -253,15 +252,11 @@
 
     }
     .about .about-container .about-informations .tab-content .history .done-list {
-      float: left;
       font-size: 11px;
-      width: 40%;
+      width: 44%;
     }
     .about .about-container .about-informations .tab-content .history .history-info {
       width: 100%;
-    }
-    .about .about-container .about-informations .tab-content .fix-row {
-      margin: 0 0 0 25px;
     }
     .about .about-container .about-informations .about-tab .li-about {
       margin-right: 10px;
@@ -284,16 +279,16 @@
       float: none;
     }
     .about .about-container .about-informations .about-header .about-title {
-      margin-top: 15px;
-      font-size: 25px;
+      font-size: 27px;
+      margin-top: 35px;
       margin-left: 0;
       text-align: center;
     }
     .about .about-container .about-informations .about-header .h-line-1 {
-      margin: 0 auto 0 32%;
+      margin: 16px auto 0;
     }
     .about .about-container .about-informations .about-header .h-line-2 {
-      margin: 4px auto;
+      margin: 3px 51% 0 49%;
     }
     .about .about-container .about-informations .tab-content .history .done-list {
       text-align: left;
@@ -303,6 +298,7 @@
     }
     .about .about-container .about-informations .tab-content .history {
       text-align: center;
+      margin-left: 20px;
       margin-bottom: 20px;
     }
     .about .about-container .about-informations .tab-content .history .history-info {

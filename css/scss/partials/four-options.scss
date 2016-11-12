@@ -70,6 +70,7 @@
    .four-options .option-3,
    .four-options .option-4 {
      height: 250px;
+     width: 50%;
    }
    .four-options .option-1 .option-title-1,
    .four-options .option-2 .option-title-2,
@@ -83,36 +84,19 @@
    .four-options .option-2,
    .four-options .option-3,
    .four-options .option-4 {
-     background-size: 30%;
      min-height: 100px;
-     height: 100%;
-     width: 25%;
+     width: 100%;
      position: relative;
-   }
-   .four-options .option-2,
-   .four-options .option-4 {
-     background-size: 60%;
    }
    .four-options .option-1 .option-title-1,
    .four-options .option-2 .option-title-2,
    .four-options .option-3 .option-title-3,
    .four-options .option-4 .option-title-4 {
      position: absolute;
-     font-size: 8px;
      margin: 0 5px;
-     bottom: 10%;
+     bottom: 33%;
      left: 0;
      right: 0;
-   }
- }
- @media #{$bootstrap-iphone5-xs} {
-   .four-options .option-1,
-   .four-options .option-3 {
-     background-size: 20%;
-   }
-   .four-options .option-2,
-   .four-options .option-4 {
-     background-size: 45%;
    }
  }
 

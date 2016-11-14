@@ -152,17 +152,20 @@ $(document).ready(function() {
         // Форма отправки сообщения
     $("#commentForm").submit(function() { //устанавливаем событие отправки для формы с id=form
         var form_data = $(this).serialize(); //собераем все данные из формы
-        $.ajax({
-            type: "POST", //Метод отправки
-            url: "mail.php", //путь до php фаила отправителя
-            data: form_data,
-            beforeSend: function () {
+            $.ajax({
+                type: "POST", //Метод отправки
+                url: "mail.php", //путь до php фаила отправителя
+                data: form_data,
+                beforeSend: function () {
 
-            },
-            success: function () {
-                //код в этом блоке выполняется при успешной отправке сообщения
-            }
+                },
+                success: function () {
+                    //код в этом блоке выполняется при успешной отправке сообщения
+                        var inputName = $('.input-name').val();
+                        alert(inputName + ", " + "письмо успешно отправлено!");
+                }
+            });
         });
+
         // console.log(form_data);
-    });
 });

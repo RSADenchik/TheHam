@@ -1,4 +1,4 @@
-<?
+<?php
 if((isset($_POST['name'])&&$_POST['name']!="")&&(isset($_POST['email'])&&$_POST['email']!="")&&(isset($_POST['message'])&&$_POST['message']!="")){ //Проверка отправилось ли наше поля name и не пустые ли они
     $sender = $_POST['email'];
     $to = 'Poznyakoff1994@gmail.com'; //Почта получателя, через запятую можно указать сколько угодно адресов

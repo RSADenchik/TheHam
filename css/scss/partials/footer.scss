@@ -176,7 +176,7 @@
         line-height: 26px;
       }
       .submit-mail {
-        width: 15%;
+        width: 30%;
         height: 42px;
         position: absolute;
         right: 0;
@@ -216,217 +216,344 @@
     }
   }
 }
-@media #{$bootstrap-sm} {
+@media #{$bootstrap-ipad-landscape} {
   .footer {
-    height: 600px;
-  }
-  .footer .logo {
-    font-size: 20px;
-    margin-top: 50px;
-  }
-  .footer .logo .footer-info {
-    font-size: 10px;
-    margin-top: 50px;
-    line-height: 20px;
-  }
-  .footer .recent-post {
-    margin-top: 45px;
-  }
-  .footer .recent-post .title-recent {
-    font-size: 14px;
-    margin-bottom: 64px;
-  }
-  .footer .logo .footer-info-1 {
-    line-height: 20px;
-    font-size: 10px;
-  }
-  .footer .logo .footer-info-2 {
-    line-height: 20px;
-    font-size: 10px;
-  }
-  .footer .recent-post .standart-title {
-    margin: 0 0 0 20%;
-    padding-left: 34px;
-    font-size: 10px;
-    line-height: 15px;
-  }
-  .footer .recent-post .standart-info {
-    padding-left: 34px;
-    line-height: 15px;
-    font-size: 10px
-  }
-  .footer .recent-post .date-post {
-    padding: 0 0 0 34px;
-    font-size: 10px;
-  }
-  .footer .tags-post {
-    margin-top: 44px;
-  }
-  .footer .tags-post .title-tags {
-    font-size: 14px;
-    margin-bottom: 50px;
-  }
-  .footer .tags-post .tags-table .td-table {
-    font-size: 11px;
-  }
-  .footer .tags-post .newsletter-title {
-    margin-bottom: 6px;
-    font-size: 14px;
-  }
-  .footer .tags-post .newsletter-info {
-    font-size: 12px;
-    line-height: 20px;
-  }
-  .footer .tags-post .input-field .submit-mail {
-    width: 25%;
-  }
-  .footer .flicke-feed {
-    margin-top: 44px;
-  }
-  .footer .flicke-feed .title-flicke {
-    margin-bottom: 56px;
-    font-size: 14px;
-    line-height: 20px;
-  }
-  .footer .flicke-feed .img-group .img-flicke {
-    width: 50px;
-    height: 50px;
+    height: auto;
+    .logo {
+      text-align: center;
+      margin-top: 50px;
+      width: 45%;
+      margin-left: 2%;
+      .footer-info {
+        text-align: justify;
+        font-size: 16px;
+        margin-top: 25px;
+      }
+      .footer-info-1 {
+        line-height: 30px;
+        margin-top: 30px;
+        font-size: 16px;
+        text-align: left;
+      }
+      .footer-info-2 {
+        line-height: 30px;
+        margin-top: 30px;
+        font-size: 16px;
+        float: none;
+        width: 45%;
+        text-align: left;
+      }
+    }
+    .recent-post {
+      margin-top: 50px;
+      width: 50%;
+      float: left;
+      margin-left: 2%;
+      .title-recent {
+        margin-bottom: 40px;
+        text-align: center;
+      }
+      .footer-img-post {
+        float: left;
+        display: block;
+        width: 100px;
+        height: 100px;
+      }
+      .standart-title {
+        margin: 0;
+        padding: 0;
+        padding-left: 15px;
+        float: left;
+        line-height: 18px;
+      }
+      .standart-info {
+        margin: 0;
+        padding: 0 0 15px 15px;
+        width: 75%;
+        float: left;
+      }
+      .date-post {
+        padding: 0 0 0 46px;
+      }
+    }
+    .tags-post {
+      margin-top: 10px;
+      margin-bottom: 30px;
+      width: 50%;
+      .title-tags {
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      .tags-table {
+        padding-bottom: 30px;
+        .td-table {
+          line-height: 45px;
+        }
+      }
+      .newsletter-title {
+        text-align: center;
+        margin: 20px auto 15px;
+      }
+      .newsletter-info {
+        text-align: center;
+      }
+      .input-field .submit-mail {
+        width: 25%;
+      }
+    }
+    .flicke-feed {
+      margin-top: 10px;
+      text-align: center;
+      width: 40%;
+      .title-flicke {
+        margin: 20px auto 40px;
+        text-align: center;
+      }
+      .img-group {
+        margin: 0 auto;
+        .img-flicke {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
   }
 }
+@media #{$bootstrap-sm} {
+    .footer {
+      height: auto;
+      .logo {
+        text-align: center;
+        margin-top: 50px;
+        width: 45%;
+        margin-left: 2%;
+        .footer-info {
+          text-align: justify;
+          font-size: 16px;
+          margin-top: 25px;
+        }
+        .footer-info-1 {
+          line-height: 30px;
+          margin-top: 30px;
+          font-size: 16px;
+          text-align: left;
+        }
+        .footer-info-2 {
+          line-height: 30px;
+          margin-top: 30px;
+          font-size: 16px;
+          text-align: left;
+        }
+      }
+      .recent-post {
+        margin-top: 50px;
+        width: 50%;
+        float: left;
+        margin-left: 2%;
+        .title-recent {
+          margin-bottom: 40px;
+          text-align: center;
+        }
+        .footer-img-post {
+          float: left;
+          display: block;
+          width: 100px;
+          height: 100px;
+        }
+        .standart-title {
+          margin: 0;
+          padding: 0;
+          padding-left: 15px;
+          float: left;
+          line-height: 18px;
+        }
+        .standart-info {
+          margin: 0;
+          padding: 0 0 15px 15px;
+          width: 71%;
+          float: left;
+        }
+        .date-post {
+          padding: 0 0 0 46px;
+        }
+      }
+      .tags-post {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        width: 50%;
+        .title-tags {
+          margin-bottom: 30px;
+          text-align: center;
+        }
+        .tags-table {
+          padding-bottom: 30px;
+          .td-table {
+            line-height: 45px;
+          }
+        }
+        .newsletter-title {
+          text-align: center;
+          margin: 20px auto 15px;
+        }
+        .newsletter-info {
+          text-align: center;
+        }
+        .input-field .submit-mail {
+          width: 25%;
+        }
+      }
+      .flicke-feed {
+        margin-top: 10px;
+        text-align: center;
+        width: 40%;
+        .title-flicke {
+          margin: 20px auto 40px;
+          text-align: center;
+        }
+        .img-group {
+          margin: 0 auto;
+          .img-flicke {
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+    }
+}
+
 @media #{$bootstrap-xs} {
   .footer {
     height: auto;
-  }
-  .footer .logo {
-    margin-top: 20px;
-    line-height: 30px;
-    font-size: 20px;
-  }
-  .footer .logo .footer-info {
-    margin-top: 15px;
-    line-height: 20px;
-    font-size: 10px;
-  }
-  .footer .logo .footer-info-1 {
-    margin-top: 20px;
-    font-size: 10px;
-    line-height: 16px;
-  }
-  .footer .logo .footer-info-1 span {
-    font-size: 12px;
-  }
-  .footer .logo .footer-info-2 {
-    font-size: 10px;
-    margin-top: 10px;
-    line-height: 16px;
-  }
-  .footer .logo .footer-info-2 span {
-    font-size: 12px;
-  }
-  .footer .recent-post {
-    margin-top: 20px;
-  }
-  .footer .recent-post .title-recent {
-    margin-top: 9px;
-    margin-bottom: 20px;
-    font-size: 10px;
-    line-height: 26px;
-  }
-  .footer .recent-post .footer-img-post {
-    width: 40px;
-    height: 40px;
-  }
-  .footer .recent-post .standart-title {
-    padding-left: 10px;
-    font-size: 9px;
-    line-height: 14px;
-  }
-  .footer .recent-post .standart-info {
-    padding-left: 10px;
-    line-height: 16px;
-    font-size: 7px;
-  }
-  .footer .recent-post .date-post {
-    line-height: 5px;
-    padding: 0 0 0 24px;
-    font-size: 7px;
-  }
-  .footer .tags-post {
-    margin-top: 20px;
-    padding-bottom: 20px;
-  }
-  .footer .tags-post .title-tags {
-    margin-bottom: 20px;
-    margin-top: 10px;
-    font-size: 11px;
-    line-height: 26px;
-  }
-  .footer .tags-post .tags-table {
-    border-spacing: 0;
-  }
-  .footer .tags-post .tags-table .td-table {
-    font-size: 10px;
-    line-height: 31px;
-  }
-  .footer .tags-post .newsletter-title {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 10px;
-    line-height: 24px;
-  }
-  .footer .tags-post .newsletter-info {
-    font-size: 10px;
-    line-height: 20px;
-  }
-  .footer .tags-post .input-field .enter-mail[placeholder] {
-    font-size: 10px;
-  }
-  .footer .tags-post .input-field .enter-mail {
-    height: 35px;
-  }
-  .footer .tags-post .input-field .submit-mail {
-    height: 35px;
-    width: 31%;
-  }
-  .footer .flicke-feed {
-    margin-top: 20px;
-  }
-  .footer .flicke-feed .title-flicke {
-    margin-bottom: 20px;
-    margin-top: 13px;
-    font-size: 10px;
-    line-height: 20px;
-  }
-  .footer .flicke-feed .img-group .img-flicke {
-    width: 35px;
-    height: 35px;
-    margin: 4px;
+    padding-top: 25px;
+
+     .logo {
+      margin: 0 auto;
+      text-align: center;
+      width: 100%;
+    }
+     .logo .footer-info {
+      margin: 0 auto;
+      width: 80%;
+    }
+     .logo .footer-info-1 {
+      margin-top: 20px;
+    }
+     .logo .footer-info-2 {
+      margin-top: 10px;
+    }
+     .recent-post {
+         margin: 0 auto;
+         text-align: center;
+         width: 100%;
+          .title-recent {
+            margin-bottom: 10px;
+          }
+          .standart-post {
+            width: auto;
+            &:last-child {
+              border-bottom: 1px solid #294453;
+              margin-bottom: 20px;
+            }
+          }
+         .footer-img-post {
+           width: 100px;
+           float: none;
+           height: 100px;
+         }
+         .standart-title {
+           line-height: 45px;
+           margin: 0;
+           padding: 0;
+         }
+        .standart-info {
+          padding: 0;
+          margin: 0 auto;
+          line-height: 26px;
+          font-size: 14px;
+        }
+        .date-post {
+          margin: 0 auto;
+          padding: 0;
+          line-height: 40px;
+        }
+     }
+     .tags-post {
+         margin: 0;
+         width: 100%;
+        .title-tags {
+          margin: 0 auto 15px;
+          text-align: center;
+          line-height: 26px;
+        }
+        .tags-table {
+           border-spacing: 0;
+           margin: 0 auto;
+           width: 90%;
+           padding-bottom: 30px;
+            .td-table {
+              line-height: 40px;
+            }
+        }
+        .newsletter-title {
+           margin: 20px auto 10px;
+           text-align: center;
+           line-height: 24px;
+        }
+        .newsletter-info {
+            width: 90%;
+            text-align: center;
+            margin: 0 auto;
+        }
+       .input-field {
+           height: 33px;
+           width: 75%;
+         max-width: 500px;
+           margin: 10px auto;
+           .enter-mail {
+             height: 35px;
+           }
+           .enter-mail[placeholder] {
+             font-size: 12px;
+           }
+           .submit-mail {
+             height: 35px;
+             width: 31%;
+           }
+       }
+     }
+     .flicke-feed {
+       margin: 20px auto 20px;
+       text-align: center;
+       width: 100%;
+        .title-flicke {
+           margin-bottom: 20px;
+           margin-top: 13px;
+           line-height: 20px;
+        }
+       .img-group {
+           width: 100%;
+           .img-flicke {
+             width: 65px;
+             height: 65px;
+             margin: 4px;
+           }
+       }
+     }
   }
 }
-@media #{$bootstrap-iphone5-portrait} {
- .hidden-portreit {
-   display: none;
+@media #{$bootstrap-min-height-xs} {
+ .footer {
+   .logo {
+     .footer-info-1 {
+       margin-top: 10px;
+       float: left;
+       width: 55%;
+     }
+     .footer-info-2 {
+       margin-top: 10px;
+       float: right;
+       width: 45%;
+     }
+   }
  }
-  .footer .logo {
-    width: 30%;
-    margin-left: 1%;
-    text-align: justify;
-  }
-  .footer .logo .footer-info {
-    line-height: 15px;
-  }
-  .footer .flicke-feed, .footer .tags-post {
-    width: 35%;
-    margin-left: 3%;
-    text-align: center;
-  }
-  .footer .flicke-feed {
-    text-align: center;
-    width: 28%;
-  }
-  .footer .flicke-feed .img-group .img-flicke {
-    width: 30px;
-    height: 30px;
-  }
-
 }

@@ -114,3 +114,10 @@
     font-size: 16px;
   }
 }
+@media #{$bootstrap-min-height-xs} {
+  .breaking-news .block-news .img-news {
+    width: 29%;
+    display: block;
+    margin: 0 auto;
+  }
+}

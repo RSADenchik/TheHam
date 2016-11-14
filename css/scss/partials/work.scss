@@ -190,32 +190,29 @@
   }
   .work .filtr-container {
     max-height: 330px;
-    width: 95%;
-    margin: 0 auto 0 6%;
+    min-width: 300px;
+    max-width: 500px;
+    margin-left: -145px;
+    text-align: center;
     top: -50px;
   }
   .work .filtr-item {
     width: 120px;
   }
-  .work .margin-fix .block .image-block-hover .hover-img {
-    padding-top: 15%;
-    width: 50%;
-    vertical-align: middle;
+  .work .image-block-hover .hover-img {
+    padding-top: 5%;
   }
-  .work .margin-fix .block .image-block-hover .title-block-hover {
-    margin: 0;
-    padding-top: 10px;
+  .work .image-block-hover .title-block-hover {
+    margin-top: 10px;
     color: #18cfab;
     font-family: $global-montserrat-regular;
-    font-size: 10px;
     font-weight: 700;
-    line-height: 12px;
+    line-height: 17px;
     text-transform: uppercase;
   }
-  .work .margin-fix .block .image-block-hover .info-block-hover {
+  .work .image-block-hover .info-block-hover {
     color: #8a8a8a;
     font-family: $global-montserrat-regular;
-    font-size: 8px;
     font-weight: 300;
     line-height: 18px;
   }
@@ -243,6 +240,5 @@
 @media #{$bootstrap-iphone5-landscape} {
   .work .filtr-container {
     max-height: 220px;
-    margin: 0 auto 0 13%;
   }
 }

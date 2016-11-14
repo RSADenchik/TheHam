@@ -175,7 +175,7 @@
     height: 30px;
   }
 }
-@media #{$bootstrap-iphone5-xs} {
+@media #{$bootstrap-min-height-xs} {
   .home .rslides {
     top: -25%;
     margin-right: 3%;

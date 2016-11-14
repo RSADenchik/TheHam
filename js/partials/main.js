@@ -134,7 +134,7 @@ $(document).ready(function() {
         // Marker 1
         $("#map").addMarker({
             coords: [50.512706, 30.602495],
-            url: 'https://RSADenchik.github.io/second_psd'
+            url: 'https://RSADenchik.github.io/TheHam'
         });
     });
     // Google maps for mobile
@@ -146,7 +146,7 @@ $(document).ready(function() {
         // Marker 1
         $("#map-m").addMarker({
             coords: [50.512706, 30.602495],
-            url: 'https://RSADenchik.github.io/second_psd'
+            url: 'https://RSADenchik.github.io/TheHam'
         });
     });
         // Форма отправки сообщения
@@ -161,7 +161,6 @@ $(document).ready(function() {
             },
             success: function () {
                 //код в этом блоке выполняется при успешной отправке сообщения
-                alert("Ваше сообщение отправлено успешно!");
             }
         });
         // console.log(form_data);

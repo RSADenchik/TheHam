@@ -40,6 +40,7 @@
     &:hover .li-price,
     &:hover .li-button {
       background-color: $color-aqua;
+      border-right: 1px solid #18cfab;
     }
     &:hover:after {
       content: "offer";
@@ -58,11 +59,11 @@
       text-transform: uppercase;
     }
     .li-header {
-      padding: 10px 5px;
+      padding: 15px 5px;
       color: #717171;
       font-family: $global-montserrat-regular;
       border: 1px solid #e1e1e1;
-      font-size: 24px;
+      font-size: 18px;
       font-weight: 700;
       text-transform: uppercase;
     }
@@ -119,14 +120,15 @@
 @media #{$bootstrap-xs}
 {
   .price-table .personal {
-    width: 50%;
+    width: 90%;
+    max-width: 260px;
     float: none;
     padding-right: 0;
     margin: 0 auto 50px;
   }
   .price-table .personal:hover:after {
     width: 107px;
-    height: 25px;
+    height: 24px;
     top: 7px;
     right: -34px;
     font-size: 14px;
@@ -144,47 +146,5 @@
   }
   .price-table .h-line-2 {
     margin-bottom: 20px;
-  }
-}
-@media #{$bootstrap-iphone5-portrait} {
-  .price-table .personal .li-header {
-    padding: 10px 0;
-    font-size: 7px;
-  }
-    .price-table .personal:hover:after {
-      width: 52px;
-      height: 19px;
-      top: 0;
-      right: -18px;
-      font-size: 7px;
-      line-height: 25px;
-    }
-  .price-table .personal .li-price {
-    line-height: 37px;
-    font-size: 12px;
-    padding: 10px 0;
-  }
-  .price-table .personal .li-price .price-span {
-    font-size: 7px;
-  }
-  .price-table .personal .li-content {
-    padding: 5px 2px;
-    font-size: 9px;
-    line-height: 18px;
-  }
-  .price-table .personal .li-button {
-    width: 95%;
-    height: 30px;
-    padding: 0;
-    font-size: 8px;
-    line-height: 26px;
-  }
-  .price-table .personal .li-content:last-child {
-    padding: 5px;
-  }
-}
-@media #{$bootstrap-iphone5-landscape} {
-  .price-table .personal .li-header {
-    padding: 10px 0;
   }
 }

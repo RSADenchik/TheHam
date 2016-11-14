@@ -144,11 +144,15 @@
   }
 }
 @media #{$bootstrap-sm} {
-  .team .team-person .person-info .name-person {
-    font-size: 12px;
-  }
-  .team .team-person .person-info .proff-person {
-    font-size: 12px;
+  .team .team-person {
+    width: 40%;
+    margin-left: 7%;
+    .person-info .name-person {
+      font-size: 12px;
+    }
+    .person-info .proff-person {
+      font-size: 12px;
+    }
   }
 }
 @media #{$bootstrap-xs} {
@@ -163,10 +167,16 @@
     margin: 3px 51% 20px 49%;
   }
   .team .team-person {
+    text-align: center;
+    display: block;
+    width: auto;
     height: auto;
+    margin: 0 auto 20px;
+    float: none;
   }
   .team .team-person .person-img {
-    height: 100px;
+    max-width: 260px;
+    margin: 0 auto;
   }
   .team .team-person:hover .person-img>.hover-add-img {
     text-align: center;
@@ -175,23 +185,17 @@
     width: 70%;
   }
   .team .team-person .person-img .person-foto {
-    height: 101px;
+    max-width: 260px;
   }
-  .team .team-person .person-info .hover-add-img {
-    margin-top: 0;
-    width: 100%;
-    margin-right: 0;
-  }
-  .team .team-person .person-info .hover-add-img .add-img {
-    width: 15px;
-    height: 15px;
-  }
-  .team .team-person .person-info .hover-add-img .submit-type {
-    margin: 28px auto;
-    font-size: 10px;
+  .team .team-person .person-info {
+    max-width: 260px;
+    margin: 0 auto;
   }
   .team .team-person .person-info .hover-add-img label {
     padding-right: 5px;
+    width: 30px;
+    height: 30px;
+    float: right;
   }
   .team .team-person .person-info .filename {
     line-height: 12px;
@@ -201,19 +205,14 @@
   }
   .team .team-person .person-info .name-person {
     padding-left: 0;
-    font-size: 9px;
-    padding-top: 19px;
-    line-height: 9px;
     text-align: center;
   }
   .team .team-person .person-info .proff-person {
     text-align: center;
-    padding-left: 0;
-    font-size: 8px;
-    line-height: 9px;
   }
   .team .team-person .person-social {
     height: 45px;
+    max-width: 260px;
   }
   .team .team-person .person-social a {
     line-height: 41px;

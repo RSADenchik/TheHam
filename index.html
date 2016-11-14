@@ -938,8 +938,17 @@
                                     <input class="input-email" type="text" placeholder="E-mail:" name="email" required="required">
                                     <textarea class="textarea-contact" name="message" cols="73" rows="8" placeholder="Message:" required="required"></textarea>
                                 <div class="shadow-button">
-                                    <input class="contact-button" type="submit" value="send request">
+                                    <input class="contact-button" type="submit" data-toggle="modal" data-target="#myModal">
+                                        <!--<button type="button" class="btn btn-primary contact-button" data-toggle="modal" data-target="#myModal">Small modal</button>-->
+                                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                Письмо успешно отправлено.
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+
                             </form>
                         </div>
                         <div class="map-google visible-xs" id="map-m"></div>
@@ -950,23 +959,22 @@
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12">
-                        <div class="logo">
+                    <!--<div class="col-xs-12">-->
+                        <div class="col-xs-12 col-sm-6 logo">
                             <span class="logo-1-part">the<strong class="logo-2-part">Ham</strong></span>
                             <p class="footer-info">Lorem ipsum dolor sit amet, con is sectetur adipiscing elit.
                                 Duis ut lob ortis nulla. Vestibulum ante ipsum primis itrices posuere cubilia.
                             </p>
                             <p class="footer-info-1">
-                                <span>Office :<br></span>
-                                795 Folsom Ave, Suite 600<br>
-                                San Francisco, CA 94107</p>
+                                <span>Office :<br>795 Folsom Ave, Suite 600<br>San Francisco, CA 94107<br></span>
+                                <span>Phone:<br> (91) 8547 632521<br></span>
+                            </p>
                             <p class="footer-info-2">
-                                 <span>Phone:</span><br> (91) 8547 632521<br>
-                                 <span>Fax:</span><br> (91) 11 4752 1433<br>
-                                 <span>Email:</span><br> info@canvas.com
+                                 <span>Fax:<br> (91) 11 4752 1433<br></span>
+                                 <span>Email:<br> info@canvas.com</span>
                             </p>
                         </div>
-                        <div class="recent-post hidden-portreit">
+                        <div class="col-xs-12 col-sm-6 recent-post">
                             <h2 class="title-recent">recent post</h2>
                             <div class="standart-post">
                                 <img class="footer-img-post" src="img/footer/post1.jpg" alt="">
@@ -987,7 +995,7 @@
                                 <p class="date-post">10 March, 2015</p>
                             </div>
                         </div>
-                        <div class="tags-post">
+                        <div class="col-xs-12 col-sm-6 tags-post">
                             <h2 class="title-tags">tags</h2>
                             <table class="tags-table">
                                 <tr>
@@ -1018,7 +1026,7 @@
                                 <input class="submit-mail" type="submit" value="GO">
                             </div>
                         </div>
-                        <div class="flicke-feed">
+                        <div class="col-xs-12 col-sm-6 flicke-feed">
                             <h2 class="title-flicke">Flicke Feed</h2>
                             <div class="img-group">
                                 <img class="img-flicke" src="img/footer/flick1.png" alt="">
@@ -1029,7 +1037,7 @@
                                 <img class="img-flicke" src="img/footer/flick6.jpg" alt="">
                             </div>
                         </div>
-                    </div>
+                    <!--</div>-->
                 </div>
             </div>
         </footer>

@@ -1,7 +1,44 @@
 $(document).ready(function() {
-    /* Button-search */
+    /* Button-search desktop and tablet */
     $('#search-ham').on('click', function () {
-        $('#forma').toggle();
+
+        var search_button = $('.search-button');
+        var search_input = $('.search-input');
+        var search_button_input = $('.search-button-input');
+
+        if ( search_button.hasClass('active-button') && search_button_input.hasClass('active-button-input') && search_input.hasClass('active-input')  ) {
+
+            search_button.removeClass('active-button');
+            search_input.removeClass('active-input');
+            search_button_input.removeClass('active-button-input');
+
+            return true;
+        }
+        else {
+            search_button.addClass('active-button');
+            search_input.addClass('active-input');
+            search_button_input.addClass('active-button-input');
+        }
+    });
+    /* Button-search mobile divice */
+    $('#m-search').on('click', function () {
+        var m_search_btn = $('.m-btn-search');
+        var m_search_input = $('.search-m-input');
+        var m_search_input_btn = $('.m-btn');
+
+        if ( m_search_btn.hasClass('m-btn-active') && m_search_input.hasClass('active-m-input') && m_search_input_btn.hasClass('m-btn-input-active') ) {
+
+            m_search_btn.removeClass('m-btn-active');
+            m_search_input.removeClass('active-m-input');
+            m_search_input_btn.removeClass('m-btn-input-active');
+
+            return true;
+        }
+        else {
+            m_search_btn.addClass('m-btn-active');
+            m_search_input.addClass('active-m-input');
+            m_search_input_btn.addClass('m-btn-input-active');
+        }
     });
     // Фильтр блока .work
     var filterizd =  $('.filtr-container').filterizr( {

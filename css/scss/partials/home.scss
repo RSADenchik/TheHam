@@ -1,24 +1,24 @@
 .home {
   background: url(../img/home.jpg) 100% 100% no-repeat;
   background-size: cover;
+  padding-top: 180px;
     .home-title {
       width: 100%;
-      padding-top: 15%;
       font-family: $global-montserrat-regular;
       text-transform: uppercase;
       .pre-title {
         font-size: 35px;
         font-weight: 700;
-        line-height: 50px;
+        margin: 20px auto;
         color: white;
         .color-aqua {
           color: $color-aqua;
           font-size: 35px;
-          line-height: 50px;
           font-weight: 700;
         }
       }
       .home-main-title {
+        margin: 20px 0;
         font-size: 79px;
         font-weight: 700;
         line-height: 84px;
@@ -27,9 +27,9 @@
       }
       .last-title {
         font-size: 34px;
-        margin-top: 10px;
+        margin: 20px 0;
         font-weight: 300;
-        line-height: 84px;
+        line-height: 50px;
         color: #d4d4d4;
       }
     }
@@ -56,6 +56,9 @@
         font-weight: 700;
         line-height: 32px;
         text-transform: uppercase;
+        &:active {
+          opacity: 0.7;
+        }
       }
       .right-button {
         width: 165px;
@@ -70,6 +73,9 @@
         font-weight: 700;
         line-height: 32px;
         text-transform: uppercase;
+        &:active {
+          opacity: 0.7;
+        }
       }
     }
     .rslides {
@@ -108,8 +114,7 @@
     }
   }
 @media #{$bootstrap-sm} {
-  .home .home-title {
-    padding-top: 23%;
+  .home {
   }
   .home .home-title .home-main-title {
     font-size: 65px;
@@ -121,17 +126,14 @@
 }
 @media #{$bootstrap-xs} {
   .home {
-    margin-top: 50px;
-  }
-  .home .home-title {
-    padding-top: 6%;
+    padding-top: 90px;
   }
   .home .home-title .pre-title {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 20px;
   }
   .home .home-title .pre-title .color-aqua {
-    font-size: 16px;
+    font-size: 15px;
   }
   .home .home-title .home-main-title {
     font-size: 26px;
@@ -143,17 +145,18 @@
     line-height: 30px;
   }
   .home .button-panel {
-    height: 185px;
+    height: 220px;
+    margin-top: 0;
   }
   .home .button-panel .left-button {
     margin-right: 5px;
-    width: 130px;
-    font-size: 12px;
+    width: 120px;
+    font-size: 11px;
     height: 50px;
   }
   .home .button-panel .right-button {
-    width: 135px;
-    font-size: 12px;
+    width: 120px;
+    font-size: 11px;
     height: 50px;
   }
   .home .rslides {
@@ -175,7 +178,7 @@
     height: 30px;
   }
 }
-@media #{$bootstrap-min-height-xs} {
+@media #{$bootstrap-iphone5-landscape} {
   .home .rslides {
     top: -25%;
     margin-right: 3%;

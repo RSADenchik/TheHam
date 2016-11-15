@@ -89,6 +89,13 @@
         .add-img {
           width: 30px;
           height: 30px;
+          &:hover {
+            opacity: 0.8;
+          }
+          &:active {
+            opacity: 0.7;
+          }
+
         }
         .submit-type {
           display: none;

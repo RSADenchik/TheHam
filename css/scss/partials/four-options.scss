@@ -1,7 +1,5 @@
  .four-options {
    .option-1 {
-     float: left;
-     width: 25%;
      height: 370px;
      border-top: 4px solid $color-aqua;
      background: #1c2a33 url('../img/option-img-1.png') center 35% no-repeat;
@@ -16,8 +14,6 @@
       }
    }
    .option-2 {
-     float: left;
-     width: 25%;
      height: 370px;
      border-top: 4px solid white;
      background: $color-aqua url('../img/option-img-2.png') center 35% no-repeat;
@@ -32,8 +28,6 @@
       }
    }
    .option-3 {
-     float: left;
-     width: 25%;
      height: 370px;
      border-top: 4px solid $color-aqua;
      background: #1c2a33 url('../img/option-img-3.png') center 35% no-repeat;
@@ -48,8 +42,6 @@
       }
    }
    .option-4 {
-     float: left;
-     width: 25%;
      height: 370px;
      border-top: 4px solid white;
      background: $color-aqua url('../img/option-img-4.png') center 35% no-repeat;
@@ -70,7 +62,12 @@
    .four-options .option-3,
    .four-options .option-4 {
      height: 250px;
-     width: 50%;
+   }
+   .four-options .option-2 {
+     float: left;
+   }
+   .four-options .option-3 {
+     float: right;
    }
    .four-options .option-1 .option-title-1,
    .four-options .option-2 .option-title-2,
@@ -85,7 +82,6 @@
    .four-options .option-3,
    .four-options .option-4 {
      min-height: 100px;
-     width: 100%;
      position: relative;
    }
    .four-options .option-1 .option-title-1,

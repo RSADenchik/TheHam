@@ -137,6 +137,7 @@
         font-size: 14px;
         font-weight: 300;
         line-height: 36px;
+        cursor: pointer;
         &:hover {
           background-color: $color-aqua;
         }
@@ -188,6 +189,10 @@
         font-weight: 700;
         line-height: 26px;
         outline: 0;
+        cursor: pointer;
+        &:active {
+          opacity: 0.7;
+        }
       }
     }
   }

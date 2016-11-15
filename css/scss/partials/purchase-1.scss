@@ -55,6 +55,9 @@
     font-weight: 700;
     line-height: 32px;
     text-transform: uppercase;
+    &:active {
+      opacity: 0.7;
+    }
   }
   .white-border {
     -webkit-box-shadow: 0px -5px 2px 0px rgba(255,255,255,1);

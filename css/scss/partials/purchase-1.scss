@@ -27,6 +27,21 @@
     margin-top: 50px;
     width: 42%;
     list-style: none;
+    input[type="checkbox"] {
+      display:none;
+    }
+    input[type="checkbox"] + label span {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin: -10px 4px 0 0;
+      vertical-align: middle;
+      background: url(/img/icons/checkbox.png) -33px 0 no-repeat;
+      cursor: pointer;
+    }
+    input[type="checkbox"]:checked + label span {
+      background:url(/img/icons/checkbox.png) no-repeat;
+    }
     .li-purchase-1 {
       color: #f7f7f7;
       width: 90%;

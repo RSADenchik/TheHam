@@ -1,19 +1,14 @@
   .about {
     background: #0a0f14 url(../img/about-img.png) no-repeat 4% 90%;
     background-size: 42% 58%;
-    height: 676px;
+    padding: 100px 0;
     opacity: 0.9;
     .about-container {
       .about-informations {
-        float: right;
-        margin-bottom: 50px;
-        width: 60%;
+        text-align: center;
         .about-header {
           width: 100%;
           .about-title {
-            text-align: left;
-            margin-top: 100px;
-            margin-left: 55px;
             font-family: $global-montserrat-regular;
             font-size: 36px;
             line-height: 40px;
@@ -21,7 +16,7 @@
             color: white;
           }
           .h-line-1 {
-            margin: auto 0 auto 200px;
+            margin: 0 auto;
             width: 76px;
             height: 1px;
             background-color: $color-aqua;
@@ -29,8 +24,7 @@
           .h-line-2 {
             width: 76px;
             height: 1px;
-            margin: 4px auto 0 220px;
-            margin-right: 47%;
+            margin: 4px 47% 0 49%;
             background-color: $color-aqua;
           }
         }
@@ -50,7 +44,6 @@
         }
         .about-tab {
           width: 100%;
-          margin-left: 55px;
           height: 50px;
           margin-top: 25px;
           border: none;
@@ -94,15 +87,11 @@
             transition: none;
             -webkit-transition: none;
           }
-          .fix-row {
-            margin: 0;
-            margin-left: 55px;
-          }
           // Content history
           .p-content {
             width: 85%;
             max-width: 520px;
-            margin: 0 auto 25px 55px;
+            margin: 20px auto;
             text-align: justify;
             font-family: $global-montserrat-regular;
             font-size: 14px;
@@ -112,11 +101,25 @@
           }
           .history {
             width: 100%;
-            height: auto;
             .history-info {
               width: 25%;
-              min-width: 250px;
+              min-width: 240px;
               display: inline-block;
+              input[type="checkbox"] {
+                display:none;
+              }
+              input[type="checkbox"] + label span {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                margin: -10px 4px 0 0;
+                vertical-align: middle;
+                background: url(/img/icons/checkbox.png) -33px 0 no-repeat;
+                cursor: pointer;
+              }
+              input[type="checkbox"]:checked + label span {
+                background:url(/img/icons/checkbox.png) no-repeat;
+              }
             }
             .done-icon {
               float: left;
@@ -126,7 +129,7 @@
             }
             .done-list {
               float: left;
-              width: 82%;
+              width: 100%;
               font-family: $global-montserrat-regular;
               font-size: 14px;
               line-height: 38px;
@@ -138,7 +141,7 @@
           .biography {
             width: 85%;
             max-width: 520px;
-            margin: 0 auto 25px 55px;
+            margin: 20px auto;
             text-align: justify;
             font-family: $global-montserrat-regular;
             font-size: 14px;
@@ -155,6 +158,7 @@
             margin-right: 20px;
             .block-skill {
               height: 39px;
+              text-align: left;
               margin-left: 38px;
               margin-right: 80px;
               margin-bottom: 14px;
@@ -248,24 +252,74 @@
     }
   }
   @media #{$bootstrap-sm} {
-    .about .about-informations .tab-content .done-list {
-
-    }
-    .about .about-container .about-informations .tab-content .history .done-list {
-      font-size: 11px;
-      width: 44%;
-    }
-    .about .about-container .about-informations .tab-content .history .history-info {
-      width: 100%;
-    }
-    .about .about-container .about-informations .about-tab .li-about {
-      margin-right: 10px;
-    }
+      .about {
+        background: #0a0f14;
+        .about-container {
+          .about-informations {
+            float: none;
+            width: 100%;
+            .about-header {
+              .about-title {
+                text-align: center;
+                margin: 0;
+              }
+              .h-line-1 {
+                margin: 20px auto 0;
+                width: 76px;
+                height: 1px;
+                background-color: $color-aqua;
+              }
+              .h-line-2 {
+                width: 76px;
+                height: 1px;
+                margin: 4px 51% 0 49%;
+                background-color: $color-aqua;
+              }
+            }
+            .about-tab {
+              width: 100%;
+              text-align: center;
+              margin: 0;
+              margin-top: 25px;
+            }
+            .tab-content {
+                .p-content {
+                  margin: 20px auto 0;
+                }
+                .history {
+                    margin: 0;
+                    margin-left: 90px;
+                    .history-info {
+                      padding-top: 50px;
+                      float: left;
+                      width: 30%;
+                      min-width: 270px;
+                    }
+                    .done-icon {
+                      float: none;
+                    }
+                    .done-list {
+                      float: none;
+                      width: 85%;
+                      font-size: 13px;
+                    }
+                }
+                .biography {
+                  margin: 20px auto 0;
+                }
+                #skill {
+                  margin: 25px auto 0;
+                }
+            }
+          }
+        }
+      }
   }
   @media #{$bootstrap-xs} {
     .about {
       background: #0a0f14;
       height: auto;
+      padding-top: 30px;
     }
     .about, .about .about-container {
       height: auto;
@@ -280,8 +334,7 @@
     }
     .about .about-container .about-informations .about-header .about-title {
       font-size: 24px;
-      margin-top: 35px;
-      margin-left: 0;
+      margin: 0;
       text-align: center;
     }
     .about .about-container .about-informations .about-header .h-line-1 {
@@ -291,10 +344,9 @@
       margin: 3px 51% 0 49%;
     }
     .about .about-container .about-informations .tab-content .history .done-list {
-      text-align: left;
       font-size: 12px;
       padding-top: 5px;
-      line-height: 16px;
+      line-height: 30px;
     }
     .about .about-container .about-informations .tab-content .history {
       text-align: center;
@@ -303,7 +355,6 @@
     .about .about-container .about-informations .tab-content .history .history-info {
       width: 30%;
       min-width: 240px;
-      padding-left: 25px;
       margin: 0 auto 20px;
     }
 

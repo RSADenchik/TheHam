@@ -44,6 +44,9 @@ $(document).ready(function() {
     var filterizd =  $('.filtr-container').filterizr( {
         animationDuration: 0.6,
         layout: 'sameSize',
+        "delay": 25,
+        selector: '.filtr-container',
+        setupControls: true,
         filterOutCss: {
             'opacity': 0,
             transform: 'scale(0.75)'

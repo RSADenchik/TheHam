@@ -1,7 +1,8 @@
 .breaking-news {
   width: 100%;
+  margin-top: 100px;
   .news-title {
-    margin-top: 100px;
+    margin: 0;
     color: #4e4e4e;
     font-family: $global-montserrat-regular;
     font-size: 36px;
@@ -86,6 +87,9 @@
   }
 }
 @media #{$bootstrap-xs} {
+  .breaking-news {
+    margin-top: 25px;
+  }
   .breaking-news .news-title {
     margin-top: 20px;
     font-size: 20px;
@@ -101,8 +105,13 @@
     margin-bottom: 20px;
   }
   .breaking-news .block-news {
-    margin: 15px auto 0;
-    width: 90%;
+    margin: 15px auto;
+    width: 80%;
+    .img-news {
+      width: 75%;
+      margin: 0 auto;
+      display: block;
+    }
   }
   .breaking-news .block-news .title .post-title {
     margin-top: 5px;

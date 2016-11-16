@@ -1,13 +1,12 @@
 .features {
   background-color: white;
-  margin-bottom: 100px;
+  padding: 100px 0;
   .hover-block {
     &:hover .feature-pretitle {
     color: $color-aqua;
     }
   }
     .feature-title {
-      margin-top: 100px;
       text-align: center;
       color: #4e4e4e;
       font-family: $global-montserrat-regular;
@@ -33,7 +32,8 @@
       }
     }
     .feature-info {
-      margin-bottom: 50px;
+      margin: 0 auto 50px;
+      width: 75%;
       color: #777;
       font-family: $global-montserrat-regular;
       font-size: 14px;

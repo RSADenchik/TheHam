@@ -1,9 +1,7 @@
 .fun-fact {
   width: 100%;
-  margin-top: 100px;
+  padding-top: 100px;
   .fact-1 {
-    float: left;
-    width: 25%;
     height: 374px;
     position: relative;
     border-top: 4px solid $color-aqua;
@@ -34,11 +32,9 @@
   }
 
   .fact-2 {
-    float: left;
     height: 374px;
     position: relative;
     border-top: 4px solid #25333c;
-    width: 25%;
     background: $color-aqua url('../img/img-fact-2.png') center 42% no-repeat;
     .fact-title-2 {
       position: absolute;
@@ -65,11 +61,9 @@
     }
   }
   .fact-3 {
-    float: left;
     height: 374px;
     position: relative;
     border-top: 4px solid $color-aqua;
-    width: 25%;
     background: #1c2a33 url('../img/img-fact-3.png') center 42% no-repeat;
     .fact-title-3 {
       position: absolute;
@@ -96,12 +90,10 @@
     }
   }
   .fact-4 {
-    float: left;
     height: 374px;
     position: relative;
     border-top: 4px solid #25333c;
-    width: 25%;
-    background: #1c2a33 url('../img/img-fact-4.png') center 42% no-repeat;
+    background: $color-aqua url('../img/img-fact-4.png') center 42% no-repeat;
     .fact-title-4 {
       position: absolute;
       bottom: 23%;
@@ -128,12 +120,11 @@
   }
 }
 @media #{$bootstrap-sm} {
-  .fun-fact .fact-1,
-  .fun-fact .fact-2,
-  .fun-fact .fact-3,
+  .fun-fact .fact-3 {
+    float: right;
+  }
   .fun-fact .fact-4 {
-    width: 50%;
-    background-size: cover;
+    float: left;
   }
   .fun-fact .fact-1 .fact-title-1,
   .fun-fact .fact-2 .fact-title-2,
@@ -150,12 +141,11 @@
 }
   @media #{$bootstrap-xs} {
     .fun-fact {
-      margin-top: 20px;
+      padding-top: 20px;
        .fact-1,
        .fact-2,
        .fact-3,
        .fact-4{
-         width: 100%;
          min-height: 130px;
          background-size: cover;
        }

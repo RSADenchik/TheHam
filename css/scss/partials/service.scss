@@ -1,7 +1,7 @@
 .service {
-
+  padding: 100px 0;
   .service-title {
-      margin-top: 70px;
+      margin: 0;
       text-align: center;
       color: #4e4e4e;
       font-family: $global-montserrat-regular;
@@ -73,7 +73,7 @@
   .tab-content {
     margin-top: 50px;
     width: 100%;
-    min-height: 300px;
+    min-height: 200px;
     .content-img {
       float: left;
       margin-left: 10.5%;

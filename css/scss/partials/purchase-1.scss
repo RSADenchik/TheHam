@@ -1,12 +1,11 @@
 .purchase-1 {
-  margin-top: 100px;
-  height: 924px;
+  padding: 100px 0;
   background: #233441 url(../img/notebook-img.png) no-repeat left bottom;
-  background-size: 56% 78%;
+  background-size: 50% 73%;
   .purchase-title-1 {
-    margin-top: 100px;
     font-family: $global-montserrat-regular;
     line-height: 65px;
+    margin: 0;
     text-transform: uppercase;
     color: white;
     font-size: 50px;
@@ -82,16 +81,13 @@
 }
 @media #{$bootstrap-md} {
   .purchase-1 {
-    height: 665px;
     background-size: 58% 76%;
     .purchase-title-1 {
       font-size: 34px;
-      margin-top: 76px;
       line-height: 28px;
     }
     .purchase-title-2 {
       font-size: 32px;
-      line-height: 28px;
     }
     .ul-purchase-1 {
       margin-top: 30px;
@@ -127,10 +123,8 @@
 
 @media #{$bootstrap-sm} {
   .purchase-1 {
-    height: 670px;
-    background-size: 63% 84%;
+    background-size: 63% 77%;
     .purchase-title-1 {
-      margin-top: 50px;
       font-size: 24px;
       line-height: 20px;
     }
@@ -148,12 +142,9 @@
 }
 @media #{$bootstrap-xs} {
   .purchase-1 {
-    margin-top: 20px;
-    background: #233441 url(../img/notebook-img.png) no-repeat left bottom;
-    background-size: 45% 63%;
-    height: auto;
+    padding: 30px 0;
+    background: #233441;
     .purchase-title-1 {
-      margin-top: 20px;
       margin-bottom: 0;
       font-size: 16px;
       line-height: 27px;
@@ -165,11 +156,11 @@
     }
     .ul-purchase-1 {
       margin: 10px auto;
-      width: 56%;
-      float: right;
+      text-align: center;
+      width: 100%;
       padding: 0;
       .li-purchase-1 {
-        line-height: 15px;
+        line-height: 30px;
         font-size: 10px;
       }
       .done-icon {

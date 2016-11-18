@@ -1,6 +1,6 @@
 .breaking-news {
   width: 100%;
-  margin-top: 100px;
+  padding-top: 100px;
   .news-title {
     margin: 0;
     color: #4e4e4e;
@@ -88,10 +88,9 @@
 }
 @media #{$bootstrap-xs} {
   .breaking-news {
-    margin-top: 25px;
+    padding: 30px 0;
   }
   .breaking-news .news-title {
-    margin-top: 20px;
     font-size: 20px;
   }
   .padding-horizontal {

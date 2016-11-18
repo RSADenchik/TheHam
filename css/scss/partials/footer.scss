@@ -1,14 +1,11 @@
 .footer {
-  height: 757px;
+  padding: 100px 0;
   background-color: #1c2b33;
   .logo {
     float: left;
     font-family: $global-montserrat-regular;
     font-size: 40px;
-    width: 19%;
-    margin-left: 3%;
     line-height: 50px;
-    margin-top: 100px;
     .logo-1-part {
       color: white;
       font-weight: 400;
@@ -51,10 +48,7 @@
     }
   }
   .recent-post {
-    width: 33%;
     float: left;
-    margin-top: 85px;
-    margin-left: 2%;
     .title-recent {
       color: white;
       margin-bottom: 63px;
@@ -78,9 +72,9 @@
       height: 66px;
     }
     .standart-title {
+      float: left;
       margin: 0;
-      margin-left: 20%;
-      padding-left: 24px;
+      padding-left: 15px;
       color: white;
       font-family: $global-montserrat-regular;
       font-size: 16px;
@@ -89,8 +83,9 @@
       text-transform: uppercase;
     }
     .standart-info {
-      margin-left: 20%;
-      padding-left: 24px;
+      width: 60%;
+      float: left;
+      padding-left: 15px;
       padding-top: 8px;
       color: #b2b2b2;
       font-family: $global-montserrat-regular;
@@ -104,16 +99,12 @@
       font-size: 14px;
       font-weight: 300;
       line-height: 30px;
-      padding: 0;
-      padding-left: 24px;
-      margin-left: 20%;
+      clear: both;
+      padding-left: 93px;
     }
   }
   .tags-post {
-    width: 20%;
     float: left;
-    margin-top: 85px;
-    margin-left: 2%;
     .title-tags {
       margin-bottom: 50px;
       color: white;
@@ -197,12 +188,9 @@
     }
   }
   .flicke-feed {
-    width: 19%;
     float: left;
-    margin-top: 85px;
-    margin-left: 2%;
     .title-flicke {
-      margin-bottom: 50px;
+      margin-bottom: 58px;
       color: white;
       font-family: $global-montserrat-regular;
       font-size: 18px;
@@ -214,114 +202,17 @@
       width: 100%;
       display: inline-block;
       .img-flicke {
-        width: 73px;
-        height: 74px;
+        width: 65px;
+        height: 66px;
         margin: 7px;
       }
     }
   }
 }
-@media #{$bootstrap-ipad-landscape} {
-  .footer {
-    height: auto;
-    .logo {
-      text-align: center;
-      margin-top: 50px;
-      width: 45%;
-      margin-left: 2%;
-      .footer-info {
-        text-align: justify;
-        font-size: 16px;
-        margin-top: 25px;
-      }
-      .footer-info-1 {
-        line-height: 30px;
-        margin-top: 30px;
-        font-size: 16px;
-        text-align: left;
-      }
-      .footer-info-2 {
-        line-height: 30px;
-        margin-top: 30px;
-        font-size: 16px;
-        float: none;
-        width: 45%;
-        text-align: left;
-      }
-    }
-    .recent-post {
-      margin-top: 50px;
-      width: 50%;
-      float: left;
-      margin-left: 2%;
-      .title-recent {
-        margin-bottom: 40px;
-        text-align: center;
-      }
-      .footer-img-post {
-        float: left;
-        display: block;
-        width: 100px;
-        height: 100px;
-      }
-      .standart-title {
-        margin: 0;
-        padding: 0;
-        padding-left: 15px;
-        float: left;
-        line-height: 18px;
-      }
-      .standart-info {
-        margin: 0;
-        padding: 0 0 15px 15px;
-        width: 75%;
-        float: left;
-      }
-      .date-post {
-        padding: 0 0 0 46px;
-      }
-    }
-    .tags-post {
-      margin-top: 10px;
-      margin-bottom: 30px;
-      width: 50%;
-      .title-tags {
-        margin-bottom: 30px;
-        text-align: center;
-      }
-      .tags-table {
-        padding-bottom: 30px;
-        .td-table {
-          line-height: 45px;
-        }
-      }
-      .newsletter-title {
-        text-align: center;
-        margin: 20px auto 15px;
-      }
-      .newsletter-info {
-        text-align: center;
-      }
-      .input-field .submit-mail {
-        width: 25%;
-      }
-    }
-    .flicke-feed {
-      margin-top: 10px;
-      text-align: center;
-      width: 40%;
-      .title-flicke {
-        margin: 20px auto 40px;
-        text-align: center;
-      }
-      .img-group {
-        margin: 0 auto;
-        .img-flicke {
-          width: 100px;
-          height: 100px;
-        }
-      }
-    }
+@media #{$bootstrap-md} {
+  .footer .flicke-feed,
+  .footer .tags-post {
+    padding-top: 50px;
   }
 }
 @media #{$bootstrap-sm} {
@@ -379,7 +270,7 @@
           float: left;
         }
         .date-post {
-          padding: 0 0 0 46px;
+          padding: 0 0 0 115px;
         }
       }
       .tags-post {
@@ -451,7 +342,7 @@
          text-align: center;
          width: 100%;
           .title-recent {
-            margin-bottom: 10px;
+            margin-bottom: 30px;
           }
           .standart-post {
             width: auto;
@@ -461,18 +352,17 @@
             }
           }
          .footer-img-post {
+           margin-left: 10%;
            width: 100px;
-           float: none;
+           float: left;
            height: 100px;
          }
          .standart-title {
-           line-height: 45px;
-           margin: 0;
-           padding: 0;
+           line-height: 20px;
          }
         .standart-info {
-          padding: 0;
-          margin: 0 auto;
+          text-align: left;
+          width: 50%;
           line-height: 26px;
           font-size: 14px;
         }

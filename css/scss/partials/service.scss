@@ -108,50 +108,52 @@
   }
 }
 @media #{$bootstrap-xs} {
-  .service .service-title {
-    margin-top: 20px;
-    font-size: 20px;
-  }
-  .service .h-line-1 {
-    margin-top: 15px;
-  }
-  .service .h-line-2 {
-    margin-bottom: 20px;
-  }
-  .service .service-ul {
-    display: block;
-    margin: 0 auto;
-  }
-  .service .service-ul .service-li {
-    margin-bottom: 14px;
-    display: inline-block;
-  }
-  .service .service-ul .service-li>a {
-    margin: 0;
-    padding: 10px 8px;
-    border: 1px solid #ebebeb;
-    position: relative;
-    line-height: 30px;
-    font-size: 10px;
-  }
-  .service .service-ul .service-li a:focus:after, .service .service-ul .service-li a:hover:after {
-    left: 38%;
-  }
-  .service .tab-content {
-    margin-top: 10px;
-    width: 100%;
-    min-height: 175px;
-  }
-  .service .tab-content .content-img {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-  .service .tab-content .service-info {
-    clear: both;
-    float: none;
-    width: 90%;
-    margin: 20px auto 40px auto;
-    font-size: 16px;
+  .service {
+    padding: 50px 0;
+    .service-title {
+      font-size: 20px;
+    }
+    .h-line-1 {
+      margin-top: 15px;
+    }
+    .h-line-2 {
+      margin-bottom: 20px;
+    }
+    .service-ul {
+      display: block;
+      margin: 0 auto;
+    }
+    .service-ul .service-li {
+      margin-bottom: 14px;
+      display: inline-block;
+    }
+    .service-ul .service-li > a {
+      margin: 0;
+      padding: 10px 8px;
+      border: 1px solid #ebebeb;
+      position: relative;
+      line-height: 30px;
+      font-size: 10px;
+    }
+    .service-ul .service-li a:focus:after, .service .service-ul .service-li a:hover:after {
+      left: 38%;
+    }
+    .tab-content {
+      margin-top: 10px;
+      width: 100%;
+      min-height: 175px;
+    }
+    .tab-content .content-img {
+      float: none;
+      display: block;
+      margin: 0 auto;
+    }
+    .tab-content .service-info {
+      clear: both;
+      float: none;
+      width: 90%;
+      margin: 20px auto 40px auto;
+      font-size: 16px;
+    }
   }
 }

@@ -148,101 +148,100 @@
   }
 }
 @media #{$bootstrap-xs} {
-  .work .work-title {
-    margin-top: 20px;
-    text-align: center;
-    color: #4e4e4e;
-    font-family: $global-montserrat-regular;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 40px;
-  }
-  .work .h-line-1 {
-    margin: 16px auto 0;
-    width: 76px;
-    height: 1px;
-    background-color: #18cfab;
-  }
-  .work .h-line-2 {
-    margin: 3px 51% 20px 49%;
-    width: 76px;
-    height: 1px;
-    background-color: #18cfab;
-  }
-  .work .work-menu {
-    text-align: center;
-    margin: 0 auto 40px;
-    width: 100%;
-    list-style: none;
-    padding: 0;
-  }
-  .work .work-menu .work-li {
-    display: inline-block;
-    border: 1px solid #ebebeb;
-    margin-left: -5px;
-  }
-  .work .work-menu .work-a {
-    padding: 8px 10px;
-    color: #717171;
-    font-family: $global-montserrat-regular;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 50px;
-    cursor: pointer;
-  }
-  .work .filtr-container {
-    max-height: 330px;
-    top: -50px;
-    margin-left: 16%;
-  }
-  .work .filtr-item {
-    width: 120px;
-  }
-  .work .image-block-hover .hover-img {
-    padding-top: 5%;
-  }
-  .work .image-block-hover .title-block-hover {
-    margin-top: 10px;
-    color: #18cfab;
-    font-family: $global-montserrat-regular;
-    font-weight: 700;
-    line-height: 17px;
-    text-transform: uppercase;
-  }
-  .work .image-block-hover .info-block-hover {
-    color: #8a8a8a;
-    font-family: $global-montserrat-regular;
-    font-weight: 300;
-    line-height: 18px;
-  }
-  .work .button-upload {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .work .button-upload .upload-button {
-    margin: 0 auto;
-    width: 120px;
-    height: 50px;
-    background-color: #18cfab;
-    border: none;
-    font-size: 12px;
-    border-radius: 4px;
-    color: #fff;
-    font-family: $global-montserrat-regular;
-    line-height: 12px;
-  }
-  .work .button-upload .icon-plus {
-    padding-left: 0;
+  .work {
+    padding: 50px 0;
+    .work-title {
+      margin-top: 0;
+      text-align: center;
+      color: #4e4e4e;
+      font-family: $global-montserrat-regular;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 40px;
+    }
+    .h-line-1 {
+      margin: 16px auto 0;
+      width: 76px;
+      height: 1px;
+      background-color: #18cfab;
+    }
+    .h-line-2 {
+      margin: 3px 51% 20px 49%;
+      width: 76px;
+      height: 1px;
+      background-color: #18cfab;
+    }
+    .work-menu {
+      text-align: center;
+      margin: 0 auto 40px;
+      width: 100%;
+      list-style: none;
+      padding: 0;
+    }
+    .work-menu .work-li {
+      display: inline-block;
+      border: 1px solid #ebebeb;
+      margin-left: -5px;
+    }
+    .work-menu .work-a {
+      padding: 8px 10px;
+      color: #717171;
+      font-family: $global-montserrat-regular;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 50px;
+      cursor: pointer;
+    }
+    .filtr-container {
+      max-height: 330px;
+      top: -50px;
+      margin: 0;
+      width: 100%;
+    }
+    .filtr-item {
+      width: 120px;
+    }
+    .image-block-hover .hover-img {
+      padding-top: 5%;
+    }
+    .image-block-hover .title-block-hover {
+      margin-top: 10px;
+      color: #18cfab;
+      font-family: $global-montserrat-regular;
+      font-weight: 700;
+      line-height: 17px;
+      text-transform: uppercase;
+    }
+    .image-block-hover .info-block-hover {
+      color: #8a8a8a;
+      font-family: $global-montserrat-regular;
+      font-weight: 300;
+      line-height: 18px;
+    }
+    .button-upload {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .button-upload .upload-button {
+      margin: 0 auto;
+      width: 120px;
+      height: 50px;
+      background-color: #18cfab;
+      border: none;
+      font-size: 12px;
+      border-radius: 4px;
+      color: #fff;
+      font-family: $global-montserrat-regular;
+      line-height: 12px;
+    }
+    .button-upload .icon-plus {
+      padding-left: 0;
+    }
   }
 }
 @media #{$bootstrap-iphone5-landscape} {
   .work .filtr-container {
     max-height: 220px;
   }
-}
-@media #{$bootstrap-iphone5-portrait} {
-  .work .filtr-container {
-    margin-left: 4%;
-}
 }

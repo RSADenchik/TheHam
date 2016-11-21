@@ -139,7 +139,7 @@
 @media #{$bootstrap-xs} {
   .main-screen-home {
     .content {
-
+       padding-top: 18vh;
       .home-title .pre-title {
         font-size: 15px;
         line-height: 20px;
@@ -188,6 +188,9 @@
 
 @media #{$bootstrap-min-height-xs} {
   .main-screen-home {
+    .content {
+      padding-top: 25vh;
+    }
     .content .rslides {
       top: 24%;
       margin-left: 4%;

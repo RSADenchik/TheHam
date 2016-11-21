@@ -1,7 +1,15 @@
-.home {
-  background: url(../img/home.jpg) 100% 100% no-repeat;
-  background-size: cover;
-  padding-top: 180px;
+.main-screen-home {
+
+  .home {
+    background: url(../img/home.jpg) 100% 100% no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+  }
+  .content {
+    height: 100vh;
+    padding-top: 25vh;
     .home-title {
       width: 100%;
       font-family: $global-montserrat-regular;
@@ -21,7 +29,7 @@
         margin: 20px 0;
         font-size: 79px;
         font-weight: 700;
-        line-height: 84px;
+        line-height: 70px;
         text-transform: uppercase;
         color: white;
       }
@@ -33,14 +41,10 @@
         color: #d4d4d4;
       }
     }
-    .button-panel {
-      height: 200px;
-      margin-top: 5%;
-      position: relative;
       .white-border {
-        -webkit-box-shadow: 0px -5px 2px 0px rgba(255,255,255,1);
-        -moz-box-shadow: 0px -5px 2px 0px rgba(255,255,255,1);
-        box-shadow: 0px -5px 2px 0px rgba(255,255,255,1);
+        -webkit-box-shadow: 0px -5px 2px 0px rgba(255, 255, 255, 1);
+        -moz-box-shadow: 0px -5px 2px 0px rgba(255, 255, 255, 1);
+        box-shadow: 0px -5px 2px 0px rgba(255, 255, 255, 1);
       }
       .left-button {
         width: 165px;
@@ -77,14 +81,14 @@
           opacity: 0.7;
         }
       }
-    }
     .rslides {
       width: 110px;
       position: absolute;
-      top: 0;
-      right: 4%;
+      left: 0;
+      margin: 20px auto;
+      right: 0;
       img {
-        opacity: 0.4;
+        opacity: 0.6;
       }
     }
     .Previous {
@@ -113,74 +117,83 @@
       }
     }
   }
+}
+@media #{$bootstrap-lg} {
+  .main-screen-home .content .home-title .home-main-title {
+    margin: 15px auto;
+  }
+  .main-screen-home .content .home-title .last-title {
+    margin: 15px auto;
+  }
+}
 @media #{$bootstrap-sm} {
-  .home {
+  .main-screen-home {
+      .content .home-title .home-main-title {
+        font-size: 65px;
+      }
+      .content .home-title .last-title {
+        font-size: 25px;
+      }
   }
-  .home .home-title .home-main-title {
-    font-size: 65px;
-  }
-  .home .home-title .last-title {
-    font-size: 25px;
-  }
-
 }
 @media #{$bootstrap-xs} {
-  .home {
-    padding-top: 90px;
-  }
-  .home .home-title .pre-title {
-    font-size: 15px;
-    line-height: 20px;
-  }
-  .home .home-title .pre-title .color-aqua {
-    font-size: 15px;
-  }
-  .home .home-title .home-main-title {
-    font-size: 26px;
-    line-height: 22px;
-    margin-top: 10px;
-  }
-  .home .home-title .last-title {
-    font-size: 10px;
-    line-height: 30px;
-  }
-  .home .button-panel {
-    height: 220px;
-    margin-top: 0;
-  }
-  .home .button-panel .left-button {
-    margin-right: 5px;
-    width: 120px;
-    font-size: 11px;
-    height: 50px;
-  }
-  .home .button-panel .right-button {
-    width: 120px;
-    font-size: 11px;
-    height: 50px;
-  }
-  .home .rslides {
-    width: 90px;
-    left: 0;
-    top: 30%;
-    margin: 0 auto;
-    right: 0;
-  }
-  .home .Previous {
-    margin-top: 5px;
-    width: 30px;
-    height: 30px;
-    margin-right: 5px;
-  }
-  .home .Next {
-    margin-top: 5px;
-    width: 30px;
-    height: 30px;
+  .main-screen-home {
+    .content {
+       padding-top: 18vh;
+      .home-title .pre-title {
+        font-size: 15px;
+        line-height: 20px;
+      }
+      .home-title .pre-title .color-aqua {
+        font-size: 15px;
+      }
+      .home-title .home-main-title {
+        font-size: 26px;
+        line-height: 22px;
+        margin-top: 10px;
+      }
+      .home-title .last-title {
+        font-size: 10px;
+        line-height: 30px;
+      }
+      .left-button {
+        margin-right: 5px;
+        width: 120px;
+        font-size: 11px;
+        height: 50px;
+      }
+      .right-button {
+        width: 120px;
+        font-size: 11px;
+        height: 50px;
+      }
+      .rslides {
+        top: 40vh;
+        margin-top: 0;
+      }
+      .Previous {
+        margin-top: 5px;
+        width: 52px;
+        height: 40px;
+        margin-right: 5px;
+      }
+      .Next {
+        margin-top: 5px;
+        width: 52px;
+        height: 40px;
+      }
+    }
   }
 }
-@media #{$bootstrap-iphone5-landscape} {
-  .home .rslides {
-    top: -25%;
-    margin-right: 3%;
+
+@media #{$bootstrap-min-height-xs} {
+  .main-screen-home {
+    .content {
+      padding-top: 25vh;
+    }
+    .content .rslides {
+      top: 24%;
+      margin-left: 4%;
+    }
   }
 }

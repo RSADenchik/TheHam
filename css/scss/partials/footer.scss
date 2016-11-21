@@ -352,22 +352,28 @@
             }
           }
          .footer-img-post {
-           margin-left: 10%;
+           margin: 0 auto;
+           display: block;
+           float: none;
            width: 100px;
-           float: left;
            height: 100px;
          }
          .standart-title {
            line-height: 20px;
+           float: none;
+           margin: 20px auto;
+           padding: 0;
          }
         .standart-info {
-          text-align: left;
-          width: 50%;
+          width: 75%;
+          float: none;
+          margin: 0 auto;
+          padding: 0;
           line-height: 26px;
           font-size: 14px;
         }
         .date-post {
-          margin: 0 auto;
+          margin: 20px auto;
           padding: 0;
           line-height: 40px;
         }

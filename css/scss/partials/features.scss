@@ -1,18 +1,18 @@
-.features {
-  background-color: white;
-  padding: 100px 0;
-  .hover-block {
-    &:hover .feature-pretitle {
-    color: $color-aqua;
+  .features {
+    padding: 100px 0;
+    background-color: white;
+    .hover-block {
+      &:hover .feature-pretitle {
+      color: $color-aqua;
+      }
     }
-  }
     .feature-title {
+      margin: 10px 0 20px;
       text-align: center;
       color: #4e4e4e;
       font-family: $global-montserrat-regular;
       font-size: 36px;
       font-weight: 400;
-      line-height: 40px;
     }
     .h-line-1 {
       margin: 36px auto 0;
@@ -21,9 +21,9 @@
       background-color: $color-aqua;
     }
     .h-line-2 {
-      margin: 3px 51% 50px 49%;
       width: 76px;
       height: 1px;
+      margin: 3px 51% 50px 49%;
       background-color: $color-aqua;
     }
     .hover-block:hover {
@@ -32,8 +32,8 @@
       }
     }
     .feature-info {
-      margin: 0 auto 50px;
       width: 75%;
+      margin: 0 auto 50px;
       color: #777;
       font-family: $global-montserrat-regular;
       font-size: 14px;
@@ -47,44 +47,42 @@
       font-family: $global-montserrat-regular;
       font-size: 16px;
       font-weight: 700;
-      line-height: 40px;
     }
   }
-@media #{$bootstrap-xs} {
-  .features {
-    padding-top: 30px;
-    .hover-block {
-      padding: 5px;
-    }
-    .feature-title {
-      font-size: 20px;
-    }
-    .h-line-1 {
-      margin-top: 15px;
-    }
-    .h-line-2 {
-      margin-bottom: 20px;
-    }
-    .feature-img {
-      margin: 0 auto;
-      margin-top: 10px;
-      display: block;
-      height: 60px;
-      width: 60px;
-    }
-    .feature-pretitle {
-      text-align: center;
-      display: block;
-      margin: 10px 2px;
-      font-size: 18px;
-      line-height: 20px;
-    }
-    .feature-info {
-      margin: 0 auto;
-      width: 60%;
-      text-align: center;
-      line-height: 30px;
-      font-size: 16px;
+  @media #{$bootstrap-xs} {
+    .features {
+      padding-top: 50px;
+      .hover-block {
+        padding: 5px;
+      }
+      .feature-title {
+        font-size: 20px;
+      }
+      .h-line-1 {
+        margin-top: 15px;
+      }
+      .h-line-2 {
+        margin-bottom: 20px;
+      }
+      .feature-img {
+        width: 50px;
+        height: 50px;
+        margin: 10px auto 0;
+        display: block;
+      }
+      .feature-pretitle {
+        margin: 10px 2px;
+        text-align: center;
+        display: block;
+        font-size: 18px;
+        line-height: 20px;
+      }
+      .feature-info {
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 30px;
+        font-size: 16px;
+      }
     }
   }
-}

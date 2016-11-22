@@ -1,409 +1,345 @@
   .about {
-    background: #0a0f14 url(../img/about-img.png) no-repeat 4% 90%;
+    background: #0a0f14 url(../img/about-img.png) no-repeat -74% 60%;
     background-size: 42% 58%;
     padding: 100px 0;
     opacity: 0.9;
-    .about-container {
-      .about-informations {
-        text-align: center;
-        .about-header {
-          width: 100%;
-          .about-title {
+    .about-informations {
+      text-align: center;
+      .about-title {
+        font-family: $global-montserrat-regular;
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: 400;
+        color: white;
+      }
+      .h-line-1 {
+        margin: 0 auto;
+        width: 76px;
+        height: 1px;
+        background-color: $color-aqua;
+      }
+      .h-line-2 {
+        width: 76px;
+        height: 1px;
+        margin: 4px 47% 0 49%;
+        background-color: $color-aqua;
+      }
+      .nav-tabs>li.active>a,
+      .nav-tabs>li.active>a:focus,
+      .nav-tabs>li.active>a:hover {
+        background: none;
+        border: none;
+      }
+      .nav-tabs>li>a,
+      .nav-tabs>li>a:focus,
+      .nav-tabs>li>a:hover,
+      .nav>li>a {
+        padding: 0;
+        background: none;
+        border: none;
+      }
+      .about-tab {
+        margin-top: 25px;
+        border: none;
+        .li-about {
+          margin-right: 18px;
+          display: inline-block;
+          float: none;
+          font-family: $global-montserrat-regular;
+          text-transform: uppercase;
+          font-size: 16px;
+          font-weight: 700;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+        .li-about:hover,
+        .li-about:focus,
+        .li-about:active {
+          margin-top: -2px;
+          border-top: 2px solid $color-aqua;
+        }
+        .a-about {
+          line-height: 50px;
+          color: whitesmoke;
+        }
+        .a-about:hover,
+        .a-about:active {
+          color: $color-aqua;
+        }
+        .a-about:focus {
+          outline: 0;
+        }
+      }
+      .tab-content {
+        .fade {
+          transition: 2s;
+          -webkit-transition: 2s;
+        }
+        .p-content {
+          width: 85%;
+          max-width: 520px;
+          margin: 20px auto;
+          text-align: justify;
+          font-family: $global-montserrat-regular;
+          font-size: 14px;
+          line-height: 25px;
+          font-weight: 300;
+          color: #bebebe;
+        }
+        .history {
+          .history-info {
+            width: 25%;
+            min-width: 240px;
+            display: inline-block;
+            input[type="checkbox"] {
+              display:none;
+            }
+            input[type="checkbox"] + label span {
+              width: 30px;
+              height: 30px;
+              margin: -10px 4px 0 0;
+              display: inline-block;
+              vertical-align: middle;
+              background: url(../img/icons/checkbox.png) -33px 0 no-repeat;
+              cursor: pointer;
+            }
+            input[type="checkbox"]:checked + label span {
+              background:url(../img/icons/checkbox.png) no-repeat;
+            }
+          }
+          .done-list {
             font-family: $global-montserrat-regular;
-            font-size: 36px;
+            font-size: 14px;
+            line-height: 38px;
+            font-weight: 300;
+            color: #bebebe;
+          }
+        }
+        .biography {
+          width: 85%;
+          max-width: 520px;
+          margin: 20px auto;
+          text-align: justify;
+          font-family: $global-montserrat-regular;
+          font-size: 14px;
+          line-height: 25px;
+          font-weight: 300;
+          color: #bebebe;
+        }
+        #skill {
+          width: 100%;
+          max-width: 640px;
+          margin-top: 25px;
+          padding-left: 50px;
+          margin-right: 20px;
+          .block-skill {
+            height: 39px;
+            text-align: left;
+            margin-left: 38px;
+            margin-right: 80px;
+            margin-bottom: 14px;
+            border: 1px solid #959595;
+            border-radius: 4px;
+            background-color: #0a0f14;
+          }
+          .user-interface {
+            width: 70%;
+            height: 39px;
+            margin-top: -1px;
+            margin-left: -1px;
+            padding-left: 10px;
+            border-radius: 4px;
+            font-family: $global-montserrat-regular;
+            text-transform: uppercase;
+            font-size: 13px;
             line-height: 40px;
             font-weight: 400;
             color: white;
+            background-color: #9c5da5;
           }
-          .h-line-1 {
-            margin: 0 auto;
-            width: 76px;
-            height: 1px;
-            background-color: $color-aqua;
-          }
-          .h-line-2 {
-            width: 76px;
-            height: 1px;
-            margin: 4px 47% 0 49%;
-            background-color: $color-aqua;
-          }
-        }
-        .nav-tabs>li.active>a,
-        .nav-tabs>li.active>a:focus,
-        .nav-tabs>li.active>a:hover {
-          background: none;
-          border: none;
-        }
-        .nav-tabs>li>a,
-        .nav-tabs>li>a:focus,
-        .nav-tabs>li>a:hover
-        .nav>li>a {
-          padding: 0;
-          background: none;
-          border: none;
-        }
-        .about-tab {
-          width: 100%;
-          height: 50px;
-          margin-top: 25px;
-          border: none;
-          .li-about {
-            display: inline-block;
-            float: none;
-            margin-right: 18px;
+          .web-design {
+            width: 85%;
+            height: 39px;
+            margin-top: -1px;
+            margin-left: -1px;
+            padding-left: 10px;
+            border-radius: 4px;
             font-family: $global-montserrat-regular;
             text-transform: uppercase;
-            font-size: 16px;
-            line-height: 42px;
-            font-weight: 700;
-             &:last-child {
-                margin-right: 0;
-             }
+            font-size: 13px;
+            line-height: 40px;
+            font-weight: 400;
+            color: white;
+            background-color: #11b0de;
           }
-          .li-about:hover,
-          .li-about:focus,
-          .li-about:active {
-            text-align: center;
-            margin-top: -2px;
-            border-top: 2px solid $color-aqua;
-            background: none;
-          }
-          .a-about {
-            text-align: center;
-            line-height: 50px;
-            color: whitesmoke;
-          }
-          .a-about:hover,
-          .a-about:active {
-            color: $color-aqua;
-          }
-          .a-about:focus {
-            outline: 0;
-          }
-        }
-        .tab-content {
-          width: 100%;
-          .fade {
-            transition: none;
-            -webkit-transition: none;
-          }
-          // Content history
-          .p-content {
-            width: 85%;
-            max-width: 520px;
-            margin: 20px auto;
-            text-align: justify;
+          .wordpress {
+            width: 60%;
+            height: 39px;
+            margin-top: -1px;
+            margin-left: -1px;
+            padding-left: 10px;
+            border-radius: 4px;
             font-family: $global-montserrat-regular;
-            font-size: 14px;
-            line-height: 25px;
-            font-weight: 300;
-            color: #bebebe;
+            text-transform: uppercase;
+            font-size: 13px;
+            line-height: 40px;
+            font-weight: 400;
+            color: white;
+            background-color: #d67f7f;
           }
-          .history {
-            width: 100%;
-            .history-info {
-              width: 25%;
-              min-width: 240px;
-              display: inline-block;
-              input[type="checkbox"] {
-                display:none;
-              }
-              input[type="checkbox"] + label span {
-                display: inline-block;
-                width: 30px;
-                height: 30px;
-                margin: -10px 4px 0 0;
-                vertical-align: middle;
-                background: url(../img/icons/checkbox.png) -33px 0 no-repeat;
-                cursor: pointer;
-              }
-              input[type="checkbox"]:checked + label span {
-                background:url(../img/icons/checkbox.png) no-repeat;
-              }
-            }
-            .done-icon {
-              float: left;
-              padding-left: 5px;
-              margin-top: 5px;
-              margin-right: 10px;
-            }
-            .done-list {
-              float: left;
-              width: 100%;
-              font-family: $global-montserrat-regular;
-              font-size: 14px;
-              line-height: 38px;
-              font-weight: 300;
-              color: #bebebe;
-            }
-          }
-          // Content biography
-          .biography {
-            width: 85%;
-            max-width: 520px;
-            margin: 20px auto;
-            text-align: justify;
+          .html-css {
+            width: 90%;
+            height: 39px;
+            margin-top: -1px;
+            margin-left: -1px;
+            padding-left: 10px;
+            border-radius: 4px;
             font-family: $global-montserrat-regular;
-            font-size: 14px;
-            line-height: 25px;
-            font-weight: 300;
-            color: #bebebe;
+            text-transform: uppercase;
+            font-size: 13px;
+            line-height: 40px;
+            font-weight: 400;
+            color: white;
+            background-color: #20bc9d;
           }
-          // Content skill
-          #skill {
-            width: 100%;
-            max-width: 640px;
-            margin-top: 25px;
-            padding-left: 50px;
-            margin-right: 20px;
-            .block-skill {
-              height: 39px;
-              text-align: left;
-              margin-left: 38px;
-              margin-right: 80px;
-              margin-bottom: 14px;
-              border: 1px solid #959595;
-              border-radius: 4px;
-              background-color: #0a0f14;
-            }
-            .user-interface {
-              width: 70%;
-              height: 39px;
-              margin-top: -1px;
-              margin-left: -1px;
-              padding-left: 10px;
-              border-radius: 4px;
-              font-family: $global-montserrat-regular;
-              text-transform: uppercase;
-              font-size: 13px;
-              line-height: 40px;
-              font-weight: 400;
-              color: white;
-              background-color: #9c5da5;
-            }
-            .web-design {
-              width: 85%;
-              height: 39px;
-              margin-top: -1px;
-              margin-left: -1px;
-              padding-left: 10px;
-              border-radius: 4px;
-              font-family: $global-montserrat-regular;
-              text-transform: uppercase;
-              font-size: 13px;
-              line-height: 40px;
-              font-weight: 400;
-              color: white;
-              background-color: #11b0de;
-            }
-            .wordpress {
-              width: 60%;
-              height: 39px;
-              margin-top: -1px;
-              margin-left: -1px;
-              padding-left: 10px;
-              border-radius: 4px;
-              font-family: $global-montserrat-regular;
-              text-transform: uppercase;
-              font-size: 13px;
-              line-height: 40px;
-              font-weight: 400;
-              color: white;
-              background-color: #d67f7f;
-            }
-            .html-css {
-              width: 90%;
-              height: 39px;
-              margin-top: -1px;
-              margin-left: -1px;
-              padding-left: 10px;
-              border-radius: 4px;
-              font-family: $global-montserrat-regular;
-              text-transform: uppercase;
-              font-size: 13px;
-              line-height: 40px;
-              font-weight: 400;
-              color: white;
-              background-color: #20bc9d;
-            }
-            .app-design {
-              width: 85%;
-              height: 39px;
-              margin-top: -1px;
-              margin-left: -1px;
-              padding-left: 10px;
-              border-radius: 4px;
-              font-family: $global-montserrat-regular;
-              text-transform: uppercase;
-              font-size: 13px;
-              line-height: 40px;
-              font-weight: 400;
-              color: white;
-              background-color: #bb8a36;
-            }
+          .app-design {
+            width: 85%;
+            height: 39px;
+            margin-top: -1px;
+            margin-left: -1px;
+            padding-left: 10px;
+            border-radius: 4px;
+            font-family: $global-montserrat-regular;
+            text-transform: uppercase;
+            font-size: 13px;
+            line-height: 40px;
+            font-weight: 400;
+            color: white;
+            background-color: #bb8a36;
           }
         }
       }
-    }
-  }
-  @media #{$bootstrap-xl} {
-    .about {
-      background-size: 42% 52%;
     }
   }
   @media #{$bootstrap-sm} {
-      .about {
-        background: #0a0f14;
-        .about-container {
-          .about-informations {
-            float: none;
-            width: 100%;
-            .about-header {
-              .about-title {
-                text-align: center;
-                margin: 0;
-              }
-              .h-line-1 {
-                margin: 20px auto 0;
-                width: 76px;
-                height: 1px;
-                background-color: $color-aqua;
-              }
-              .h-line-2 {
-                width: 76px;
-                height: 1px;
-                margin: 4px 51% 0 49%;
-                background-color: $color-aqua;
-              }
+    .about {
+      background: #0a0f14;
+      .about-informations {
+        .about-title {
+          text-align: center;
+          margin: 0;
+        }
+        .h-line-1 {
+          margin: 20px auto 0;
+          width: 76px;
+          height: 1px;
+          background-color: $color-aqua;
+        }
+        .h-line-2 {
+          width: 76px;
+          height: 1px;
+          margin: 4px 51% 0 49%;
+          background-color: $color-aqua;
+        }
+        .about-tab {
+          width: 100%;
+          text-align: center;
+          margin: 0;
+          margin-top: 25px;
+        }
+        .tab-content {
+          .p-content {
+            margin: 20px auto 0;
+          }
+          .history {
+            margin: 0;
+            margin-left: 70px;
+            .history-info {
+              width: 45%;
+              min-width: 250px;
+              padding-top: 25px;
+              float: left;
             }
-            .about-tab {
-              width: 100%;
-              text-align: center;
-              margin: 0;
-              margin-top: 25px;
-            }
-            .tab-content {
-                .p-content {
-                  margin: 20px auto 0;
-                }
-                .history {
-                    margin: 0;
-                    margin-left: 90px;
-                    .history-info {
-                      padding-top: 50px;
-                      float: left;
-                      width: 30%;
-                      min-width: 270px;
-                    }
-                    .done-icon {
-                      float: none;
-                    }
-                    .done-list {
-                      float: none;
-                      width: 85%;
-                      font-size: 13px;
-                    }
-                }
-                .biography {
-                  margin: 20px auto 0;
-                }
-                #skill {
-                  margin: 25px auto 0;
-                }
-            }
+          }
+          .biography {
+            margin: 20px auto 0;
+          }
+          #skill {
+            margin: 25px auto 0;
           }
         }
       }
+    }
   }
   @media #{$bootstrap-xs} {
     .about {
       background: #0a0f14;
-      height: auto;
-      padding-top: 30px;
+      padding: 50px 0;
+      .about-informations {
+        .about-title {
+          font-size: 24px;
+          margin: 0;
+        }
+        .h-line-1 {
+          margin: 16px auto 0;
+        }
+        .h-line-2 {
+          margin: 3px 51% 0 49%;
+        }
+        .about-tab {
+          .li-about {
+            margin-right: 5px;
+            font-family: $global-montserrat-regular;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 700;
+          }
+        }
+        .tab-content {
+          .history .done-list {
+            font-size: 12px;
+            padding-top: 5px;
+            line-height: 30px;
+          }
+          .p-content {
+            width: 85%;
+            margin: 10px auto;
+            text-align: justify;
+            font-family: $global-montserrat-regular;
+            font-size: 14px;
+            line-height: 32px;
+            font-weight: 300;
+            color: #bebebe;
+          }
+          .biography {
+            width: 85%;
+            margin: 10px auto;
+            text-align: justify;
+            line-height: 25px;
+            font-size: 14px;
+          }
+          #skill {
+            padding-left: 0;
+            .block-skill {
+              margin-right: 45px;
+              .user-interface,
+              .web-design {
+                font-size: 10px;
+              }
+              .app-design,
+              .html-css,
+              .wordpress {
+                font-size: 10px;
+              }
+            }
+          }
+        }
+      }
     }
-    .about, .about .about-container {
-      height: auto;
-    }
-    .about .about-container .about-informations .tab-content .fix-row {
-      margin: 0 0 20px auto;
-    }
-    .about .about-container .about-informations {
-      width: 100%;
-      padding-top: 0;
-      float: none;
-    }
-    .about .about-container .about-informations .about-header .about-title {
-      font-size: 24px;
-      margin: 0;
-      text-align: center;
-    }
-    .about .about-container .about-informations .about-header .h-line-1 {
-      margin: 16px auto 0;
-    }
-    .about .about-container .about-informations .about-header .h-line-2 {
-      margin: 3px 51% 0 49%;
-    }
-    .about .about-container .about-informations .tab-content .history .done-list {
-      font-size: 12px;
-      padding-top: 5px;
-      line-height: 30px;
-    }
-    .about .about-container .about-informations .tab-content .history {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .about .about-container .about-informations .tab-content .history .history-info {
-      width: 30%;
-      min-width: 240px;
-      margin: 0 auto 20px;
-    }
-
-    .about .about-container .about-informations .about-tab {
-      width: 100%;
-      text-align: center;
-      height: 50px;
-      margin-top: 25px;
-      margin-left: 0;
-      border: none;
-    }
-    .about .about-container .about-informations .about-tab .li-about {
-      display: inline-block;
-      float: none;
-      margin-right: 5px;
-      font-family: $global-montserrat-regular;
-      text-transform: uppercase;
+  }
+  @media #{$bootstrap-iphone5-portrait} {
+    .about .about-informations .about-tab .li-about {
       font-size: 11px;
-      line-height: 42px;
-      font-weight: 700;
-    }
-    .about .about-container .about-informations .tab-content .p-content {
-      width: 85%;
-      margin: 0 auto 10px auto;
-      text-align: justify;
-      font-family: $global-montserrat-regular;
-      font-size: 12px;
-      line-height: 25px;
-      font-weight: 300;
-      color: #bebebe;
-    }
-    .about .about-container .about-informations .tab-content .biography {
-      width: 85%;
-      margin: 0 auto 25px auto;
-      text-align: justify;
-      line-height: 25px;
-      font-size: 12px;
-    }
-    .about .about-informations .tab-content .done-icon {
-      margin-top: 0;
-      margin-right: 10px;
-    }
-    .about .about-container .about-informations .tab-content #skill .user-interface,
-    .about .about-container .about-informations .tab-content #skill .web-design {
-      font-size: 10px;
-    }
-    .about .about-container .about-informations .tab-content #skill .app-design,
-    .about .about-container .about-informations .tab-content #skill .html-css,
-    .about .about-container .about-informations .tab-content #skill .wordpress {
-      font-size: 10px;
     }
   }

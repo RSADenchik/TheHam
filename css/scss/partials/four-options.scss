@@ -3,57 +3,36 @@
      height: 370px;
      border-top: 4px solid $color-aqua;
      background: #1c2a33 url('../img/option-img-1.png') center 35% no-repeat;
-      .option-title-1 {
-        margin: 230px 5px 0 5px;
-        text-align: center;
-        font-family: $global-montserrat-regular;
-        text-transform: uppercase;
-        font-size: 18px;
-        font-weight: 700;
-        color: $color-aqua;
-      }
    }
    .option-2 {
      height: 370px;
      border-top: 4px solid white;
      background: $color-aqua url('../img/option-img-2.png') center 35% no-repeat;
-      .option-title-2 {
-        margin: 230px 5px 0 5px;
-        text-align: center;
-        font-family: $global-montserrat-regular;
-        text-transform: uppercase;
-        font-size: 18px;
-        font-weight: 700;
-        color: white;
-      }
+     .option-title {
+       color: white;
+     }
    }
    .option-3 {
      height: 370px;
      border-top: 4px solid $color-aqua;
      background: #1c2a33 url('../img/option-img-3.png') center 35% no-repeat;
-      .option-title-3 {
-        margin: 230px 5px 0 5px;
-        text-align: center;
-        font-family: $global-montserrat-regular;
-        text-transform: uppercase;
-        font-size: 18px;
-        font-weight: 700;
-        color: $color-aqua;
-      }
    }
    .option-4 {
      height: 370px;
      border-top: 4px solid white;
      background: $color-aqua url('../img/option-img-4.png') center 35% no-repeat;
-      .option-title-4 {
-        margin: 230px 5px 0 5px;
-        text-align: center;
-        font-family: $global-montserrat-regular;
-        text-transform: uppercase;
-        font-size: 18px;
-        font-weight: 700;
-        color: white;
-      }
+     .option-title {
+       color: white;
+     }
+   }
+   .option-title {
+     margin: 230px 5px 0 5px;
+     text-align: center;
+     font-family: $global-montserrat-regular;
+     text-transform: uppercase;
+     font-size: 18px;
+     font-weight: 700;
+     color: $color-aqua;
    }
  }
  @media #{$bootstrap-sm} {
@@ -69,30 +48,8 @@
    .four-options .option-3 {
      float: right;
    }
-   .four-options .option-1 .option-title-1,
-   .four-options .option-2 .option-title-2,
-   .four-options .option-3 .option-title-3,
-   .four-options .option-4 .option-title-4 {
+   .four-options .option-title {
      margin-top: 170px;
-   }
- }
- @media #{$bootstrap-xs} {
-   .four-options .option-1,
-   .four-options .option-2,
-   .four-options .option-3,
-   .four-options .option-4 {
-     min-height: 100px;
-     position: relative;
-   }
-   .four-options .option-1 .option-title-1,
-   .four-options .option-2 .option-title-2,
-   .four-options .option-3 .option-title-3,
-   .four-options .option-4 .option-title-4 {
-     position: absolute;
-     margin: 0 5px;
-     bottom: 33%;
-     left: 0;
-     right: 0;
    }
  }
 

@@ -1,94 +1,78 @@
-.purchase {
-  height: 476px;
-  background: url('../img/purches.jpg') no-repeat center center;
-  background-size: cover;
-  opacity: 0.85;
-  background-color: #1c2a33;
-  .img-purchase {
-    position: absolute;
-    height: 476px;
-    width: 100%;
-    opacity: 0.9;
-  }
-  .purchase-title {
-    margin-top: 130px;
-    color: #18cfab;
-    font-family: $global-montserrat-regular;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 40px;
-    text-transform: uppercase;
-  }
-  .purchase-info {
-    margin: 0 auto;
-    color: #d8d8d8;
-    font-family: $global-montserrat-regular;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
-  }
-  .white-border {
-    -webkit-box-shadow: 0px -5px 2px 0px rgba(255,255,255,1);
-    -moz-box-shadow: 0px -5px 2px 0px rgba(255,255,255,1);
-    box-shadow: 0px -5px 2px 0px rgba(255,255,255,1);
-  }
-  .button-purchase {
-    margin: 50px auto 25px;
-    width: 165px;
-    height: 60px;
-    font-family: $global-montserrat-regular;
-    background-color: $color-aqua;
-    border-radius: 4px;
-    border-width: 0;
-    border-top: 1px;
-    color: white;
-    &:active {
-      opacity: 0.7;
+  .purchase {
+    padding: 100px 0;
+    background: #1c2a33 url('../img/purches.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.85;
+    .purchase-title {
+      width: 60%;
+      margin: 10px auto;
+      line-height: 60px;
+      color: #18cfab;
+      font-family: $global-montserrat-regular;
+      font-size: 40px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .purchase-info {
+      width: 70%;
+      margin: 10px auto;
+      color: #d8d8d8;
+      font-family: $global-montserrat-regular;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 60px;
+    }
+    .white-border {
+      -webkit-box-shadow: 0px -5px 2px 0px rgba(255,255,255,1);
+      -moz-box-shadow: 0px -5px 2px 0px rgba(255,255,255,1);
+      box-shadow: 0px -5px 2px 0px rgba(255,255,255,1);
+    }
+    .button-purchase {
+      margin: 30px auto;
+      width: 165px;
+      height: 60px;
+      font-family: $global-montserrat-regular;
+      background-color: $color-aqua;
+      border-radius: 4px;
+      border-width: 0;
+      color: white;
+      &:active {
+        opacity: 0.7;
+      }
     }
   }
-}
-@media #{$bootstrap-sm} {
-  .purchase .purchase-title {
-    font-size: 20px;
+  @media #{$bootstrap-md} {
+    .purchase .purchase-title {
+      font-size: 30px;
+    }
+    .purchase .purchase-info {
+      font-size: 26px;
+    }
   }
-  .purchase .purchase-info {
-    font-size: 12px;
+  @media #{$bootstrap-sm} {
+    .purchase .purchase-title {
+      font-size: 25px;
+    }
+    .purchase .purchase-info {
+      font-size: 24px;
+      line-height: 40px;
+    }
   }
-}
-@media #{$bootstrap-md} {
-  .purchase .purchase-title {
-    font-size: 30px;
+  @media #{$bootstrap-xs} {
+    .purchase {
+      padding: 50px 0;
+      .purchase-title {
+        font-size: 22px;
+        line-height: 40px;
+      }
+      .purchase-info {
+        width: 60%;
+        font-size: 20px;
+        line-height: 40px;
+      }
+      .button-purchase {
+        width: 130px;
+        height: 50px;
+      }
+    }
   }
-}
-@media #{$bootstrap-xs} {
-  .purchase {
-    height: auto;
-  }
-  .purchase .purchase-title {
-    margin-top: 30px;
-    color: #18cfab;
-    font-family: $global-montserrat-regular;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 30px;
-    text-transform: uppercase;
-  }
-  .purchase .purchase-info {
-    width: 80%;
-    margin: 0 auto;
-    color: #d8d8d8;
-    font-family: $global-montserrat-regular;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 25px;
-  }
-  .purchase .button-purchase {
-    margin: 20px auto 25px;
-    width: 130px;
-    height: 50px;
-    font-family: $global-montserrat-regular;
-    background-color: #18cfab;
-    border-radius: 4px;
-    color: #fff;
-  }
-}

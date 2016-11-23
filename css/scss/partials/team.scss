@@ -1,154 +1,151 @@
-.team {
-  padding: 100px 0;
-  .team-title {
-    color: #4e4e4e;
-    font-family: $global-montserrat-regular;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 40px;
-  }
-  .h-line-1 {
-    margin: 36px auto 0;
-    width: 76px;
-    height: 1px;
-    background-color: $color-aqua;
-  }
-  .h-line-2 {
-    margin: 3px 51% 50px 49%;
-    width: 76px;
-    height: 1px;
-    background-color: $color-aqua;
-  }
-  .team-person {
-    width: 23%;
-    padding: 0;
-    float: left;
-    height: 371px;
-    list-style: none;
-    margin-left: 2%;
-      &:hover .person-info,
-      &:hover .person-social {
-      background-color: Tomato;
-      }
-      &:hover .person-info>.proff-person {
-        color: #2e4a5b;
-      }
-      &:last-child {
-        margin-right: 0;
-      }
-    .person-img {
-      height: 229px;
-      width: 100%;
-      background-color: #dae9e6;
-      position: relative;
-      .person-foto {
+  .team {
+    padding: 100px 0;
+    .team-title {
+      margin: 20px auto;
+      color: #4e4e4e;
+      font-family: $global-montserrat-regular;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 40px;
+    }
+    .h-line-1 {
+      margin: 36px auto 0;
+      width: 76px;
+      height: 1px;
+      background-color: $color-aqua;
+    }
+    .h-line-2 {
+      margin: 3px 51% 50px 49%;
+      width: 76px;
+      height: 1px;
+      background-color: $color-aqua;
+    }
+    .team-person {
+      width: 23%;
+      padding: 0;
+      float: left;
+      list-style: none;
+      margin-left: 2%;
+        &:hover .person-info,
+        &:hover .person-social {
+        background-color: Tomato;
+        }
+        &:hover .person-info>.proff-person {
+          color: #2e4a5b;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      .person-img {
         height: 229px;
         width: 100%;
-        z-index: -1;
-      }
-    }
-    .person-info {
-      height: 77px;
-      position: relative;
-      background-color: #2e4a5b;
-      .filename {
-        background-color: transparent;
-        position: absolute;
-        text-align: right;
-        border: none;
-        color: green;
-        padding-right: 8px;
-        line-height: 14px;
-        font-size: 12px;
-        bottom: 0;
-        width: 100%;
-        right: 0;
-      }
-      .hover-add-img {
-        position: absolute;
-        text-align: center;
-        width: 60px;
-        margin-right: 5px;
-        margin-top: 5px;
-        right: 0;
-        top: 0;
-        input[type="file"] {
-          display: none;
-        }
-        label {
-          display: block;
-          margin-bottom: 0;
-          text-align: right;
-          top: 0;
-          left: 0;
+        background-color: #dae9e6;
+        .person-foto {
+          height: 229px;
           width: 100%;
-          height: 100%;
-          cursor: pointer;
         }
-        .add-img {
-          width: 30px;
-          height: 30px;
-          &:hover {
-            opacity: 0.8;
-          }
-          &:active {
-            opacity: 0.7;
-          }
-
-        }
-        .submit-type {
-          display: none;
-          margin-top: 5px;
-          border-radius: 5px;
-          background-color: aqua;
+      }
+      .person-info {
+        height: 77px;
+        position: relative;
+        background-color: #2e4a5b;
+        .filename {
+          background-color: transparent;
+          position: absolute;
+          text-align: right;
           border: none;
+          color: green;
+          padding-right: 8px;
+          line-height: 14px;
+          font-size: 12px;
+          bottom: 0;
+          width: 100%;
+          right: 0;
+        }
+        .hover-add-img {
+          position: absolute;
+          width: 60px;
+          margin-right: 5px;
+          margin-top: 5px;
+          right: 0;
+          top: 0;
+          input[type="file"] {
+            display: none;
+          }
+          label {
+            display: block;
+            margin-bottom: 0;
+            text-align: right;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+          }
+          .add-img {
+            width: 30px;
+            height: 30px;
+            &:hover {
+              opacity: 0.8;
+            }
+            &:active {
+              opacity: 0.7;
+            }
+
+          }
+          .submit-type {
+            display: none;
+            margin-top: 5px;
+            border-radius: 5px;
+            background-color: aqua;
+            border: none;
+          }
+        }
+        .name-person {
+          padding-top: 15px;
+          padding-left: 15px;
+          margin: 0;
+          color: white;
+          font-family: $global-montserrat-regular;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 25px;
+        }
+        .proff-person {
+          padding-left: 15px;
+          margin: 0;
+          color: $color-aqua;
+          font-family: $global-montserrat-regular;
+          font-size: 13px;
+          font-weight: 300;
+          line-height: 18px;
         }
       }
-      .name-person {
-        padding-top: 15px;
-        padding-left: 15px;
-        margin: 0;
-        color: white;
-        font-family: $global-montserrat-regular;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 25px;
-      }
-      .proff-person {
-        padding-left: 15px;
-        margin: 0;
-        color: $color-aqua;
-        font-family: $global-montserrat-regular;
-        font-size: 13px;
-        font-weight: 300;
-        line-height: 18px;
-      }
-    }
-    .person-social {
-      text-align: center;
-      height: 65px;
-      width: 100%;
-      background-color: #2e4a5b;
-      display: inline-block;
-      a {
-        line-height: 57px;
-        margin-right: -5px;
+      .person-social {
+        text-align: center;
+        height: 65px;
+        width: 100%;
+        background-color: #2e4a5b;
         display: inline-block;
-        width: 25.5%;
-        border: 1px solid white;
-        &:first-child {
-          margin-left: -5px;
+        a {
+          line-height: 57px;
+          margin-right: -5px;
+          display: inline-block;
+          width: 25.5%;
+          border: 1px solid white;
+          &:first-child {
+            margin-left: -5px;
+          }
         }
-      }
-      .social-icon {
-        padding-top: 14px;
-        font-size: 30px;
-        display: inline-block;
-        color: white;
+        .social-icon {
+          padding-top: 14px;
+          font-size: 30px;
+          display: inline-block;
+          color: white;
+        }
       }
     }
   }
-}
 @media #{$bootstrap-sm} {
   .team .team-person {
     width: 40%;

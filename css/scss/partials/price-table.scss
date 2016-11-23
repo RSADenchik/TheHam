@@ -1,146 +1,114 @@
-.price-table {
-  padding: 100px 0;
-  .price-title {
-    text-align: center;
-    color: #4e4e4e;
-    font-family: $global-montserrat-regular;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 40px;
-  }
-  .h-line-1 {
-    margin: 36px auto 0;
-    width: 76px;
-    height: 1px;
-    background-color: $color-aqua;
-  }
-  .h-line-2 {
-    margin: 3px 51% 50px 49%;
-    width: 76px;
-    height: 1px;
-    background-color: $color-aqua;
-  }
-  .personal {
-    float: left;
-    list-style: none;
-    text-align: center;
-    width: 25%;
-    border-radius: 5px;
-    background-color: #f8fcfe;
-    border-collapse: collapse;
-    padding-left: 0;
-    padding-right: 0;
-    position: relative;
-    overflow: hidden;
-    &:hover {
-      box-shadow: -2px -2px 9px #c7c7c7,
-                  2px 2px 9px #c7c7c7,
-                    0 0 40px #c7c7c7;
-    }
-    &:hover .li-price,
-    &:hover .li-button {
-      background-color: $color-aqua;
-      border-right: 1px solid #18cfab;
-    }
-    &:hover:after {
-      content: "offer";
-      width: 80px;
-      height: 22px;
-      background-color: $color-aqua;
-      color: white;
-      position: absolute;
-      top: 10px;
-      right: -18px;
-      transform: rotate(45deg);
+  .price-table {
+    padding: 100px 0;
+    .price-title {
+      text-align: center;
+      color: #4e4e4e;
       font-family: $global-montserrat-regular;
-      font-size: 14px;
+      font-size: 36px;
       font-weight: 400;
-      line-height: 26px;
-      text-transform: uppercase;
     }
-    .li-header {
-      padding: 15px 5px;
-      color: #717171;
-      font-family: $global-montserrat-regular;
-      border: 1px solid #e1e1e1;
-      font-size: 18px;
-      font-weight: 700;
-      text-transform: uppercase;
+    .h-line-1 {
+      width: 76px;
+      height: 1px;
+      margin: 36px auto 0;
+      background-color: $color-aqua;
     }
-    .li-price {
-      padding: 30px 10px;
-      background-color: #2e4a5b;
-      border: 1px solid #ebebeb;
-      color: white;
-      font-family: $global-montserrat-regular;
-      line-height: 34px;
-      font-size: 39px;
-      font-weight: 700;
-      text-transform: uppercase;
+    .h-line-2 {
+      width: 76px;
+      height: 1px;
+      margin: 3px 51% 50px 49%;
+      background-color: $color-aqua;
+    }
+    .personal {
+      list-style: none;
+      text-align: center;
+      border-radius: 5px;
+      background-color: #f8fcfe;
+      padding-left: 0;
+      padding-right: 0;
       overflow: hidden;
-      .price-span {
+      &:hover {
+        box-shadow: -2px -2px 9px #c7c7c7,
+                    2px 2px 9px #c7c7c7,
+                      0 0 40px #c7c7c7;
+      }
+      &:hover .li-price,
+      &:hover .li-button {
+        background-color: $color-aqua;
+        border-right: 1px solid #18cfab;
+      }
+      &:hover:after {
+        content: "offer";
+        width: 80px;
+        height: 22px;
+        background-color: $color-aqua;
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: -18px;
+        transform: rotate(45deg);
+        font-family: $global-montserrat-regular;
         font-size: 14px;
-        font-weight: 300;
+        font-weight: 400;
+        line-height: 26px;
         text-transform: uppercase;
       }
-    }
-    .li-content {
-      padding: 5px;
-      border: 1px solid #e1e1e1;
-      color: #777;
-      font-family: $global-montserrat-regular;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 47px;
-      &:last-child {
+      .li-header {
+        padding: 15px 5px;
+        color: #717171;
+        font-family: $global-montserrat-regular;
+        border: 1px solid #e1e1e1;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      .li-price {
         padding: 30px 10px;
+        background-color: #2e4a5b;
+        border: 1px solid #ebebeb;
+        color: white;
+        font-family: $global-montserrat-regular;
+        font-size: 39px;
+        font-weight: 700;
+        text-transform: uppercase;
+        overflow: hidden;
+        .price-span {
+          font-size: 14px;
+          font-weight: 300;
+          text-transform: uppercase;
+        }
+      }
+      .li-content {
+        border: 1px solid #e1e1e1;
+        color: #777;
+        font-family: $global-montserrat-regular;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 55px;
+        &:last-child {
+          padding: 30px 10px;
+        }
+      }
+      .li-button {
+        width: 140px;
+        height: 50px;
+        background-color: #2e4a5b;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        font-family: $global-montserrat-regular;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 50px;
       }
     }
-    .li-button {
-      width: 140px;
-      height: 50px;
-      background-color: #2e4a5b;
-      border-radius: 3px;
-      border: none;
-      color: white;
-      font-family: $global-montserrat-regular;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 50px;
-    }
   }
-}
-@media #{$bootstrap-sm} {
-  .price-table .personal {
-    width: 50%;
-    padding-right: 0;
-    margin: 0 auto 50px;
-  }
-}
-@media #{$bootstrap-xs}
-{
-  .price-table {
+
+  @media #{$bootstrap-xs} {
+    .price-table {
       padding: 30px 0;
       .price-title {
         font-size: 20px;
-      }
-     .personal {
-        width: 90%;
-        max-width: 260px;
-        float: none;
-        padding-right: 0;
-        margin: 0 auto 50px;
-     }
-      .personal:hover:after {
-        width: 107px;
-        height: 24px;
-        top: 7px;
-        right: -34px;
-        font-size: 14px;
-        line-height: 26px;
-      }
-      .personal .li-content:last-child {
-        padding: 15px;
       }
       .h-line-1 {
         margin-top: 16px;
@@ -148,5 +116,19 @@
       .h-line-2 {
         margin-bottom: 20px;
       }
+      .personal {
+        max-width: 260px;
+        float: none;
+        margin: 50px auto;
+      }
+      .personal:hover:after {
+        width: 107px;
+        height: 24px;
+        top: 7px;
+        right: -34px;
+      }
+      .personal .li-content:last-child {
+        padding: 15px;
+      }
+    }
   }
-}

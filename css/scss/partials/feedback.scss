@@ -1,17 +1,12 @@
 .feedback {
   padding: 100px 0;
   background: url('../img/feedback.jpg') no-repeat;
-  .feedback-img {
-    position: absolute;
-    width: 100%;
-    height: 800px;
-  }
   .feedback-title {
+    margin: 20px auto;
     color: white;
     font-family: $global-montserrat-regular;
     font-size: 36px;
     font-weight: 400;
-    line-height: 40px;
   }
   .h-line-1 {
     margin: 36px auto 0;
@@ -40,19 +35,16 @@
   .feedback-caption {
     position: static;
     padding: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     text-shadow: none;
     .caption-title {
       color: $color-aqua;
-      font-size: 16px;
+      font-size: 20px;
       font-weight: 700;
       text-transform: uppercase;
     }
     .caption-info {
       color: #bbb;
-      font-size: 13px;
+      font-size: 20px;
       font-weight: 300;
     }
     .img-opacity {
@@ -128,76 +120,59 @@
     }
   }
 }
-@media #{$bootstrap-sm} {
-  .feedback .buttom-prev {
-    right: 70%;
-  }
-  .feedback .buttom-next {
-    right: 25%;
-  }
-}
-@media #{$bootstrap-xs} {
-  .feedback {
-    padding: 30px 0;
-    .feedback-title {
-      font-size: 16px;
+  @media #{$bootstrap-sm} {
+    .feedback .buttom-prev {
+      right: 70%;
     }
-    .h-line-1 {
-      margin: 16px auto 0;
-    }
-    .h-line-2 {
-      margin: 3px 51% 20px 49%;
-    }
-    .feedback-info {
-      font-size: 13px;
-      line-height: 25px;
-      text-align: justify;
-      width: 80%;
-    }
-    .carousel-inner {
-      width: 60%;
-      margin: 0 auto;
-    }
-    .feedback-caption .caption-title {
-      font-size: 16px;
-    }
-    .feedback-caption .caption-info {
-      font-size: 14px;
-    }
-    .feedback-caption .img-opacity {
-      margin: 15px auto 0;
-      width: 100px;
-      height: 100px;
-    }
-    .feedback-caption .img-autor {
-      margin-top: -125px;
-      width: 100px;
-      height: 100px;
-    }
-    .buttom-prev {
-      right: 80%;
-      top: 70%;
-    }
-    .buttom-next {
-      right: 12%;
-      top: 70%;
+    .feedback .buttom-next {
+      right: 25%;
     }
   }
-}
-@media #{$bootstrap-iphone5-portrait} {
-  .carousel-inner {
-    width: 60%;
-    margin: 0 auto;
+  @media #{$bootstrap-xs} {
+    .feedback {
+      padding: 30px 0;
+      .feedback-title {
+        font-size: 16px;
+      }
+      .h-line-1 {
+        margin: 16px auto 0;
+      }
+      .h-line-2 {
+        margin: 3px 51% 20px 49%;
+      }
+      .feedback-info {
+        font-size: 13px;
+        line-height: 25px;
+        text-align: justify;
+        width: 80%;
+      }
+      .carousel-inner {
+        width: 60%;
+        margin: 0 auto;
+      }
+      .feedback-caption .caption-title {
+        font-size: 16px;
+      }
+      .feedback-caption .caption-info {
+        font-size: 14px;
+      }
+      .feedback-caption .img-opacity {
+        margin: 15px auto 0;
+        width: 100px;
+        height: 100px;
+      }
+      .feedback-caption .img-autor {
+        margin-top: -125px;
+        width: 100px;
+        height: 100px;
+      }
+      .buttom-prev {
+        right: 80%;
+        top: 70%;
+      }
+      .buttom-next {
+        right: 13%;
+        top: 70%;
+      }
+    }
   }
-  .feedback .buttom-prev {
-    right: 83%;
-    top: 67%;
-  }
-  .feedback .buttom-next {
-    top: 67%;
-    right: 7%;
-  }
-  .feedback .feedback-info {
-    text-align: center;
-  }
-}

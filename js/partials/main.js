@@ -206,19 +206,19 @@ $(document).ready(function() {
     });
 
     // Фильтр блока .work
-    $('.filtr-container').filterizr( {
+    var filterizd = $('.filtr-container').filterizr( {
         animationDuration: 0.6,
-        layout: 'sameSize',
-        "delay": 25,
+        layout: 'sameWidth',
+        delay: 25,
         selector: '.filtr-container',
         setupControls: true,
         filterOutCss: {
-            'opacity': 0,
-            transform: 'scale(0.75)'
+            opacity: 0,
+            transform: 'scale(0.5)'
         },
         filterInCss: {
-            'opacity': 1,
-            transform: 'scale(0.75)',
+            opacity: 1,
+            transform: 'scale(1)',
             transition: 'all 0.5s ease-out 0ms'
         }
     });

@@ -1,12 +1,32 @@
-.fun-fact {
-  width: 100%;
-  padding-top: 100px;
-  .fact-1 {
-    height: 374px;
-    position: relative;
-    border-top: 4px solid $color-aqua;
-    background: #1c2a33 url('../img/img-fact-1.png') center 42% no-repeat;
-    .fact-title-1 {
+  .fun-fact {
+    padding-top: 100px;
+    .fact-1 {
+      height: 374px;
+      border-top: 4px solid $color-aqua;
+      background: #1c2a33 url('../img/img-fact-1.png') center 42% no-repeat;
+    }
+    .fact-2 {
+      height: 374px;
+      border-top: 4px solid #25333c;
+      background: $color-aqua url('../img/img-fact-2.png') center 42% no-repeat;
+      .fact-info {
+        color: #25333c;
+      }
+    }
+    .fact-3 {
+      height: 374px;
+      border-top: 4px solid $color-aqua;
+      background: #1c2a33 url('../img/img-fact-3.png') center 42% no-repeat;
+    }
+    .fact-4 {
+      height: 374px;
+      border-top: 4px solid #25333c;
+      background: $color-aqua url('../img/img-fact-4.png') center 42% no-repeat;
+      .fact-info {
+        color: #25333c;
+      }
+    }
+    .fact-title {
       position: absolute;
       bottom: 23%;
       left: 0;
@@ -18,7 +38,7 @@
       line-height: 20px;
       text-transform: uppercase;
     }
-    .fact-info-1 {
+    .fact-info {
       position: absolute;
       bottom: 13%;
       left: 0;
@@ -30,138 +50,40 @@
       line-height: 14px;
     }
   }
-
-  .fact-2 {
-    height: 374px;
-    position: relative;
-    border-top: 4px solid #25333c;
-    background: $color-aqua url('../img/img-fact-2.png') center 42% no-repeat;
-    .fact-title-2 {
-      position: absolute;
-      bottom: 23%;
-      left: 0;
-      right: 0;
-      color: white;
-      font-family: $global-montserrat-regular;
-      font-size: 30px;
-      font-weight: 400;
-      line-height: 20px;
-      text-transform: uppercase;
+  @media #{$bootstrap-sm} {
+    .fun-fact .fact-3 {
+      float: right;
     }
-    .fact-info-2 {
-      position: absolute;
-      bottom: 13%;
-      left: 0;
-      right: 0;
-      color: #25333c;
-      font-family: $global-montserrat-regular;
-      font-size: 18px;
-      font-weight: 300;
-      line-height: 14px;
+    .fun-fact .fact-4 {
+      float: left;
+    }
+    .fun-fact .fact-1, .fun-fact .fact-2,
+    .fun-fact .fact-3, .fun-fact .fact-4{
+      .fact-title {
+        bottom: 20%;
+      }
+    }
+    .fun-fact .fact-1, .fun-fact .fact-2,
+    .fun-fact .fact-3, .fun-fact .fact-4 {
+      .fact-info {
+        bottom: 11%;
+      }
     }
   }
-  .fact-3 {
-    height: 374px;
-    position: relative;
-    border-top: 4px solid $color-aqua;
-    background: #1c2a33 url('../img/img-fact-3.png') center 42% no-repeat;
-    .fact-title-3 {
-      position: absolute;
-      bottom: 23%;
-      left: 0;
-      right: 0;
-      color: white;
-      font-family: $global-montserrat-regular;
-      font-size: 30px;
-      font-weight: 400;
-      line-height: 20px;
-      text-transform: uppercase;
-    }
-    .fact-info-3 {
-      position: absolute;
-      bottom: 13%;
-      left: 0;
-      right: 0;
-      color: $color-aqua;
-      font-family: $global-montserrat-regular;
-      font-size: 18px;
-      font-weight: 300;
-      line-height: 14px;
-    }
-  }
-  .fact-4 {
-    height: 374px;
-    position: relative;
-    border-top: 4px solid #25333c;
-    background: $color-aqua url('../img/img-fact-4.png') center 42% no-repeat;
-    .fact-title-4 {
-      position: absolute;
-      bottom: 23%;
-      left: 0;
-      right: 0;
-      color: white;
-      font-family: $global-montserrat-regular;
-      font-size: 30px;
-      font-weight: 400;
-      line-height: 20px;
-      text-transform: uppercase;
-    }
-    .fact-info-4 {
-      position: absolute;
-      bottom: 13%;
-      left: 0;
-      right: 0;
-      color: #25333c;
-      font-family: $global-montserrat-regular;
-      font-size: 18px;
-      font-weight: 300;
-      line-height: 14px;
-    }
-  }
-}
-@media #{$bootstrap-sm} {
-  .fun-fact .fact-3 {
-    float: right;
-  }
-  .fun-fact .fact-4 {
-    float: left;
-  }
-  .fun-fact .fact-1 .fact-title-1,
-  .fun-fact .fact-2 .fact-title-2,
-  .fun-fact .fact-3 .fact-title-3,
-  .fun-fact .fact-4 .fact-title-4 {
-    bottom: 20%;
-  }
-  .fun-fact .fact-1 .fact-info-1,
-  .fun-fact .fact-2 .fact-info-2,
-  .fun-fact .fact-3 .fact-info-3,
-  .fun-fact .fact-4 .fact-info-4 {
-    bottom: 11%;
-  }
-}
   @media #{$bootstrap-xs} {
     .fun-fact {
-      padding-top: 20px;
-       .fact-1,
-       .fact-2,
-       .fact-3,
-       .fact-4{
-         min-height: 130px;
+      padding-top: 50px;
+       .fact-1, .fact-2,
+       .fact-3, .fact-4 {
          background-size: cover;
-       }
-       .fact-1 .fact-title-1,
-       .fact-2 .fact-title-2,
-       .fact-3 .fact-title-3,
-       .fact-4 .fact-title-4{
-         bottom: 15%;
-         line-height: 20px;
-       }
-       .fact-1 .fact-info-1,
-       .fact-2 .fact-info-2,
-       .fact-3 .fact-info-3,
-       .fact-4 .fact-info-4{
-         line-height: 12px;
-         bottom: 8%;
+         .fact-title {
+           bottom: 15%;
+           line-height: 20px;
+         }
+         .fact-info {
+           line-height: 12px;
+           bottom: 8%;
+         }
        }
     }
   }
